@@ -9,3 +9,6 @@ class UGOTCamera:
 
     def read_camera_data(self):
         return self.got.read_camera_data()
+    
+    def close_camera(self):
+        self.got.close_camera()

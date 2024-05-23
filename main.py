@@ -5,15 +5,20 @@ from camera import UGOTCamera
 from model import YOLOModel
 from utils import calculate_relative_position_params, draw_detections, draw_max_score_detection
 import config
+from ugot import ugot
 
 def main():
-    got = UGOTCamera(config.CAMERA_IP)
-    got.open_camera()
+    got = ugot.UGOT()
+    got.initialize(config.UGOT_IP)
+    cam = UGOTCamera(got)
+    cam.open_camera()
 
     model = YOLOModel(config.MODEL_PATH)
+    
+    # got.mecanum_turn_speed_times(2, 30, 1, 2)
 
     while True:
-        frame = got.read_camera_data()
+        frame = cam.read_camera_data()
         if frame is None:
             break
 

@@ -16,4 +16,4 @@ def calculate_relative_position_params(actual_width, focal_length, sensor_width,
     theta_x = math.atan(sensor_x / focal_length)
     horizontal_distance = (actual_width * focal_length) / ((pixel_width * sensor_width / (image_center_x * 2)) * math.cos(theta_x))
     
-    return abs(horizontal_distance), theta_x
+    return abs((horizontal_distance / 1000 - 0.09) / 0.033), math.degrees(theta_x * 4.56)

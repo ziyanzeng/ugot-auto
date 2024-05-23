@@ -6,6 +6,8 @@ import numpy as np
 
 def get_single_relative_pos(detections, frame_width, frame_height):
     boxes, scores, classes = parse_detection_results(detections)
+    if len(scores) == 0:
+        return 0, 0
     max_index = np.argmax(scores)
     box = boxes[max_index]
     x1, y1, x2, y2 = map(int, box)

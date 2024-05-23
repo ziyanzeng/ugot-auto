@@ -1,0 +1,7 @@
+CAMERA_IP = "10.10.67.69"
+MODEL_PATH = './model/ball.pt'
+BALL_DIAMETER = 40
+CAM_FOCAL = 20
+SENSOR_WIDTH = 5.7
+SENSOR_HEIGHT = 7.6
+CLASS_LABELS = {0: 'pingpong', 1: 'tennis'}

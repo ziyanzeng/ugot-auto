@@ -1,0 +1,12 @@
+name: ugot_auto
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy
+  - opencv
+  - ultralytics
+  - pip
+  - pip:
+    - ugot

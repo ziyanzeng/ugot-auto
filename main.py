@@ -4,7 +4,7 @@ import numpy as np
 from threading import Thread, Lock
 from camera import UGOTCamera
 from model import YOLOModel
-from utils import calculate_relative_position_params, draw_max_score_detection, get_single_relative_pos
+import utils
 import config
 from ugot import ugot
 
@@ -17,25 +17,6 @@ shared_data = {
     "exit": False,
 }
 data_lock = Lock()
-
-class PID:
-    def __init__(self, kp, ki, kd):
-        self.kp = kp
-        self.ki = ki
-        self.kd = kd
-        self.prev_error = 0
-        self.integral = 0
-
-    def update(self, error):
-        self.integral += error
-        derivative = error - self.prev_error
-        self.prev_error = error
-        return self.kp * error + self.ki * self.integral + self.kd * derivative
-
-    def set_pid(self, kp, ki, kd):
-        self.kp = kp
-        self.ki = ki
-        self.kd = kd
 
 def camera_loop(got, cam, model):
     while True:
@@ -65,7 +46,7 @@ def camera_loop(got, cam, model):
             shared_data["frame_width"] = frame_width
             shared_data["frame_height"] = frame_height
 
-        graphic = draw_max_score_detection(graphic, detections, frame_width, frame_height)
+        graphic = utils.calculate_relative_position_paramsdraw_max_score_detection(graphic, detections, frame_width, frame_height)
 
         try:
             cv2.imshow('YOLOv8 Ball Detection', graphic)
@@ -80,7 +61,7 @@ def camera_loop(got, cam, model):
     cam.close_camera()
     cv2.destroyAllWindows()
 
-def control_loop(got, pid):
+def control_loop(got, angle_pid, translation_pid, locked=False):
     while True:
         with data_lock:
             if shared_data["exit"]:
@@ -90,7 +71,7 @@ def control_loop(got, pid):
                 frame_height = shared_data["frame_height"]
                 detections = shared_data["detections"]
 
-                distance, angle = get_single_relative_pos(detections, frame_width, frame_height)
+                distance, angle = utils.get_single_relative_pos(detections, frame_width, frame_height)
 
                 # 将角度限制在[-180, 180]范围内
                 angle = angle % 360
@@ -98,7 +79,7 @@ def control_loop(got, pid):
                     angle -= 360
 
                 if angle < -1 or angle > 1:
-                    turn_speed = abs(pid.update(angle))
+                    turn_speed = abs(angle_pid.update(angle))
                     turn_speed = min(turn_speed, 280)  # 限制最大转速
                     if angle < -1:
                         got.mecanum_turn_speed(2, turn_speed)  # 左转
@@ -136,14 +117,15 @@ def main():
     model = YOLOModel(config.MODEL_PATH)
 
     # 创建PID控制器
-    pid = PID(kp=0.1, ki=0.01, kd=0.05)
+    angle_pid = utils.PID(kp=config.angle_kp, ki=config.angle_ki, kd=config.angle_kd)
+    translation_pid = utils.PID(kp=config.translation_kp, ki=config.translation_ki, kd=config.translation_kd)
 
     # 启动摄像头读取和检测线程
     camera_thread = Thread(target=camera_loop, args=(got, cam, model))
     camera_thread.start()
 
     # 启动控制线程
-    control_thread = Thread(target=control_loop, args=(got, pid))
+    control_thread = Thread(target=control_loop, args=(got, angle_pid, translation_pid))
     control_thread.start()
 
     # 启动显示线程

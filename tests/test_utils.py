@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import MagicMock
 import utils
 import cv2
 import numpy as np
@@ -22,7 +23,10 @@ class TestUtils(unittest.TestCase):
 
     def test_draw_max_score_detection(self):
         frame = np.zeros((480, 640, 3), dtype=np.uint8)
-        detections = {'boxes': [{'xyxy': [100, 100, 200, 200], 'score': 0.9, 'cls': 0}]}
+        detections = MagicMock()  # 使用 MagicMock 模拟 detections 对象
+        detections.boxes.xyxy.cpu().numpy.return_value = [[100, 100, 200, 200]]
+        detections.scores.cpu().numpy.return_value = [0.9]
+        detections.cls.cpu().numpy.return_value = [0]
         frame_width = 640
         frame_height = 480
 

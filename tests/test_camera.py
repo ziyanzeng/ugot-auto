@@ -1,10 +1,12 @@
 import unittest
 from camera import UGOTCamera
 from ugot import ugot
+import config
 
 class TestUGOTCamera(unittest.TestCase):
     def setUp(self):
         self.got = ugot.UGOT()
+        self.got.initialize(config.UGOT_IP)
         self.cam = UGOTCamera(self.got)
 
     def test_open_camera(self):

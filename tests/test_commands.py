@@ -10,6 +10,7 @@ import utils
 class TestCommands(unittest.TestCase):
     def setUp(self):
         self.got = ugot.UGOT()
+        self.got.initialize(config.UGOT_IP)
         self.pid_controllers = {
             "linear": utils.PID(kp=0.1, ki=0.01, kd=0.05),
             "angle": utils.PID(kp=0.1, ki=0.01, kd=0.05)

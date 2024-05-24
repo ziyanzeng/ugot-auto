@@ -11,6 +11,7 @@ def camera_thread(got, cam, model, render_frame_queue):
 
         frame = cam.read_camera_data()
         if frame is None:
+            print("No camera data received")
             break
 
         nparr = np.frombuffer(frame, np.uint8)

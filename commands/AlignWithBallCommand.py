@@ -6,6 +6,7 @@ class AlignWithBallCommand(Command):
         super().__init__(got, shared_data, pid_controllers)
         self.chassis = Chassis(got)
         self.angle = angle
+        self.angle_pid = self.pid_controllers.get('angle', None)
 
     def initialize(self):
         self.finished = False
@@ -16,7 +17,7 @@ class AlignWithBallCommand(Command):
                 self.finished = True
                 self.chassis.stop()
             else:
-                turn_speed = self.pid_controllers["align"].update(self.angle)
+                turn_speed = self.angle_pid.update(self.angle) if self.angle_pid else 30
                 self.chassis.spin_on_location(turn_speed)
 
     def end(self):

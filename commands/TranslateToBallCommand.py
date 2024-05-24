@@ -7,6 +7,7 @@ class TranslateToBallCommand(Command):
         self.chassis = Chassis(got)
         self.distance = distance
         self.angle = angle
+        self.linear_pid = self.pid_controllers.get('linear', None)
 
     def initialize(self):
         self.finished = False
@@ -17,7 +18,8 @@ class TranslateToBallCommand(Command):
                 self.finished = True
                 self.chassis.stop()
             else:
-                self.chassis.translate(self.angle, 20)
+                speed = self.linear_pid.update(self.distance) if self.linear_pid else 20
+                self.chassis.translate(self.angle, speed)
 
     def end(self):
         self.chassis.stop()

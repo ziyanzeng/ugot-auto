@@ -64,8 +64,12 @@ def camera_loop(got, cam, model):
 
 def control_loop(got):
     # 创建PID控制器
-    pid_align = utils.PID(kp=0.1, ki=0.01, kd=0.05)
-    pid_controllers = {"align": pid_align}
+    pid_linear = utils.PID(kp=0.1, ki=0.01, kd=0.05)
+    pid_angle = utils.PID(kp=0.1, ki=0.01, kd=0.05)
+    pid_controllers = {
+        "linear": pid_linear,
+        "angle": pid_angle
+    }
 
     command_planner = CommandPlanner(got, shared_data, pid_controllers)
 

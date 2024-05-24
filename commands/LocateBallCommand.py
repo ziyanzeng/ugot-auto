@@ -5,6 +5,7 @@ class LocateBallCommand(Command):
     def __init__(self, got, shared_data, pid_controllers=None):
         super().__init__(got, shared_data, pid_controllers)
         self.chassis = Chassis(got)
+        self.angle_pid = self.pid_controllers.get('angle', None)
 
     def initialize(self):
         self.finished = False
@@ -15,7 +16,8 @@ class LocateBallCommand(Command):
                 self.finished = True
                 self.chassis.stop()
             else:
-                self.chassis.spin_on_location(30)
+                turn_speed = self.angle_pid.update(30) if self.angle_pid else 30
+                self.chassis.spin_on_location(turn_speed)
 
     def end(self):
         self.chassis.stop()

@@ -1,10 +1,11 @@
 import time
 from commands.CommandPlanner import CommandPlanner
 import utils
-from config import shared_data, logger
+from config import shared_data
+from logger import logger  # Import the global logger
 
 def control_thread(got):
-    # 创建PID控制器
+    # Create PID controllers
     pid_linear = utils.PID(kp=0.1, ki=0.01, kd=0.05)
     pid_angle = utils.PID(kp=0.1, ki=0.01, kd=0.05)
     pid_controllers = {
@@ -32,6 +33,6 @@ def control_thread(got):
             else:
                 logger.info('No detections found')
 
-        time.sleep(0.1)  # 控制循环间隔
+        time.sleep(0.1)  # Control loop interval
 
     logger.info('Control thread exited')

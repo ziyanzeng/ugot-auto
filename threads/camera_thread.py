@@ -1,17 +1,18 @@
 import cv2
 import numpy as np
 import utils
-from config import shared_data, logger
+from config import shared_data
+from logger import logger  # Import the global logger
+import threading
 
-MAX_QUEUE_SIZE = 10  # 设置一个合适的最大队列大小
-
-def camera_thread(got, cam, model, render_frame_queue):
+def camera_thread(got, cam, model, render_frame_queue, condition):
     while True:
         with shared_data["lock"]:
             if shared_data["exit"]:
                 break
 
         frame = cam.read_camera_data()
+        logger.info('frame read from camera')
         if frame is None:
             logger.error('No camera data received')
             break
@@ -27,6 +28,7 @@ def camera_thread(got, cam, model, render_frame_queue):
 
         results = model.predict(graphic)
         detections = results[0]
+        logger.info('detections processed from camera frame')
 
         with shared_data["lock"]:
             shared_data["frame"] = graphic.copy()
@@ -36,12 +38,16 @@ def camera_thread(got, cam, model, render_frame_queue):
 
         graphic = utils.draw_max_score_detection(graphic, detections, frame_width, frame_height)
 
-        # 检查队列大小，如果超过最大值则移除旧元素
-        while render_frame_queue.qsize() >= MAX_QUEUE_SIZE:
+        # Check queue size, remove old elements if it exceeds the maximum size
+        while render_frame_queue.qsize() >= 1:  # Ensure only one frame in the queue
             render_frame_queue.get()
 
-        # 将处理完的画面存入缓存队列
+        # Put the processed frame into the render queue
         render_frame_queue.put(graphic)
+
+        # Notify the main thread
+        with condition:
+            condition.notify_all()
 
         logger.info('Frame processed and added to queue')
 

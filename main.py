@@ -1,36 +1,20 @@
 import time
 import cv2
 import queue
-from threading import Thread
+from threading import Thread, Condition
 from camera import UGOTCamera
 from model import YOLOModel
-from utils.render_frame import RenderFrame
 from threads.camera_thread import camera_thread
 from threads.control_thread import control_thread
 import config
 from ugot import ugot
-import logging
-import os
-from datetime import datetime
+from logger import logger  # Import the global logger
 
 def main():
-    # Logger configuration
-    LOGS_DIR = "log"
-    if not os.path.exists(LOGS_DIR):
-        os.makedirs(LOGS_DIR)
+    # Log the start of the main function
+    logger.info('Main function started')
 
-    # Create a new log file with a timestamp
-    log_filename = datetime.now().strftime("log_%Y%m%d_%H%M%S.log")
-    log_filepath = os.path.join(LOGS_DIR, log_filename)
-
-    logging.basicConfig(
-        filename=log_filepath,
-        level=logging.INFO,
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-    )
-    logger = logging.getLogger('UGOTProject')
-    config.logger = logger
-
+    # Robot connection configuration
     got = ugot.UGOT()
     got.initialize(config.UGOT_IP)
     cam = UGOTCamera(got)
@@ -38,44 +22,46 @@ def main():
 
     model = YOLOModel(config.MODEL_PATH)
 
-    # 创建一个渲染完成的缓冲队列
-    render_frame_queue = queue.Queue()
+    # Render queue configuration
+    render_frame_queue = queue.Queue(maxsize=1)  # Only allow one frame in the queue
 
-    # 启动摄像头读取和检测线程
-    camera_thread_instance = Thread(target=camera_thread, args=(got, cam, model, render_frame_queue))
+    # Initialize condition variable
+    condition = Condition()
+
+    # Invoke camera thread
+    camera_thread_instance = Thread(target=camera_thread, args=(got, cam, model, render_frame_queue, condition))
     camera_thread_instance.start()
+    
+    # # Invoke control thread
+    # control_thread_instance = Thread(target=control_thread, args=(got,))
+    # control_thread_instance.start()
 
-    # 启动控制线程
-    control_thread_instance = Thread(target=control_thread, args=(got,))
-    control_thread_instance.start()
-
-    # 启动渲染线程
-    render_thread_instance = RenderFrame("RenderFrame", render_frame_queue)
-    render_thread_instance.start()
-
-    # 在主线程处理渲染完成的画面
+    # Show rendered frames in main thread
     while True:
-        frame = render_frame_queue.get()
-        if frame is None:
-            break
-        start_time = time.time()
-        # 如果获取的帧不为空
-        cv2.namedWindow('YOLOv8 Ball Detection', cv2.WINDOW_NORMAL)
-        cv2.imshow('YOLOv8 Ball Detection', frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
-            with config.shared_data["lock"]:
-                config.shared_data["exit"] = True
-            break
-        end_time = time.time()
-        logger.info(f'Frame displayed. FPS: {1 / (end_time - start_time)}')
+        with condition:
+            start_time = time.time()
+            condition.wait()  # Wait for notification from the camera thread
+            if render_frame_queue.empty():
+                continue
+            frame = render_frame_queue.get()
+            if frame is None:
+                break
+            # Frame is not None
+            cv2.namedWindow('YOLOv8 Ball Detection', cv2.WINDOW_NORMAL)
+            cv2.imshow('YOLOv8 Ball Detection', frame)
+            if cv2.waitKey(1) & 0xFF == ord('q'):
+                with config.shared_data["lock"]:
+                    config.shared_data["exit"] = True
+                break
+            end_time = time.time()
+            logger.info(f'Frame displayed. FPS: {1 / (end_time - start_time)}')
 
     cv2.destroyAllWindows()
     logger.info('Main thread exited')
 
-    # 等待线程结束
+    # End thread
     camera_thread_instance.join()
-    control_thread_instance.join()
-    render_thread_instance.join()
+    # control_thread_instance.join()
 
 if __name__ == "__main__":
     main()

@@ -10,11 +10,8 @@ shared_data = {
     "exit": False,
 }
 
-# Logger will be configured in main.py
-logger = None
-
 # System params
-UGOT_IP = "10.10.67.69"
+UGOT_IP = "10.10.67.238"
 MODEL_PATH = './model/ball.pt'
 CLASS_LABELS = {0: 'pingpong', 1: 'tennis'}
 

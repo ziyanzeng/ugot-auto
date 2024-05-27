@@ -9,7 +9,8 @@ class Chassis:
             self.got.mecanum_turn_speed(3, int(abs(turn_speed)))
 
     def stop(self):
-        self.got.mecanum_stop()
+        # self.got.mecanum_stop()
+        self.got.mecanum_motor_control(0,0,0,0)
 
     def translate(self, angle, speed):
         self.got.mecanum_translate_speed(int(angle), int(speed))

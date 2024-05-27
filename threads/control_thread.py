@@ -28,13 +28,7 @@ def control_thread(got, condition):
                 break
 
             if shared_data["detections"] is not None:
-                frame_width = shared_data["frame_width"]
-                frame_height = shared_data["frame_height"]
-                detections = shared_data["detections"]
-
-                distance, angle = utils.get_single_relative_pos(detections, frame_width, frame_height)
-                shared_data["distance"] = distance
-                shared_data["angle"] = angle
+                distance, angle = shared_data["distance"], shared_data["angle"]
                 logger.info(f'Updating command planner with distance: {distance}, angle: {angle}')
             else:
                 logger.info('No detections found')

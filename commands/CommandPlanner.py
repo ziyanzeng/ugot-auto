@@ -26,12 +26,12 @@ class CommandPlanner:
             elif distance >= 10:
                 if not isinstance(self.current_command, TranslateToBallCommand):
                     logger.info(f'Switching to TranslateToBallCommand with distance: {distance}, angle: {angle}')
-                    self.current_command = TranslateToBallCommand(self.got, distance, angle, self.pid_controllers)
+                    self.current_command = TranslateToBallCommand(self.got, self.pid_controllers)
                     self.current_command.initialize()
             elif distance < 10 and abs(angle) >= 1:
                 if not isinstance(self.current_command, AlignWithBallCommand):
                     logger.info(f'Switching to AlignWithBallCommand with angle: {angle}')
-                    self.current_command = AlignWithBallCommand(self.got, angle, self.pid_controllers)
+                    self.current_command = AlignWithBallCommand(self.got, self.pid_controllers)
                     self.current_command.initialize()
 
         logger.info('Command updated')
@@ -41,6 +41,4 @@ class CommandPlanner:
             self.current_command.execute()
             if self.current_command.isFinished():
                 logger.info(f'Command {type(self.current_command).__name__} finished')
-                self.current_command.end()
-                self.current_command = None
         logger.info('Update completed')

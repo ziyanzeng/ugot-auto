@@ -13,12 +13,11 @@ class LocateBallCommand(Command):
         self.finished = False
 
     def execute(self):
-        with shared_data["lock"]:
-            if shared_data["detections"] is not None and (shared_data["angle"] != 0 or shared_data["distance"] != 0):
-                self.end()
-            else:
-                turn_speed = 50
-                self.chassis.spin_on_location(turn_speed)
+        if shared_data["detections"] is not None and (shared_data["angle"] != 0 or shared_data["distance"] != 0):
+            self.end()
+        else:
+            turn_speed = 75
+            self.chassis.spin_on_location(turn_speed)
 
     def end(self):
         self.finished = True

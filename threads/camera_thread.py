@@ -37,7 +37,7 @@ def camera_thread(got, cam, model, render_frame_queue, condition):
             shared_data["frame_width"] = frame_width
             shared_data["frame_height"] = frame_height
 
-        graphic = utils.draw_max_score_detection(graphic, detections, frame_width, frame_height)
+        graphic = utils.draw_max_score_detection(graphic, detections)
 
         curr_time = time.time()
         fps = 1.0 / (curr_time - prev_time)

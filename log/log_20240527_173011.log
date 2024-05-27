@@ -1,0 +1,287 @@
+2024-05-27 17:30:13,575 - main.py - INFO - Main function started
+2024-05-27 17:30:14,848 - ugotcamera.py - INFO - camera opened
+2024-05-27 17:30:14,893 - CommandPlanner.py - INFO - CommandPlanner initiated
+2024-05-27 17:30:14,893 - control_thread.py - INFO - Control thread started
+2024-05-27 17:30:16,357 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:16,357 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:16,357 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:16,357 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:16,357 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:16,391 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:16,391 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:16,661 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:16,661 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:16,661 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:16,661 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:16,661 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:16,733 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:16,733 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:16,883 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:16,883 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:16,883 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:16,883 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:16,883 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:16,900 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:16,900 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:17,060 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:17,060 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:17,060 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:17,060 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:17,060 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:17,076 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:17,076 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:17,228 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:17,228 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:17,228 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:17,228 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:17,228 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:17,249 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:17,250 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:17,396 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:17,396 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:17,396 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:17,396 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:17,396 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:17,418 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:17,418 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:17,560 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:17,560 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:17,560 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:17,560 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:17,560 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:17,577 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:17,577 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:17,726 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:17,726 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:17,726 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:17,726 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:17,726 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:17,743 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:17,743 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:17,880 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:17,880 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:17,880 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:17,880 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:17,881 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:17,913 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:17,913 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:18,043 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:18,043 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:18,043 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:18,043 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:18,043 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:18,063 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:18,063 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:18,187 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:18,188 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:18,188 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:18,188 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:18,188 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:18,210 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:18,210 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:18,356 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:18,356 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:18,356 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:18,356 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:18,356 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:18,379 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:18,379 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:18,498 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:18,498 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:18,498 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:18,498 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:18,498 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:18,513 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:18,513 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:18,651 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:18,651 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:18,651 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:18,652 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:18,652 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:18,664 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:18,664 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:18,797 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:18,797 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:18,797 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:18,797 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:18,797 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:18,818 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:18,818 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:18,956 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:18,956 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:18,956 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:18,957 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:18,957 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:18,983 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:18,984 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:19,127 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:19,127 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:19,127 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:19,127 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:19,127 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:19,166 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:19,166 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:19,289 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:19,289 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:19,289 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:19,289 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:19,289 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:19,315 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:19,315 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:19,455 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:19,456 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:19,456 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:19,456 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:19,456 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:19,472 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:19,472 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:19,613 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:19,613 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:19,613 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:19,613 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:19,613 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:19,625 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:19,625 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:19,877 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:19,878 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:19,878 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:19,878 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:19,878 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:19,900 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:19,900 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:20,087 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:20,087 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:20,088 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:20,088 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:20,088 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:20,113 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:20,113 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:20,286 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:20,286 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:20,286 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:20,286 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:20,286 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:20,307 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:20,308 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:20,453 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:20,453 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:20,453 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:20,453 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:20,453 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:20,472 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:20,472 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:20,621 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:20,621 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:20,621 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:20,621 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:20,621 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:20,654 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:20,655 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:20,780 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:20,780 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:20,780 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:20,780 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:20,780 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:20,796 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:20,796 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:20,947 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:20,947 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:20,947 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:20,947 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:20,947 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:20,966 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:20,966 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:21,100 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:21,100 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:21,100 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:21,100 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:21,101 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:21,121 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:21,121 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:21,333 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:21,333 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:21,333 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:21,333 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:21,333 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:21,403 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:21,404 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:21,559 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:21,559 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:21,559 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:21,559 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:21,559 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:21,575 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:21,575 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:21,723 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:21,723 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:21,723 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:21,723 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:21,723 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:21,735 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:21,735 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:21,891 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:21,891 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:21,891 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:21,891 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:21,891 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:21,910 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:21,910 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:22,063 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:22,063 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:22,063 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:22,063 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:22,063 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:22,078 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:22,079 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:22,220 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:22,220 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:22,221 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:22,221 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:22,221 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:22,237 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:22,237 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:22,374 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:22,374 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:22,374 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:22,374 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:22,374 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:22,394 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:22,394 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:22,518 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:22,518 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:22,518 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:22,518 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:22,518 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:22,544 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:22,544 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:22,671 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:22,671 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:22,671 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:22,672 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:22,672 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:22,706 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:22,706 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:22,873 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:22,873 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:22,873 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:22,873 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:22,873 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:22,900 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:22,900 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:23,123 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:23,123 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:23,123 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:23,123 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:23,123 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:23,148 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:23,148 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:23,323 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-27 17:30:23,323 - CommandPlanner.py - INFO - Update called with distance: 0, angle: 0
+2024-05-27 17:30:23,323 - CommandPlanner.py - INFO - Starting command planning
+2024-05-27 17:30:23,324 - CommandPlanner.py - INFO - Command updated
+2024-05-27 17:30:23,324 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-27 17:30:23,355 - CommandPlanner.py - INFO - Update completed
+2024-05-27 17:30:23,355 - control_thread.py - INFO - Command planner updated
+2024-05-27 17:30:23,444 - main.py - INFO - Main thread exited
+2024-05-27 17:30:23,534 - camera_thread.py - INFO - Camera thread exited
+2024-05-27 17:30:23,534 - control_thread.py - INFO - Control thread exited

@@ -1,5 +1,0 @@
-2024-05-27 11:55:01,212 - main.py - INFO - Main function started
-2024-05-27 11:55:02,626 - ugotcamera.py - INFO - camera opened
-2024-05-27 11:55:02,675 - ugotcamera.py - INFO - reading camera data
-2024-05-27 11:55:02,676 - render_thread.py - INFO - renderer running
-2024-05-27 11:55:02,822 - camera_thread.py - INFO - frame read

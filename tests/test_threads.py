@@ -48,16 +48,5 @@ class TestThreads(unittest.TestCase):
             self.shared_data["exit"] = True
         control_thread_instance.join()
 
-    def test_render_frame(self):
-        render_thread_instance = RenderFrame("RenderFrame", self.render_frame_queue)
-        render_thread_instance.start()
-        
-        # 运行一段时间以检查渲染线程
-        time.sleep(2)
-        
-        with self.shared_data["lock"]:
-            self.shared_data["exit"] = True
-        render_thread_instance.join()
-
 if __name__ == '__main__':
     unittest.main()

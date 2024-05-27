@@ -4,15 +4,17 @@ import utils
 from config import shared_data
 from logger import logger  # Import the global logger
 import threading
+import time
 
 def camera_thread(got, cam, model, render_frame_queue, condition):
+    prev_time = time.time()
+    
     while True:
         with shared_data["lock"]:
             if shared_data["exit"]:
                 break
 
         frame = cam.read_camera_data()
-        logger.info('frame read from camera')
         if frame is None:
             logger.error('No camera data received')
             break
@@ -28,7 +30,6 @@ def camera_thread(got, cam, model, render_frame_queue, condition):
 
         results = model.predict(graphic)
         detections = results[0]
-        logger.info('detections processed from camera frame')
 
         with shared_data["lock"]:
             shared_data["frame"] = graphic.copy()
@@ -38,9 +39,16 @@ def camera_thread(got, cam, model, render_frame_queue, condition):
 
         graphic = utils.draw_max_score_detection(graphic, detections, frame_width, frame_height)
 
+        curr_time = time.time()
+        fps = 1.0 / (curr_time - prev_time)
+        prev_time = curr_time
+        
         # Check queue size, remove old elements if it exceeds the maximum size
         while render_frame_queue.qsize() >= 1:  # Ensure only one frame in the queue
             render_frame_queue.get()
+            
+        # Display FPS on the frame
+        cv2.putText(graphic, f'FPS: {int(fps)}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
 
         # Put the processed frame into the render queue
         render_frame_queue.put(graphic)

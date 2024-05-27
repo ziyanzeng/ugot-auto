@@ -1,0 +1,291 @@
+2024-05-27 13:40:10,468 - main.py - INFO - Main function started
+2024-05-27 13:40:11,732 - ugotcamera.py - INFO - camera opened
+2024-05-27 13:40:11,778 - main.py - INFO - Logger is properly initialized before starting control thread
+2024-05-27 13:40:13,066 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:13,627 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:13,627 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:13,649 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:13,833 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:13,854 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:13,951 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:13,983 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:14,056 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:14,075 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:14,147 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:14,160 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:14,261 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:14,273 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:14,353 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:14,366 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:14,446 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:14,459 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:14,530 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:14,543 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:14,641 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:14,654 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:14,758 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:14,771 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:14,864 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:14,877 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:14,944 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:14,957 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,037 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:15,050 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,113 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:15,127 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,203 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:15,216 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,287 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:15,300 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,375 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:15,389 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,480 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:15,494 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,562 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:15,575 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,648 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:15,661 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,735 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:15,748 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,823 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:15,836 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,908 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:15,921 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:15,994 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,007 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:16,100 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,113 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:16,180 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,194 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:16,264 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,277 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:16,340 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,353 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:16,427 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,440 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:16,536 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,549 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:16,642 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,656 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:16,718 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,731 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:16,804 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,817 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:16,877 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,890 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:16,960 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:16,973 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:17,039 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:17,052 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:17,126 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:17,140 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:17,208 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:17,222 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:17,289 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:17,302 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:17,369 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:17,381 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:17,450 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:17,463 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:17,672 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:17,686 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:17,765 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:17,778 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:17,851 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:17,864 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:17,937 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:17,950 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:18,024 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:18,037 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:18,104 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:18,117 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:18,179 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:18,192 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:18,260 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:18,273 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:18,340 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:18,354 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:18,420 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:18,433 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:18,504 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:18,518 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:18,577 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:18,591 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:18,649 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:18,662 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:18,859 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:18,873 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:18,944 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:18,957 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,027 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,040 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,113 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,126 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,185 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,199 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,259 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,272 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,348 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,361 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,423 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,437 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,499 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,512 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,579 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,592 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,661 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,674 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,741 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,754 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,824 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,837 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,905 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,917 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:19,979 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:19,992 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,061 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,074 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,147 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,160 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,224 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,236 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,300 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,314 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,389 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,402 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,467 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,481 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,568 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,580 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,643 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,656 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,731 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,744 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,814 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,827 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,896 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,909 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:20,977 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:20,990 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,064 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,077 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,147 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,161 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,225 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,239 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,318 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,331 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,399 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,413 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,475 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,488 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,562 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,575 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,644 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,657 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,721 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,734 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,790 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,803 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,870 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,883 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:21,940 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:21,953 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:22,033 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:22,045 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:22,126 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:22,139 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:22,217 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:22,230 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:22,295 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:22,307 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:22,381 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:22,393 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:22,499 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:22,512 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:22,604 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:22,617 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:22,677 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:22,690 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:22,831 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:22,844 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:22,912 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:22,925 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:23,009 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:23,022 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:23,115 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:23,128 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:23,194 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:23,207 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:23,270 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:23,283 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:23,412 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:23,425 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:23,499 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:23,512 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:23,591 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:23,604 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:23,692 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:23,705 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:23,778 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:23,791 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:23,863 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:23,876 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:23,940 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:23,953 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,026 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,039 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,122 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,135 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,202 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,215 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,276 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,289 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,355 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,368 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,449 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,463 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,534 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,547 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,612 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,626 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,697 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,709 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,777 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,790 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,853 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,866 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:24,929 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:24,942 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,012 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,025 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,106 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,119 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,205 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,218 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,288 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,301 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,371 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,384 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,462 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,475 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,544 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,557 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,622 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,635 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,712 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,725 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,788 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,801 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,872 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,885 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:25,960 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:25,973 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:26,043 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:26,056 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:26,124 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:26,138 - main.py - INFO - Frame displayed.
+2024-05-27 13:40:26,209 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:26,229 - main.py - INFO - Main thread exited
+2024-05-27 13:40:26,284 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-27 13:40:26,284 - camera_thread.py - INFO - Camera thread exited

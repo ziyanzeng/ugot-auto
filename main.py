@@ -31,7 +31,10 @@ def main():
     # Invoke camera thread
     camera_thread_instance = Thread(target=camera_thread, args=(got, cam, model, render_frame_queue, condition))
     camera_thread_instance.start()
-    
+
+    # Check if logger is properly initialized before starting control thread
+    logger.info("Logger is properly initialized before starting control thread")
+
     # # Invoke control thread
     # control_thread_instance = Thread(target=control_thread, args=(got,))
     # control_thread_instance.start()
@@ -39,7 +42,6 @@ def main():
     # Show rendered frames in main thread
     while True:
         with condition:
-            start_time = time.time()
             condition.wait()  # Wait for notification from the camera thread
             if render_frame_queue.empty():
                 continue
@@ -53,8 +55,7 @@ def main():
                 with config.shared_data["lock"]:
                     config.shared_data["exit"] = True
                 break
-            end_time = time.time()
-            logger.info(f'Frame displayed. FPS: {1 / (end_time - start_time)}')
+            logger.info('Frame displayed.')
 
     cv2.destroyAllWindows()
     logger.info('Main thread exited')

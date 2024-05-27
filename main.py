@@ -4,7 +4,7 @@ import queue
 from threading import Thread
 from camera import UGOTCamera
 from model import YOLOModel
-from utils.render_frame import RenderFrame
+from threads.render_thread import RenderFrame
 from threads.camera_thread import camera_thread
 from threads.control_thread import control_thread
 import config

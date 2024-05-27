@@ -6,7 +6,7 @@ from camera import UGOTCamera
 from model.model import YOLOModel
 from threads.camera_thread import camera_thread
 from threads.control_thread import control_thread
-from utils.render_frame import RenderFrame
+from threads.render_thread import RenderFrame
 import config
 import time
 

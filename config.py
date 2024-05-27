@@ -4,6 +4,8 @@ from threading import Lock
 shared_data = {
     "frame": None,
     "detections": None,
+    "distance": 0,
+    "angle": 0,
     "frame_width": 0,
     "frame_height": 0,
     "lock": Lock(),

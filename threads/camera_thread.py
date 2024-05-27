@@ -57,7 +57,7 @@ def camera_thread(got, cam, model, render_frame_queue, condition):
         with condition:
             condition.notify_all()
 
-        logger.info('Frame processed and added to queue')
+        # logger.info('Frame processed and added to queue')
 
     cam.close_camera()
     logger.info('Camera thread exited')

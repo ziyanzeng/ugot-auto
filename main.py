@@ -4,13 +4,33 @@ import queue
 from threading import Thread
 from camera import UGOTCamera
 from model import YOLOModel
-from threads.render_thread import RenderFrame
+from utils.render_frame import RenderFrame
 from threads.camera_thread import camera_thread
 from threads.control_thread import control_thread
 import config
 from ugot import ugot
+import logging
+import os
+from datetime import datetime
 
 def main():
+    # Logger configuration
+    LOGS_DIR = "log"
+    if not os.path.exists(LOGS_DIR):
+        os.makedirs(LOGS_DIR)
+
+    # Create a new log file with a timestamp
+    log_filename = datetime.now().strftime("log_%Y%m%d_%H%M%S.log")
+    log_filepath = os.path.join(LOGS_DIR, log_filename)
+
+    logging.basicConfig(
+        filename=log_filepath,
+        level=logging.INFO,
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    )
+    logger = logging.getLogger('UGOTProject')
+    config.logger = logger
+
     got = ugot.UGOT()
     got.initialize(config.UGOT_IP)
     cam = UGOTCamera(got)
@@ -47,9 +67,10 @@ def main():
                 config.shared_data["exit"] = True
             break
         end_time = time.time()
-        print("FPS: ", 1 / (end_time - start_time))
+        logger.info(f'Frame displayed. FPS: {1 / (end_time - start_time)}')
 
     cv2.destroyAllWindows()
+    logger.info('Main thread exited')
 
     # 等待线程结束
     camera_thread_instance.join()

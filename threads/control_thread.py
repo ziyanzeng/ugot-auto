@@ -1,7 +1,7 @@
 import time
 from commands.CommandPlanner import CommandPlanner
 import utils
-from config import shared_data
+from config import shared_data, logger
 
 def control_thread(got):
     # 创建PID控制器
@@ -27,4 +27,11 @@ def control_thread(got):
                 distance, angle = utils.get_single_relative_pos(detections, frame_width, frame_height)
                 command_planner.update(distance, angle)
 
+                # Log the detection results
+                logger.info(f'Detection results - Distance: {distance}, Angle: {angle}')
+            else:
+                logger.info('No detections found')
+
         time.sleep(0.1)  # 控制循环间隔
+
+    logger.info('Control thread exited')

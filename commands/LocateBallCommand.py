@@ -8,12 +8,15 @@ class LocateBallCommand(Command):
         super().__init__(got, pid_controllers)
         self.chassis = Chassis(got)
         self.angle_pid = self.pid_controllers.get('angle', None)
+        self.cummulate = 0
 
     def initialize(self):
         self.finished = False
 
     def execute(self):
-        if shared_data["detections"] is not None and (shared_data["angle"] != 0 or shared_data["distance"] != 0):
+        self.cummulate += 1
+        # end only when target is found
+        if shared_data["detections"] is not None and (shared_data["angle"] != 0 or shared_data["distance"] != 0) or self.cummulate > 1000:
             self.end()
         else:
             turn_speed = 75

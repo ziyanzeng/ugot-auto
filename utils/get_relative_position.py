@@ -7,6 +7,8 @@ from config import shared_data
 def get_single_relative_pos(detections):
     boxes, scores, classes = parse_detection_results(detections)
     if len(scores) == 0:
+        shared_data["distance"] = 0
+        shared_data["angle"] = 0
         return 0, 0
     max_index = np.argmax(scores)
     box = boxes[max_index]

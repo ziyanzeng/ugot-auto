@@ -60,6 +60,8 @@ def main():
     # End thread
     camera_thread_instance.join()
     control_thread_instance.join()
+    
+    got.stop_chassis()
 
 if __name__ == "__main__":
     main()

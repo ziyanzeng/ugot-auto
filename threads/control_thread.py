@@ -6,8 +6,8 @@ from logger import logger  # Import the global logger
 
 def control_thread(got, condition):
     # Create PID controllers
-    pid_linear = utils.PID(kp=0.1, ki=0.01, kd=0.05)
-    pid_angle = utils.PID(kp=0.1, ki=0.01, kd=0.05)
+    pid_linear = utils.PID(kp=0.8, ki=0.1, kd=0.05)
+    pid_angle = utils.PID(kp=2, ki=0.01, kd=0.05)
     pid_controllers = {
         "linear": pid_linear,
         "angle": pid_angle
@@ -21,7 +21,6 @@ def control_thread(got, condition):
             condition.wait()  # Wait for notification from the camera thread
 
         distance, angle = None, None
-        detections_exist = False
 
         with shared_data["lock"]:
             if shared_data["exit"]:
@@ -29,12 +28,12 @@ def control_thread(got, condition):
 
             if shared_data["detections"] is not None:
                 distance, angle = shared_data["distance"], shared_data["angle"]
-                logger.info(f'Updating command planner with distance: {distance}, angle: {angle}')
+                # logger.info(f'Updating command planner with distance: {distance}, angle: {angle}')
             else:
                 logger.info('No detections found')
 
-        command_planner.update(distance, angle)
-        logger.info('Command planner updated')
+        command_planner.update()
+        # logger.info('Command planner updated')
 
         time.sleep(0.1)  # Control loop interval
 

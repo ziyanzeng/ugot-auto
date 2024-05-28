@@ -1,0 +1,379 @@
+2024-05-28 12:03:45,821 - main.py - INFO - Main function started
+2024-05-28 12:03:47,126 - ugotcamera.py - INFO - camera opened
+2024-05-28 12:03:47,170 - CommandPlanner.py - INFO - CommandPlanner initiated
+2024-05-28 12:03:47,170 - control_thread.py - INFO - Control thread started
+2024-05-28 12:03:48,732 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:48,733 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:48,796 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:49,038 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:49,038 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:49,054 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:49,209 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:49,209 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:49,300 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:49,489 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:49,489 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:49,524 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:49,744 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:49,744 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:49,838 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:50,045 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:50,045 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:50,125 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:50,297 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:50,297 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:50,400 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:50,519 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:50,519 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:50,583 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:50,709 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:50,709 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:50,741 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:50,920 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:50,920 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:51,154 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:51,441 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:51,441 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:51,507 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:51,711 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:51,712 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:51,763 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:52,049 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:52,049 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:52,095 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:52,265 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:52,265 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:52,328 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:52,516 - control_thread.py - INFO - Updating command planner with distance: 13.46520633235299, angle: 18.005110264015055
+2024-05-28 12:03:52,516 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:52,837 - CommandPlanner.py - INFO - Command LocateBallCommand is finished
+2024-05-28 12:03:52,838 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:52,986 - control_thread.py - INFO - Updating command planner with distance: 14.777563392214422, angle: 1.512484253624852
+2024-05-28 12:03:52,987 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:52,987 - CommandPlanner.py - INFO - Switching to AlignWithBallCommand with angle: 1.512484253624852
+2024-05-28 12:03:52,987 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:52,987 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:53,050 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:53,197 - control_thread.py - INFO - Updating command planner with distance: 15.005574819336472, angle: 1.337970089873291
+2024-05-28 12:03:53,197 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:53,255 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:53,386 - control_thread.py - INFO - Updating command planner with distance: 14.948021230687377, angle: 1.3961416181358839
+2024-05-28 12:03:53,386 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:53,408 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:53,602 - control_thread.py - INFO - Updating command planner with distance: 15.12189826016727, angle: 1.45431300797538
+2024-05-28 12:03:53,603 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:53,650 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:53,828 - control_thread.py - INFO - Updating command planner with distance: 15.063567636025306, angle: 1.45431300797538
+2024-05-28 12:03:53,828 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:53,862 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:54,001 - control_thread.py - INFO - Updating command planner with distance: 15.063525301514934, angle: 1.337970089873291
+2024-05-28 12:03:54,001 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:54,014 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:54,179 - control_thread.py - INFO - Updating command planner with distance: 15.005454822169629, angle: 0.9307660006268693
+2024-05-28 12:03:54,179 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:54,251 - CommandPlanner.py - INFO - Command AlignWithBallCommand is finished
+2024-05-28 12:03:54,251 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:54,427 - control_thread.py - INFO - Updating command planner with distance: 15.121749603132926, angle: 0.9889383363706531
+2024-05-28 12:03:54,427 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:54,427 - CommandPlanner.py - INFO - Switching to TranslateToBallCommand with distance: 15.121749603132926, angle: 0.9889383363706531
+2024-05-28 12:03:54,427 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:54,427 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:03:54,427 - TranslateToBallCommand.py - INFO - shared data: distance - 15.121749603132926, angle: 0.9889383363706531
+2024-05-28 12:03:54,462 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:54,670 - control_thread.py - INFO - Updating command planner with distance: 15.121735002821714, angle: 0.9307660006268693
+2024-05-28 12:03:54,670 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:03:54,670 - TranslateToBallCommand.py - INFO - shared data: distance - 15.121735002821714, angle: 0.9307660006268693
+2024-05-28 12:03:54,690 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:54,826 - control_thread.py - INFO - Updating command planner with distance: 14.890572019725221, angle: -0.17451933745482198
+2024-05-28 12:03:54,826 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:03:54,826 - TranslateToBallCommand.py - INFO - shared data: distance - 14.890572019725221, angle: -0.17451933745482198
+2024-05-28 12:03:54,844 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:55,007 - control_thread.py - INFO - Updating command planner with distance: 15.35883248962509, angle: 0.34903851917496764
+2024-05-28 12:03:55,007 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:03:55,007 - TranslateToBallCommand.py - INFO - shared data: distance - 15.35883248962509, angle: 0.34903851917496764
+2024-05-28 12:03:55,034 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:55,174 - control_thread.py - INFO - Updating command planner with distance: 14.890583810870456, angle: 0.34903851917496764
+2024-05-28 12:03:55,175 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:03:55,175 - TranslateToBallCommand.py - INFO - shared data: distance - 14.890583810870456, angle: 0.34903851917496764
+2024-05-28 12:03:55,205 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:55,340 - control_thread.py - INFO - Updating command planner with distance: 14.23197781648353, angle: -0.40721151822364315
+2024-05-28 12:03:55,341 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:03:55,341 - TranslateToBallCommand.py - INFO - shared data: distance - 14.23197781648353, angle: -0.40721151822364315
+2024-05-28 12:03:55,369 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:55,528 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:55,528 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:03:55,528 - TranslateToBallCommand.py - INFO - shared data: distance - 0, angle: 0
+2024-05-28 12:03:55,713 - CommandPlanner.py - INFO - Command TranslateToBallCommand is finished
+2024-05-28 12:03:55,713 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:55,917 - control_thread.py - INFO - Updating command planner with distance: 7.4316986391910795, angle: 5.700061337039638
+2024-05-28 12:03:55,917 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:55,918 - CommandPlanner.py - INFO - Switching to AlignWithBallCommand with angle: 5.700061337039638
+2024-05-28 12:03:55,918 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:55,918 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:55,950 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:56,110 - control_thread.py - INFO - Updating command planner with distance: 8.032869322254106, angle: 4.246263929929137
+2024-05-28 12:03:56,110 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:56,558 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:56,786 - control_thread.py - INFO - Updating command planner with distance: 9.374139782094947, angle: 6.572176120025542
+2024-05-28 12:03:56,786 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:56,814 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:56,971 - control_thread.py - INFO - Updating command planner with distance: 9.481426400148976, angle: 5.4093272149426195
+2024-05-28 12:03:56,971 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:56,994 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:57,213 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:57,213 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:03:57,307 - CommandPlanner.py - INFO - Command AlignWithBallCommand is finished
+2024-05-28 12:03:57,307 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:57,495 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:57,496 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:57,496 - CommandPlanner.py - INFO - Switching to LocateBallCommand
+2024-05-28 12:03:57,496 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:57,496 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:57,574 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:57,729 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:57,729 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:57,752 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:57,890 - control_thread.py - INFO - Updating command planner with distance: 9.11177234969486, angle: -18.641872000230826
+2024-05-28 12:03:57,890 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:58,210 - CommandPlanner.py - INFO - Command LocateBallCommand is finished
+2024-05-28 12:03:58,210 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:58,547 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:58,547 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:58,547 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:58,547 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:58,581 - CommandPlanner.py - INFO - Command LocateBallCommand is finished
+2024-05-28 12:03:58,581 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:58,741 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:58,741 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:58,741 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:58,741 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:58,773 - CommandPlanner.py - INFO - Command LocateBallCommand is finished
+2024-05-28 12:03:58,773 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:58,920 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:58,920 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:58,920 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:58,920 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:58,936 - CommandPlanner.py - INFO - Command LocateBallCommand is finished
+2024-05-28 12:03:58,936 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:59,074 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:59,074 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:59,074 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:59,074 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:59,103 - CommandPlanner.py - INFO - Command LocateBallCommand is finished
+2024-05-28 12:03:59,103 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:59,250 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:59,250 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:59,250 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:59,251 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:59,266 - CommandPlanner.py - INFO - Command LocateBallCommand is finished
+2024-05-28 12:03:59,267 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:59,428 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:59,428 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:59,428 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:59,428 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:59,444 - CommandPlanner.py - INFO - Command LocateBallCommand is finished
+2024-05-28 12:03:59,444 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:59,587 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:03:59,587 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:59,587 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:59,587 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:03:59,606 - CommandPlanner.py - INFO - Command LocateBallCommand is finished
+2024-05-28 12:03:59,606 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:59,740 - control_thread.py - INFO - Updating command planner with distance: 25.911093322532526, angle: 36.86778031066937
+2024-05-28 12:03:59,740 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:03:59,740 - CommandPlanner.py - INFO - Switching to TranslateToBallCommand with distance: 25.911093322532526, angle: 36.86778031066937
+2024-05-28 12:03:59,740 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:03:59,740 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:03:59,740 - TranslateToBallCommand.py - INFO - shared data: distance - 25.911093322532526, angle: 36.86778031066937
+2024-05-28 12:03:59,762 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:03:59,915 - control_thread.py - INFO - Updating command planner with distance: 19.722782517678258, angle: 29.082196795412685
+2024-05-28 12:03:59,916 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:03:59,916 - TranslateToBallCommand.py - INFO - shared data: distance - 19.722782517678258, angle: 29.082196795412685
+2024-05-28 12:03:59,935 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:00,167 - control_thread.py - INFO - Updating command planner with distance: 25.857887800112408, angle: 19.914722754275072
+2024-05-28 12:04:00,167 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:00,167 - TranslateToBallCommand.py - INFO - shared data: distance - 25.857887800112408, angle: 19.914722754275072
+2024-05-28 12:04:00,194 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:00,340 - control_thread.py - INFO - Updating command planner with distance: 20.45565340262825, angle: 26.09082754483857
+2024-05-28 12:04:00,340 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:00,340 - TranslateToBallCommand.py - INFO - shared data: distance - 20.45565340262825, angle: 26.09082754483857
+2024-05-28 12:04:00,371 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:00,509 - control_thread.py - INFO - Updating command planner with distance: 15.966505502337835, angle: 28.85235299817042
+2024-05-28 12:04:00,509 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:00,509 - TranslateToBallCommand.py - INFO - shared data: distance - 15.966505502337835, angle: 28.85235299817042
+2024-05-28 12:04:00,556 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:00,721 - control_thread.py - INFO - Updating command planner with distance: 10.451920489947444, angle: 31.03400998328894
+2024-05-28 12:04:00,721 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:00,721 - TranslateToBallCommand.py - INFO - shared data: distance - 10.451920489947444, angle: 31.03400998328894
+2024-05-28 12:04:00,739 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:00,886 - control_thread.py - INFO - Updating command planner with distance: 11.591725634170462, angle: 25.457130704162534
+2024-05-28 12:04:00,886 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:00,886 - TranslateToBallCommand.py - INFO - shared data: distance - 11.591725634170462, angle: 25.457130704162534
+2024-05-28 12:04:00,916 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:01,059 - control_thread.py - INFO - Updating command planner with distance: 9.87129401583303, angle: 24.41952712429743
+2024-05-28 12:04:01,059 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:01,059 - TranslateToBallCommand.py - INFO - shared data: distance - 9.87129401583303, angle: 24.41952712429743
+2024-05-28 12:04:01,280 - CommandPlanner.py - INFO - Command TranslateToBallCommand is finished
+2024-05-28 12:04:01,280 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:01,453 - control_thread.py - INFO - Updating command planner with distance: 9.826065336919118, angle: 20.49298196340515
+2024-05-28 12:04:01,453 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:04:01,453 - CommandPlanner.py - INFO - Switching to AlignWithBallCommand with angle: 20.49298196340515
+2024-05-28 12:04:01,453 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:04:01,453 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:01,487 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:01,637 - control_thread.py - INFO - Updating command planner with distance: 18.097942118854665, angle: 17.54187578670435
+2024-05-28 12:04:01,637 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:01,660 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:01,790 - control_thread.py - INFO - Updating command planner with distance: 14.961028637016444, angle: 10.117063342894916
+2024-05-28 12:04:01,791 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:01,808 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:01,953 - control_thread.py - INFO - Updating command planner with distance: 27.86001240672043, angle: 3.9554700070780395
+2024-05-28 12:04:01,953 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:01,969 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:02,119 - control_thread.py - INFO - Updating command planner with distance: 36.15886844040934, angle: 1.9196784514473448
+2024-05-28 12:04:02,120 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:02,141 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:02,302 - control_thread.py - INFO - Updating command planner with distance: 41.8954058738666, angle: 1.1634547322174356
+2024-05-28 12:04:02,302 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:02,322 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:02,508 - control_thread.py - INFO - Updating command planner with distance: 42.263743365926, angle: -0.05817312017554997
+2024-05-28 12:04:02,508 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:02,582 - CommandPlanner.py - INFO - Command AlignWithBallCommand is finished
+2024-05-28 12:04:02,582 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:02,768 - control_thread.py - INFO - Updating command planner with distance: 49.618417760936154, angle: -0.9889383363706531
+2024-05-28 12:04:02,768 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:04:02,768 - CommandPlanner.py - INFO - Switching to TranslateToBallCommand with distance: 49.618417760936154, angle: -0.9889383363706531
+2024-05-28 12:04:02,768 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:04:02,768 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:02,768 - TranslateToBallCommand.py - INFO - shared data: distance - 49.618417760936154, angle: -0.9889383363706531
+2024-05-28 12:04:02,797 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:02,938 - control_thread.py - INFO - Updating command planner with distance: 54.57810816772308, angle: -1.5706553493174562
+2024-05-28 12:04:02,938 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:02,938 - TranslateToBallCommand.py - INFO - shared data: distance - 54.57810816772308, angle: -1.5706553493174562
+2024-05-28 12:04:02,976 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:03,117 - control_thread.py - INFO - Updating command planner with distance: 57.09856075517312, angle: -2.44319986873172
+2024-05-28 12:04:03,117 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:03,117 - TranslateToBallCommand.py - INFO - shared data: distance - 57.09856075517312, angle: -2.44319986873172
+2024-05-28 12:04:03,136 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:03,275 - control_thread.py - INFO - Updating command planner with distance: 52.82577160556944, angle: -2.6758700065141245
+2024-05-28 12:04:03,275 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:03,275 - TranslateToBallCommand.py - INFO - shared data: distance - 52.82577160556944, angle: -2.6758700065141245
+2024-05-28 12:04:03,298 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:03,445 - control_thread.py - INFO - Updating command planner with distance: 46.76543949653212, angle: -2.6758700065141245
+2024-05-28 12:04:03,446 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:03,446 - TranslateToBallCommand.py - INFO - shared data: distance - 46.76543949653212, angle: -2.6758700065141245
+2024-05-28 12:04:03,481 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:03,600 - control_thread.py - INFO - Updating command planner with distance: 37.01149291989357, angle: -2.734036892194864
+2024-05-28 12:04:03,600 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:03,601 - TranslateToBallCommand.py - INFO - shared data: distance - 37.01149291989357, angle: -2.734036892194864
+2024-05-28 12:04:03,617 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:03,746 - control_thread.py - INFO - Updating command planner with distance: 30.469628824775103, angle: -3.0830323128137946
+2024-05-28 12:04:03,746 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:03,746 - TranslateToBallCommand.py - INFO - shared data: distance - 30.469628824775103, angle: -3.0830323128137946
+2024-05-28 12:04:03,760 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:03,896 - control_thread.py - INFO - Updating command planner with distance: 19.772552529154172, angle: -5.118579693851166
+2024-05-28 12:04:03,896 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:03,896 - TranslateToBallCommand.py - INFO - shared data: distance - 19.772552529154172, angle: -5.118579693851166
+2024-05-28 12:04:03,927 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:04,068 - control_thread.py - INFO - Updating command planner with distance: 9.602728534149158, angle: -12.207464254824783
+2024-05-28 12:04:04,068 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:04,068 - TranslateToBallCommand.py - INFO - shared data: distance - 9.602728534149158, angle: -12.207464254824783
+2024-05-28 12:04:04,514 - CommandPlanner.py - INFO - Command TranslateToBallCommand is finished
+2024-05-28 12:04:04,514 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:04,761 - control_thread.py - INFO - Updating command planner with distance: 27.081035360982384, angle: -31.89401191326776
+2024-05-28 12:04:04,761 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:04:04,761 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:04:04,761 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:04,761 - TranslateToBallCommand.py - INFO - shared data: distance - 27.081035360982384, angle: -31.89401191326776
+2024-05-28 12:04:04,788 - CommandPlanner.py - INFO - Command TranslateToBallCommand is finished
+2024-05-28 12:04:04,788 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:04,951 - control_thread.py - INFO - Updating command planner with distance: 26.91911224272412, angle: -31.83669984656846
+2024-05-28 12:04:04,951 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:04:04,952 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:04:04,952 - CommandPlanner.py - INFO - Executing command: TranslateToBallCommand
+2024-05-28 12:04:04,952 - TranslateToBallCommand.py - INFO - shared data: distance - 26.91911224272412, angle: -31.83669984656846
+2024-05-28 12:04:04,986 - CommandPlanner.py - INFO - Command TranslateToBallCommand is finished
+2024-05-28 12:04:04,986 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:05,188 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:04:05,188 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:04:05,189 - CommandPlanner.py - INFO - Switching to LocateBallCommand
+2024-05-28 12:04:05,189 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:04:05,189 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:04:05,211 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:05,456 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:04:05,456 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:04:05,479 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:05,825 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:04:05,825 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:04:05,851 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:05,996 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:04:05,996 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:04:06,016 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:06,247 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:04:06,247 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:04:06,303 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:06,507 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:04:06,508 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:04:06,523 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:06,642 - control_thread.py - INFO - Updating command planner with distance: 0, angle: 0
+2024-05-28 12:04:06,642 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:04:06,662 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:06,856 - control_thread.py - INFO - Updating command planner with distance: 8.735897256721495, angle: -5.234880264140132
+2024-05-28 12:04:06,856 - CommandPlanner.py - INFO - Executing command: LocateBallCommand
+2024-05-28 12:04:07,167 - CommandPlanner.py - INFO - Command LocateBallCommand is finished
+2024-05-28 12:04:07,167 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:07,377 - control_thread.py - INFO - Updating command planner with distance: 7.8792346918701766, angle: -14.006289206663277
+2024-05-28 12:04:07,377 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:04:07,377 - CommandPlanner.py - INFO - Switching to AlignWithBallCommand with angle: -14.006289206663277
+2024-05-28 12:04:07,377 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:04:07,377 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:07,404 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:07,543 - control_thread.py - INFO - Updating command planner with distance: 7.921049284792526, angle: -14.180301254658117
+2024-05-28 12:04:07,543 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:07,577 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:07,719 - control_thread.py - INFO - Updating command planner with distance: 9.041377568709395, angle: -11.162442548631441
+2024-05-28 12:04:07,719 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:07,735 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:07,870 - control_thread.py - INFO - Updating command planner with distance: 7.948476051277427, angle: -4.246263929929137
+2024-05-28 12:04:07,870 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:07,899 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:08,024 - control_thread.py - INFO - Updating command planner with distance: 7.989474648320163, angle: -2.2105258555619915
+2024-05-28 12:04:08,024 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:08,038 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:08,177 - control_thread.py - INFO - Updating command planner with distance: 7.989117640119638, angle: -0.5817302500451741
+2024-05-28 12:04:08,177 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:08,249 - CommandPlanner.py - INFO - Command AlignWithBallCommand is finished
+2024-05-28 12:04:08,249 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:08,389 - control_thread.py - INFO - Updating command planner with distance: 8.031525317734632, angle: -0.9889383363706531
+2024-05-28 12:04:08,389 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:04:08,389 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:04:08,389 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:08,433 - CommandPlanner.py - INFO - Command AlignWithBallCommand is finished
+2024-05-28 12:04:08,433 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:08,588 - control_thread.py - INFO - Updating command planner with distance: 8.074228331753476, angle: -1.0471105740619537
+2024-05-28 12:04:08,589 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:04:08,589 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:04:08,589 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:08,615 - CommandPlanner.py - INFO - Command AlignWithBallCommand is finished
+2024-05-28 12:04:08,615 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:08,811 - control_thread.py - INFO - Updating command planner with distance: 7.9891293280764195, angle: -0.6980757924775274
+2024-05-28 12:04:08,811 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:04:08,811 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:04:08,811 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:08,893 - CommandPlanner.py - INFO - Command AlignWithBallCommand is finished
+2024-05-28 12:04:08,893 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:09,029 - control_thread.py - INFO - Updating command planner with distance: 8.031508249931036, angle: -0.8725935725980932
+2024-05-28 12:04:09,030 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:04:09,030 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:04:09,030 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:09,083 - CommandPlanner.py - INFO - Command AlignWithBallCommand is finished
+2024-05-28 12:04:09,083 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:09,204 - control_thread.py - INFO - Updating command planner with distance: 8.117272146441504, angle: -1.105282707933338
+2024-05-28 12:04:09,204 - CommandPlanner.py - INFO - Starting command planning
+2024-05-28 12:04:09,204 - CommandPlanner.py - INFO - Command updated
+2024-05-28 12:04:09,204 - CommandPlanner.py - INFO - Executing command: AlignWithBallCommand
+2024-05-28 12:04:09,228 - CommandPlanner.py - INFO - Command AlignWithBallCommand is finished
+2024-05-28 12:04:09,228 - CommandPlanner.py - INFO - Command Planner Update completed
+2024-05-28 12:04:09,393 - control_thread.py - INFO - Control thread exited
+2024-05-28 12:04:09,397 - main.py - INFO - Main thread exited
+2024-05-28 12:04:09,464 - camera_thread.py - INFO - Camera thread exited

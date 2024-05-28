@@ -19,9 +19,7 @@ def control_thread(got, condition):
     while True:
         with condition:
             condition.wait()  # Wait for notification from the camera thread
-
-        distance, angle = None, None
-
+            
         with shared_data["lock"]:
             if shared_data["exit"]:
                 break

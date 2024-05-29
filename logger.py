@@ -12,7 +12,7 @@ log_filename = datetime.now().strftime("log_%Y%m%d_%H%M%S.log")
 log_filepath = os.path.join(LOGS_DIR, log_filename)
 
 # Create a logger
-logger = logging.getLogger('UGOT')
+logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
 # Create file handler which logs even debug messages
@@ -31,3 +31,5 @@ ch.setFormatter(formatter)
 # Add the handlers to the logger
 logger.addHandler(fh)
 logger.addHandler(ch)
+
+logger.info('Logger initialized')

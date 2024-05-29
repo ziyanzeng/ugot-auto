@@ -2,9 +2,7 @@ import asyncio
 import signal
 import websockets
 import json
-import numpy as np
-from utils.pid_controller import PID
-from config import shared_data
+from shared_data import shared_data
 from logger import logger
 
 class WSServer:
@@ -13,47 +11,46 @@ class WSServer:
         self.clients = set()
 
     async def pid_tuner(self, websocket, path):
+        logger.info('New WebSocket connection established')
         self.clients.add(websocket)
         try:
             while True:
                 message = await websocket.recv()
+                logger.info(f'Received message: {message}')
                 data = json.loads(message)
 
                 if 'linear' in data and 'angle' in data:
                     shared_data["linear_pid"].set_pid(data['linear']['kp'], data['linear']['ki'], data['linear']['kd'])
                     shared_data["angle_pid"].set_pid(data['angle']['kp'], data['angle']['ki'], data['angle']['kd'])
-                    logger.info('PID parameters updated from WebSocket')
+                    logger.info(f'Updated PID parameters: {data}')
 
                 if 'command' in data:
+                    shared_data["command"] = data['command']
                     self.current_command = data['command']
                     logger.info(f'Received command: {self.current_command}')
 
-                time_data, distance_data, angle_data = self.get_robot_response()
+                # For testing purposes, send back the updated shared data
                 response_data = {
-                    'type': 'chart',
-                    'time': time_data,
-                    'distance': distance_data,
-                    'angle': angle_data
+                    'linear_pid': {
+                        'kp': shared_data["linear_pid"].kp,
+                        'ki': shared_data["linear_pid"].ki,
+                        'kd': shared_data["linear_pid"].kd
+                    },
+                    'angle_pid': {
+                        'kp': shared_data["angle_pid"].kp,
+                        'ki': shared_data["angle_pid"].ki,
+                        'kd': shared_data["angle_pid"].kd
+                    },
+                    'command': shared_data["command"]
                 }
                 await websocket.send(json.dumps(response_data))
+                logger.info('Sent updated data back to client')
         except websockets.ConnectionClosed:
-            print("Client disconnected")
+            logger.info("Client disconnected")
+        except KeyError as e:
+            logger.error(f"KeyError: {e}")
         finally:
             self.clients.remove(websocket)
-
-    def get_robot_response(self):
-        time_data = list(range(len(shared_data["distance_history"])))
-        distance_data = shared_data["distance_history"]
-        angle_data = shared_data["angle_history"]
-        return time_data, distance_data, angle_data
-
-    async def send_video_frame(self, frame):
-        if self.clients:
-            message = json.dumps({
-                'type': 'video',
-                'frame': frame
-            })
-            await asyncio.wait([client.send(message) for client in self.clients])
 
 def start_server():
     ws_server = WSServer()
@@ -69,6 +66,7 @@ def start_server():
     for signame in ('SIGINT', 'SIGTERM'):
         loop.add_signal_handler(getattr(signal, signame), shutdown)
 
+    logger.info("WebSocket server started")
     loop.run_until_complete(start_server)
     loop.run_forever()
 

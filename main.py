@@ -6,9 +6,11 @@ from camera import UGOTCamera
 from model import YOLOModel
 from threads.camera_thread import camera_thread
 from threads.control_thread import control_thread
+from shared_data import shared_data
 import config
 from ugot import ugot
 from logger import logger  # Import the global logger
+from ws_server import start_server, WSServer
 
 def main():
     # Log the start of the main function
@@ -28,8 +30,13 @@ def main():
     # Initialize condition variable
     condition = Condition()
 
+    # Start WebSocket server
+    ws_server = WSServer()
+    ws_thread = Thread(target=start_server)
+    ws_thread.start()
+
     # Invoke camera thread
-    camera_thread_instance = Thread(target=camera_thread, args=(got, cam, model, render_frame_queue, condition))
+    camera_thread_instance = Thread(target=camera_thread, args=(got, cam, model, render_frame_queue, condition, ws_server))
     camera_thread_instance.start()
 
     # Invoke control thread
@@ -49,8 +56,8 @@ def main():
             cv2.namedWindow('YOLOv8 Ball Detection', cv2.WINDOW_NORMAL)
             cv2.imshow('YOLOv8 Ball Detection', frame)
             if cv2.waitKey(1) & 0xFF == ord('q'):
-                with config.shared_data["lock"]:
-                    config.shared_data["exit"] = True
+                with shared_data["lock"]:
+                    shared_data["exit"] = True
                 break
             # logger.info('Frame displayed.')
 
@@ -60,6 +67,7 @@ def main():
     # End thread
     camera_thread_instance.join()
     control_thread_instance.join()
+    ws_thread.join()
     
     got.stop_chassis()
 

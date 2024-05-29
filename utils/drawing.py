@@ -1,10 +1,10 @@
 import cv2
 import math
-from utils import parse_detection_results
-from utils import get_single_relative_pos
+from utils.parse_results import parse_detection_results
+from utils.get_relative_position import get_single_relative_pos
 import numpy as np
 import config
-from config import shared_data
+from shared_data import shared_data
 
 # draw only the box with the highest confidence
 def draw_max_score_detection(data, detections):

@@ -2,7 +2,7 @@ from .LocateBallCommand import LocateBallCommand
 from .TranslateToBallCommand import TranslateToBallCommand
 from .AlignWithBallCommand import AlignWithBallCommand
 from .RestCommand import RestCommand
-from config import shared_data
+from shared_data import shared_data
 from logger import logger
 
 class CommandPlanner:

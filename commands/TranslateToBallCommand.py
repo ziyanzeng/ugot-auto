@@ -1,6 +1,6 @@
 from .Command import Command
 from .actuators.chassis import Chassis
-from config import shared_data
+from shared_data import shared_data
 from logger import logger
 
 class TranslateToBallCommand(Command):

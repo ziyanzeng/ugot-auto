@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import utils
-from config import shared_data
+from shared_data import shared_data
 from logger import logger  # Import the global logger
 import threading
 import time

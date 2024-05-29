@@ -1,7 +1,7 @@
 # import time
 # from commands.CommandPlanner import CommandPlanner
 # import utils
-# from config import shared_data
+# from shared_data import shared_data
 # from logger import logger  # Import the global logger
 
 # def control_thread(got, condition):
@@ -42,29 +42,20 @@
 import time
 from commands.TranslateToBallCommand import TranslateToBallCommand
 from commands.AlignWithBallCommand import AlignWithBallCommand
-import utils
-from config import shared_data
+from shared_data import shared_data
 from logger import logger  # Import the global logger
 
-def control_thread(got, condition, ws_server):
-    # Create PID controllers
-    pid_linear = shared_data["linear_pid"]
-    pid_angle = shared_data["angle_pid"]
-    pid_controllers = {
-        "linear": pid_linear,
-        "angle": pid_angle
-    }
-
-    translate_command = TranslateToBallCommand(got, pid_controllers)
-    align_command = AlignWithBallCommand(got, pid_controllers)
-    current_command = None
-
+def control_thread(got, condition):
     logger.info("Control thread started")
+
+    translate_command = TranslateToBallCommand(got)
+    align_command = AlignWithBallCommand(got)
+    current_command = None
 
     while True:
         with condition:
             condition.wait()  # Wait for notification from the camera thread
-            
+
         with shared_data["lock"]:
             if shared_data["exit"]:
                 break
@@ -74,7 +65,7 @@ def control_thread(got, condition, ws_server):
             # Update shared_data for chart update
             shared_data["distance_history"].append(distance)
             shared_data["angle_history"].append(angle)
-
+            
             # Maintain only the last 50 records
             if len(shared_data["distance_history"]) > 50:
                 shared_data["distance_history"].pop(0)
@@ -84,10 +75,10 @@ def control_thread(got, condition, ws_server):
             # Log detection data
             logger.info(f'Detected distance: {distance}, angle: {angle}')
 
-        if ws_server.current_command == 'translate':
+        if shared_data["command"] == 'translate':
             current_command = translate_command
             logger.info('Starting TranslateToBallCommand')
-        elif ws_server.current_command == 'align':
+        elif shared_data["command"] == 'align':
             current_command = align_command
             logger.info('Starting AlignWithBallCommand')
         else:
@@ -96,8 +87,19 @@ def control_thread(got, condition, ws_server):
             got.stop_chassis()
 
         if current_command:
+            if current_command == translate_command:
+                translate_command.pid_controllers = {
+                    "linear": shared_data["linear_pid"],
+                    "angle": shared_data["angle_pid"]
+                }
+            elif current_command == align_command:
+                align_command.pid_controllers = {
+                    "linear": shared_data["linear_pid"],
+                    "angle": shared_data["angle_pid"]
+                }
             current_command.execute()
 
         time.sleep(0.1)  # Control loop interval
 
     logger.info('Control thread exited')
+

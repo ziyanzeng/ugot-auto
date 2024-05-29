@@ -1,8 +1,8 @@
 import math
-from utils import parse_detection_results
+from utils.parse_results import parse_detection_results
 import config
 import numpy as np
-from config import shared_data
+from shared_data import shared_data
 
 def get_single_relative_pos(detections):
     boxes, scores, classes = parse_detection_results(detections)

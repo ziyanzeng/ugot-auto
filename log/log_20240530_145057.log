@@ -1,0 +1,210 @@
+2024-05-30 14:50:57,688 - logger.py - INFO - Logger initialized
+2024-05-30 14:50:59,710 - main.py - INFO - Main function started
+2024-05-30 14:51:00,996 - ugotcamera.py - INFO - camera opened
+2024-05-30 14:51:01,044 - control_thread.py - INFO - Control thread started
+2024-05-30 14:51:01,056 - ws_server.py - INFO - WebSocket server started
+2024-05-30 14:51:01,057 - server.py - INFO - server listening on 127.0.0.1:8765
+2024-05-30 14:51:01,057 - server.py - INFO - server listening on [::1]:8765
+2024-05-30 14:51:06,765 - server.py - INFO - connection open
+2024-05-30 14:51:06,772 - ws_server.py - INFO - New WebSocket connection established
+2024-05-30 14:51:28,864 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:51:28,865 - ws_server.py - INFO - Received command: align
+2024-05-30 14:51:35,780 - ws_server.py - INFO - Received message: {"command":"translate"}
+2024-05-30 14:51:35,781 - ws_server.py - INFO - Received command: translate
+2024-05-30 14:51:41,063 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:51:41,064 - ws_server.py - INFO - Received command: align
+2024-05-30 14:51:45,046 - ws_server.py - INFO - Received message: {"chart_command":"pause_chart"}
+2024-05-30 14:53:01,348 - ws_server.py - INFO - Received message: {"linear":{"kp":1.1,"ki":0,"kd":0.1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:01,349 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.1, 'ki': 0, 'kd': 0.1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:01,411 - ws_server.py - INFO - Received message: {"linear":{"kp":1.2,"ki":0,"kd":0.1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:01,411 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.2, 'ki': 0, 'kd': 0.1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:01,445 - ws_server.py - INFO - Received message: {"linear":{"kp":1.3,"ki":0,"kd":0.1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:01,445 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.3, 'ki': 0, 'kd': 0.1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:01,478 - ws_server.py - INFO - Received message: {"linear":{"kp":1.4,"ki":0,"kd":0.1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:01,478 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.4, 'ki': 0, 'kd': 0.1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:01,563 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":0.1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:01,563 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 0.1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:10,179 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:53:10,180 - ws_server.py - INFO - Received command: align
+2024-05-30 14:53:11,928 - ws_server.py - INFO - Received message: {"chart_command":"start_chart"}
+2024-05-30 14:53:13,712 - ws_server.py - INFO - Received message: {"command":"translate"}
+2024-05-30 14:53:13,713 - ws_server.py - INFO - Received command: translate
+2024-05-30 14:53:21,845 - ws_server.py - INFO - Received message: {"chart_command":"pause_chart"}
+2024-05-30 14:53:37,147 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":0.2},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,147 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 0.2}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,163 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":0.4},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,163 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 0.4}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,180 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":0.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,180 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 0.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,195 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":0.7},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,195 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 0.7}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,211 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":0.8},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,211 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 0.8}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,229 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":0.9},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,229 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 0.9}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,245 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,245 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,262 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":1.1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,262 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 1.1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,321 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":1.2},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,321 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 1.2}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,645 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":1.1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,645 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 1.1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,677 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,677 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,712 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":0.9},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,712 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 0.9}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:37,760 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":0.8},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:37,761 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 0.8}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:53:50,843 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":0.9},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:53:50,843 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 0.9}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:54:04,203 - ws_server.py - INFO - Received message: {"chart_command":"start_chart"}
+2024-05-30 14:54:05,802 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:54:05,803 - ws_server.py - INFO - Received command: align
+2024-05-30 14:54:17,146 - ws_server.py - INFO - Received message: {"command":"translate"}
+2024-05-30 14:54:17,147 - ws_server.py - INFO - Received command: translate
+2024-05-30 14:54:23,214 - ws_server.py - INFO - Received message: {"chart_command":"pause_chart"}
+2024-05-30 14:54:31,362 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0,"kd":1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:54:31,363 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0, 'kd': 1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:54:34,128 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.1,"kd":1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:54:34,128 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.1, 'kd': 1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:54:34,889 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.2,"kd":1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:54:34,889 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.2, 'kd': 1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:54:36,644 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:54:36,644 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:54:36,895 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.4,"kd":1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:54:36,895 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.4, 'kd': 1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:54:37,761 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:54:37,762 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:54:39,741 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:54:39,741 - ws_server.py - INFO - Received command: align
+2024-05-30 14:54:42,991 - ws_server.py - INFO - Received message: {"chart_command":"start_chart"}
+2024-05-30 14:55:51,858 - ws_server.py - INFO - Received message: {"command":"translate"}
+2024-05-30 14:55:51,859 - ws_server.py - INFO - Received command: translate
+2024-05-30 14:55:58,024 - ws_server.py - INFO - Received message: {"chart_command":"pause_chart"}
+2024-05-30 14:55:58,858 - ws_server.py - INFO - Received message: {"chart_command":"start_chart"}
+2024-05-30 14:56:00,106 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:56:00,106 - ws_server.py - INFO - Received command: align
+2024-05-30 14:57:20,663 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:57:20,663 - ws_server.py - INFO - Received command: align
+2024-05-30 14:57:29,180 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:57:29,181 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:57:29,573 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.2},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:57:29,574 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.2}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:57:29,607 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.3},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:57:29,607 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.3}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:57:29,673 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.4},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:57:29,674 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.4}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:57:29,757 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:57:29,757 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:57:29,841 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.6},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:57:29,841 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.6}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:57:30,657 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:57:30,657 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:57:30,725 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.4},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:57:30,725 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.4}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:57:31,674 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:57:31,674 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:57:31,865 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.6},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:57:31,866 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.6}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:57:32,424 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:57:32,424 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:57:35,306 - ws_server.py - INFO - Received message: {"chart_command":"start_chart"}
+2024-05-30 14:57:37,207 - ws_server.py - INFO - Received message: {"command":"translate"}
+2024-05-30 14:57:37,207 - ws_server.py - INFO - Received command: translate
+2024-05-30 14:57:49,572 - ws_server.py - INFO - Received message: {"chart_command":"pause_chart"}
+2024-05-30 14:57:50,938 - ws_server.py - INFO - Received message: {"chart_command":"start_chart"}
+2024-05-30 14:57:51,789 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:57:51,789 - ws_server.py - INFO - Received command: align
+2024-05-30 14:58:10,857 - ws_server.py - INFO - Received message: {"linear":{"kp":1.6,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:10,858 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.6, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:10,923 - ws_server.py - INFO - Received message: {"linear":{"kp":1.5,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:10,923 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.5, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:10,948 - ws_server.py - INFO - Received message: {"linear":{"kp":1.4,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:10,948 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.4, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:10,957 - ws_server.py - INFO - Received message: {"linear":{"kp":1.2,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:10,957 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.2, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:10,975 - ws_server.py - INFO - Received message: {"linear":{"kp":1.1,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:10,976 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.1, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:11,390 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:11,390 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:11,942 - ws_server.py - INFO - Received message: {"linear":{"kp":0.9,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:11,943 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 0.9, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:12,339 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:12,340 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:12,390 - ws_server.py - INFO - Received message: {"linear":{"kp":1.1,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:12,390 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.1, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:12,423 - ws_server.py - INFO - Received message: {"linear":{"kp":1.2,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:12,423 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.2, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:12,924 - ws_server.py - INFO - Received message: {"linear":{"kp":1.1,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:12,924 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1.1, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:12,973 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.3,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:12,973 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.3, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:14,906 - ws_server.py - INFO - Received message: {"command":"translate"}
+2024-05-30 14:58:14,906 - ws_server.py - INFO - Received command: translate
+2024-05-30 14:58:17,623 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:58:17,624 - ws_server.py - INFO - Received command: align
+2024-05-30 14:58:33,260 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.2,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:33,260 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.2, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:33,713 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":1.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:58:33,714 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 1.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:58:39,906 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:58:39,907 - ws_server.py - INFO - Received command: align
+2024-05-30 14:58:41,772 - ws_server.py - INFO - Received message: {"command":"translate"}
+2024-05-30 14:58:41,772 - ws_server.py - INFO - Received command: translate
+2024-05-30 14:58:45,555 - ws_server.py - INFO - Received message: {"chart_command":"pause_chart"}
+2024-05-30 14:58:46,256 - ws_server.py - INFO - Received message: {"chart_command":"start_chart"}
+2024-05-30 14:58:47,172 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:58:47,172 - ws_server.py - INFO - Received command: align
+2024-05-30 14:59:26,222 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":1.4},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:26,223 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 1.4}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:26,274 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":1.3},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:26,274 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 1.3}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:26,323 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":1.2},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:26,324 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 1.2}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:26,372 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":1.1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:26,372 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 1.1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:26,389 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":1},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:26,389 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 1}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:26,407 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":0.9},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:26,407 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 0.9}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:26,434 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":0.8},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:26,434 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 0.8}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:26,439 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":0.7},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:26,440 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 0.7}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:26,740 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":0.6},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:26,740 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 0.6}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:26,889 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":0.5},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:26,890 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 0.5}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:27,328 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":0.4},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:27,329 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 0.4}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:27,640 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":0.3},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:27,640 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 0.3}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:28,039 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":0.2},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:28,040 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 0.2}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:28,556 - ws_server.py - INFO - Received message: {"linear":{"kp":1,"ki":0.1,"kd":0.3},"angle":{"kp":1,"ki":0,"kd":0.1}}
+2024-05-30 14:59:28,556 - ws_server.py - INFO - Updated PID parameters: {'linear': {'kp': 1, 'ki': 0.1, 'kd': 0.3}, 'angle': {'kp': 1, 'ki': 0, 'kd': 0.1}}
+2024-05-30 14:59:30,205 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:59:30,205 - ws_server.py - INFO - Received command: align
+2024-05-30 14:59:31,307 - ws_server.py - INFO - Received message: {"command":"translate"}
+2024-05-30 14:59:31,307 - ws_server.py - INFO - Received command: translate
+2024-05-30 14:59:36,071 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 14:59:36,071 - ws_server.py - INFO - Received command: align
+2024-05-30 14:59:58,565 - control_thread.py - INFO - Control thread exited
+2024-05-30 14:59:58,576 - main.py - INFO - Main thread exited
+2024-05-30 14:59:58,652 - camera_thread.py - INFO - Camera thread exited
+2024-05-30 14:59:58,711 - ws_server.py - INFO - Shutting down server...
+2024-05-30 14:59:58,712 - server.py - INFO - server closing
+2024-05-30 14:59:59,130 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<WebSocketServerProtocol.handler() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/server.py:236> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-05-30 14:59:59,131 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-6' coro=<WebSocketCommonProtocol.transfer_data() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:963> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /opt/anaconda3/lib/python3.11/asyncio/tasks.py:519]>
+2024-05-30 14:59:59,131 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-7' coro=<WebSocketCommonProtocol.keepalive_ping() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:1254> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-05-30 14:59:59,131 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-8' coro=<WebSocketCommonProtocol.close_connection() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:1301> wait_for=<Task pending name='Task-6' coro=<WebSocketCommonProtocol.transfer_data() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:963> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /opt/anaconda3/lib/python3.11/asyncio/tasks.py:519]>>
+2024-05-30 14:59:59,131 - server.py - INFO - connection closed
+2024-05-30 14:59:59,135 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-3' coro=<WSServer.broadcast_data() running at /Users/tomzeng/Code/ugot/ws_server.py:82> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-05-30 14:59:59,135 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-914' coro=<WebSocketServer._close() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/server.py:766>>

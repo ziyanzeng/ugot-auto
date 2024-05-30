@@ -28,6 +28,22 @@ class WSServer:
                     self.current_command = data['command']
                     logger.info(f'Received command: {self.current_command}')
 
+        except websockets.ConnectionClosed:
+            logger.info("Client disconnected")
+        except KeyError as e:
+            logger.error(f"KeyError: {e}")
+        finally:
+            self.clients.remove(websocket)
+
+    def get_robot_response(self):
+        time_data = list(range(len(SharedData.shared_data["distance_history"])))
+        distance_data = SharedData.shared_data["distance_history"]
+        angle_data = SharedData.shared_data["angle_history"]
+        return time_data, distance_data, angle_data
+
+    async def broadcast_data(self):
+        while True:
+            if self.clients:
                 time_data, distance_data, angle_data = self.get_robot_response()
                 response_data = {
                     'type': 'chart',
@@ -35,20 +51,10 @@ class WSServer:
                     'distance': distance_data,
                     'angle': angle_data
                 }
-                await websocket.send(json.dumps(response_data))
-                logger.info('Sent updated data back to client')
-        except websockets.ConnectionClosed:
-            logger.info("Client disconnected")
-        except KeyError as e:
-            logger.error(f"KeyError: {e}")
-        finally:
-            self.clients.remove(websocket)
-            
-    def get_robot_response(self):
-        time_data = list(range(len(SharedData.shared_data["distance_history"])))
-        distance_data = SharedData.shared_data["distance_history"]
-        angle_data = SharedData.shared_data["angle_history"]
-        return time_data, distance_data, angle_data
+                message = json.dumps(response_data)
+                tasks = [asyncio.create_task(client.send(message)) for client in self.clients]
+                await asyncio.gather(*tasks)
+            await asyncio.sleep(1)  # Adjust the sleep time as needed
 
 def start_server(shutdown_event):
     ws_server = WSServer()
@@ -66,6 +72,7 @@ def start_server(shutdown_event):
 
     async def run_server():
         await start_server
+        loop.create_task(ws_server.broadcast_data())
         while not shutdown_event.is_set():
             await asyncio.sleep(1)
         await shutdown()

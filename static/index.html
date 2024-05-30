@@ -8,47 +8,51 @@
 </head>
 <body>
     <header>PID Tuner</header>
-    <div id="controls">
-        <div class="pid-controller">
-            <h3>Linear PID</h3>
-            <div class="slider-container">
-                <label for="kp" class="slider-label">Kp: <span id="kp-value">1.0</span></label>
-                <input type="range" id="kp" class="slider" min="0" max="10" step="0.1" value="1.0">
+    <div class="container">
+        <div id="controls">
+            <div class="pid-controller">
+                <h3>Linear PID</h3>
+                <div class="slider-container">
+                    <label for="kp" class="slider-label">Kp: <span id="kp-value">1.0</span></label>
+                    <input type="range" id="kp" class="slider" min="0" max="10" step="0.1" value="1.0">
+                </div>
+                <div class="slider-container">
+                    <label for="ki" class="slider-label">Ki: <span id="ki-value">0.01</span></label>
+                    <input type="range" id="ki" class="slider" min="0" max="10" step="0.1" value="0.01">
+                </div>
+                <div class="slider-container">
+                    <label for="kd" class="slider-label">Kd: <span id="kd-value">0.05</span></label>
+                    <input type="range" id="kd" class="slider" min="0" max="10" step="0.1" value="0.05">
+                </div>
             </div>
-            <div class="slider-container">
-                <label for="ki" class="slider-label">Ki: <span id="ki-value">0.01</span></label>
-                <input type="range" id="ki" class="slider" min="0" max="10" step="0.1" value="0.01">
+            <div class="pid-controller">
+                <h3>Angle PID</h3>
+                <div class="slider-container">
+                    <label for="kp-angle" class="slider-label">Kp: <span id="kp-angle-value">1.0</span></label>
+                    <input type="range" id="kp-angle" class="slider" min="0" max="10" step="0.1" value="1.0">
+                </div>
+                <div class="slider-container">
+                    <label for="ki-angle" class="slider-label">Ki: <span id="ki-angle-value">0.01</span></label>
+                    <input type="range" id="ki-angle" class="slider" min="0" max="10" step="0.1" value="0.01">
+                </div>
+                <div class="slider-container">
+                    <label for="kd-angle" class="slider-label">Kd: <span id="kd-angle-value">0.05</span></label>
+                    <input type="range" id="kd-angle" class="slider" min="0" max="10" step="0.1" value="0.05">
+                </div>
             </div>
-            <div class="slider-container">
-                <label for="kd" class="slider-label">Kd: <span id="kd-value">0.05</span></label>
-                <input type="range" id="kd" class="slider" min="0" max="10" step="0.1" value="0.05">
+            <div class="buttons">
+                <button id="start-translate">Start Translate</button>
+                <button id="start-align">Start Align</button>
+                <button id="start-chart">Start Chart</button>
+                <button id="pause-chart">Pause Chart</button>
             </div>
         </div>
-        <div class="pid-controller">
-            <h3>Angle PID</h3>
-            <div class="slider-container">
-                <label for="kp-angle" class="slider-label">Kp: <span id="kp-angle-value">1.0</span></label>
-                <input type="range" id="kp-angle" class="slider" min="0" max="10" step="0.1" value="1.0">
-            </div>
-            <div class="slider-container">
-                <label for="ki-angle" class="slider-label">Ki: <span id="ki-angle-value">0.01</span></label>
-                <input type="range" id="ki-angle" class="slider" min="0" max="10" step="0.1" value="0.01">
-            </div>
-            <div class="slider-container">
-                <label for="kd-angle" class="slider-label">Kd: <span id="kd-angle-value">0.05</span></label>
-                <input type="range" id="kd-angle" class="slider" min="0" max="10" step="0.1" value="0.05">
-            </div>
+        <div id="chart-container">
+            <canvas id="chart"></canvas>
         </div>
-    </div>
-    <div id="chart-container">
-        <canvas id="chart"></canvas>
-    </div>
-    <div id="buttons">
-        <button id="start-translate">Start Translate</button>
-        <button id="start-align">Start Align</button>
-    </div>
-    <div id="video-container">
-        <img id="video-feed" src="" alt="Video Feed">
+        <div id="video-container">
+            <img id="video-feed" src="" alt="Video Feed">
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
@@ -131,6 +135,14 @@
 
         document.getElementById('start-align').onclick = () => {
             ws.send(JSON.stringify({ command: 'align' }));
+        };
+
+        document.getElementById('start-chart').onclick = () => {
+            ws.send(JSON.stringify({ chart_command: 'start_chart' }));
+        };
+
+        document.getElementById('pause-chart').onclick = () => {
+            ws.send(JSON.stringify({ chart_command: 'pause_chart' }));
         };
 
         const ctx = document.getElementById('chart').getContext('2d');

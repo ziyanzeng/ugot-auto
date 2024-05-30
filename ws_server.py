@@ -8,6 +8,7 @@ class WSServer:
     def __init__(self):
         self.current_command = None
         self.clients = set()
+        self.broadcasting = True  # Add this line to control broadcasting
 
     async def pid_tuner(self, websocket, path):
         logger.info('New WebSocket connection established')
@@ -28,6 +29,13 @@ class WSServer:
                     self.current_command = data['command']
                     logger.info(f'Received command: {self.current_command}')
 
+                if 'chart_command' in data:
+                    chart_command = data['chart_command']
+                    if chart_command == 'start_chart':
+                        self.broadcasting = True
+                    elif chart_command == 'pause_chart':
+                        self.broadcasting = False
+
         except websockets.ConnectionClosed:
             logger.info("Client disconnected")
         except KeyError as e:
@@ -43,7 +51,7 @@ class WSServer:
 
     async def broadcast_data(self):
         while True:
-            if self.clients:
+            if self.clients and self.broadcasting:
                 time_data, distance_data, angle_data = self.get_robot_response()
                 response_data = {
                     'type': 'chart',

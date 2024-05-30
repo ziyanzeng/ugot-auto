@@ -65,7 +65,7 @@ def control_thread(got, condition):
             SharedData.shared_data["angle_history"].append(SharedData.shared_data["angle"])
 
             # Log detection data
-            logger.info(f'Detected distance: {SharedData.shared_data["distance"]}, angle: {SharedData.shared_data["angle"]}')
+            # logger.info(f'Detected distance: {SharedData.shared_data["distance"]}, angle: {SharedData.shared_data["angle"]}')
         else:
             SharedData.shared_data["distance_history"].append(0)
             SharedData.shared_data["angle_history"].append(0)

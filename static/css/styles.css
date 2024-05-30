@@ -52,6 +52,7 @@ header {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap; /* Adjust the flex direction to wrap */
 }
 
 button {
@@ -62,6 +63,7 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 10px; /* Add margin to separate the buttons */
 }
 
 button:hover {

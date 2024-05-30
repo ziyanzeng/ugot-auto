@@ -4,10 +4,10 @@ from shared_data import SharedData
 from logger import logger
 
 class TranslateToBallCommand(Command):
-    def __init__(self, got, pid_controllers=None):
-        super().__init__(got, pid_controllers)
+    def __init__(self, got):
+        super().__init__(got)
         self.chassis = Chassis(got)
-        self.linear_pid = self.pid_controllers.get('linear', None)
+        self.linear_pid = SharedData.shared_data["linear_pid"]
 
     def initialize(self):
         self.finished = False

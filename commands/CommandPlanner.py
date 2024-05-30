@@ -6,10 +6,9 @@ from shared_data import SharedData
 from logger import logger
 
 class CommandPlanner:
-    def __init__(self, got, pid_controllers):
+    def __init__(self, got):
         self.got = got
-        self.pid_controllers = pid_controllers
-        self.current_command = LocateBallCommand(self.got, self.pid_controllers)
+        self.current_command = LocateBallCommand(self.got)
         logger.info('CommandPlanner initiated')
         self.prev_command = None
 
@@ -22,17 +21,17 @@ class CommandPlanner:
             if SharedData.shared_data["detections"] is None or (SharedData.shared_data["distance"] == 0 and SharedData.shared_data["angle"] == 0):
                 if not isinstance(self.current_command, LocateBallCommand):
                     logger.info('Switching to LocateBallCommand')
-                    self.current_command = LocateBallCommand(self.got, self.pid_controllers)
+                    self.current_command = LocateBallCommand(self.got)
                     self.current_command.initialize()
             elif SharedData.shared_data["distance"] >= 15:
                 if not isinstance(self.current_command, TranslateToBallCommand):
                     logger.info(f'Switching to TranslateToBallCommand with distance: {SharedData.shared_data["distance"]}, angle: {SharedData.shared_data["angle"]}')
-                    self.current_command = TranslateToBallCommand(self.got, self.pid_controllers)
+                    self.current_command = TranslateToBallCommand(self.got)
                     self.current_command.initialize()
             elif SharedData.shared_data["distance"] < 15 and abs(SharedData.shared_data["angle"]) >= 1:
                 if not isinstance(self.current_command, AlignWithBallCommand):
                     logger.info(f'Switching to AlignWithBallCommand with angle: {SharedData.shared_data["angle"]}')
-                    self.current_command = AlignWithBallCommand(self.got, self.pid_controllers)
+                    self.current_command = AlignWithBallCommand(self.got)
                     self.current_command.initialize()
             else:
                 if isinstance(self.current_command, RestCommand): return
@@ -47,3 +46,5 @@ class CommandPlanner:
             if self.current_command.isFinished():
                 logger.info(f'Command {type(self.current_command).__name__} is finished')
         # logger.info('Command Planner Update completed')
+        
+        return type(self.current_command).__name__ 

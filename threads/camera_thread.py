@@ -62,6 +62,8 @@ def camera_thread(got, cam, model, render_frame_queue, condition):
             condition.notify_all()
 
         # logger.info('Frame processed and added to queue')
+        with SharedData.shared_data["lock"]:
+            SharedData.shared_data["latest_frame"] = graphic
 
     cam.close_camera()
     logger.info('Camera thread exited')

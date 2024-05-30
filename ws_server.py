@@ -1,8 +1,10 @@
 import asyncio
+import base64
 import websockets
 import json
 from shared_data import SharedData
 from logger import logger
+import cv2
 
 class WSServer:
     def __init__(self):
@@ -62,6 +64,21 @@ class WSServer:
                 message = json.dumps(response_data)
                 tasks = [asyncio.create_task(client.send(message)) for client in self.clients]
                 await asyncio.gather(*tasks)
+                
+            if self.clients:
+                with SharedData.shared_data["lock"]:
+                    frame = SharedData.shared_data.get("latest_frame")
+                    if frame is not None:
+                        _, buffer = cv2.imencode('.jpg', frame)
+                        frame_data = base64.b64encode(buffer).decode('utf-8')
+                        response_data = {
+                            'type': 'video',
+                            'frame': frame_data
+                        }
+                        message = json.dumps(response_data)
+                        tasks = [asyncio.create_task(client.send(message)) for client in self.clients]
+                        await asyncio.gather(*tasks)
+            
             await asyncio.sleep(1)  # Adjust the sleep time as needed
 
 def start_server(shutdown_event):

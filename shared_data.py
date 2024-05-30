@@ -15,5 +15,6 @@ class SharedData:
         "distance": 0,
         "angle": 0,
         "distance_history": [0] * 50,
-        "angle_history": [0] * 50
+        "angle_history": [0] * 50,
+        "latest_frame": None
     }

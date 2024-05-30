@@ -1,11 +1,12 @@
 from .Command import Command
 from .actuators.chassis import Chassis
-from shared_data import shared_data
+from shared_data import SharedData
 from logger import logger
 
 class RestCommand(Command):
     def __init__(self, got):
         self.chassis = Chassis(got)
+        self.finished = False
 
     def initialize(self):
         self.finished = False

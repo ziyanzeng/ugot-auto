@@ -2,20 +2,17 @@ import math
 from utils.parse_results import parse_detection_results
 import config
 import numpy as np
-from shared_data import shared_data
+from shared_data import SharedData
 
 def get_single_relative_pos(detections):
     boxes, scores, classes = parse_detection_results(detections)
     if len(scores) == 0:
-        shared_data["distance"] = 0
-        shared_data["angle"] = 0
         return 0, 0
     max_index = np.argmax(scores)
     box = boxes[max_index]
     x1, y1, x2, y2 = map(int, box)
-    distance, angle = calculate_relative_position_params(config.BALL_DIAMETER, config.CAM_FOCAL, config.SENSOR_WIDTH, config.SENSOR_HEIGHT, shared_data["frame_width"] / 2, shared_data["frame_height"] / 2, x1, y1, x2, y2)
-    shared_data["distance"] = distance
-    shared_data["angle"] = angle
+    distance, angle = calculate_relative_position_params(config.BALL_DIAMETER, config.CAM_FOCAL, config.SENSOR_WIDTH, config.SENSOR_HEIGHT, SharedData.shared_data["frame_width"] / 2, SharedData.shared_data["frame_height"] / 2, x1, y1, x2, y2)
+    SharedData.shared_data["distance"], SharedData.shared_data["angle"] = distance, angle
     return distance, angle
 
 def calculate_relative_position_params(actual_width, focal_length, sensor_width, sensor_height, image_center_x, image_center_y, x1, y1, x2, y2):

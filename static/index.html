@@ -65,6 +65,7 @@
                 updateChart(data);
             } else if (data.type === 'video') {
                 document.getElementById('video-feed').src = `data:image/jpeg;base64,${data.frame}`;
+                console.log(data.frame);
             }
         };
 

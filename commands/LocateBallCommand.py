@@ -1,6 +1,6 @@
 from .Command import Command
 from .actuators.chassis import Chassis
-from shared_data import shared_data
+from shared_data import SharedData
 from logger import logger
 
 class LocateBallCommand(Command):
@@ -16,7 +16,7 @@ class LocateBallCommand(Command):
     def execute(self):
         self.cummulate += 1
         # end only when target is found
-        if shared_data["detections"] is not None and (shared_data["angle"] != 0 or shared_data["distance"] != 0) or self.cummulate > 1000:
+        if SharedData.shared_data["detections"] is not None and (SharedData.shared_data["angle"] != 0 or SharedData.shared_data["distance"] != 0) or self.cummulate > 1000:
             self.end()
         else:
             turn_speed = 75

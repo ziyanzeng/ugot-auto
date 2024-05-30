@@ -2,7 +2,7 @@ from .LocateBallCommand import LocateBallCommand
 from .TranslateToBallCommand import TranslateToBallCommand
 from .AlignWithBallCommand import AlignWithBallCommand
 from .RestCommand import RestCommand
-from shared_data import shared_data
+from shared_data import SharedData
 from logger import logger
 
 class CommandPlanner:
@@ -19,19 +19,19 @@ class CommandPlanner:
         if self.current_command.isFinished():
             self.prev_command = self.current_command
             # logger.info('Planning next command...')
-            if shared_data["detections"] is None or (shared_data["distance"] == 0 and shared_data["angle"] == 0):
+            if SharedData.shared_data["detections"] is None or (SharedData.shared_data["distance"] == 0 and SharedData.shared_data["angle"] == 0):
                 if not isinstance(self.current_command, LocateBallCommand):
                     logger.info('Switching to LocateBallCommand')
                     self.current_command = LocateBallCommand(self.got, self.pid_controllers)
                     self.current_command.initialize()
-            elif shared_data["distance"] >= 15:
+            elif SharedData.shared_data["distance"] >= 15:
                 if not isinstance(self.current_command, TranslateToBallCommand):
-                    logger.info(f'Switching to TranslateToBallCommand with distance: {shared_data["distance"]}, angle: {shared_data["angle"]}')
+                    logger.info(f'Switching to TranslateToBallCommand with distance: {SharedData.shared_data["distance"]}, angle: {SharedData.shared_data["angle"]}')
                     self.current_command = TranslateToBallCommand(self.got, self.pid_controllers)
                     self.current_command.initialize()
-            elif shared_data["distance"] < 15 and abs(shared_data["angle"]) >= 1:
+            elif SharedData.shared_data["distance"] < 15 and abs(SharedData.shared_data["angle"]) >= 1:
                 if not isinstance(self.current_command, AlignWithBallCommand):
-                    logger.info(f'Switching to AlignWithBallCommand with angle: {shared_data["angle"]}')
+                    logger.info(f'Switching to AlignWithBallCommand with angle: {SharedData.shared_data["angle"]}')
                     self.current_command = AlignWithBallCommand(self.got, self.pid_controllers)
                     self.current_command.initialize()
             else:

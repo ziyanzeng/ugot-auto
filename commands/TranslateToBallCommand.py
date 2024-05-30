@@ -1,6 +1,6 @@
 from .Command import Command
 from .actuators.chassis import Chassis
-from shared_data import shared_data
+from shared_data import SharedData
 from logger import logger
 
 class TranslateToBallCommand(Command):
@@ -15,11 +15,11 @@ class TranslateToBallCommand(Command):
     def execute(self):
         # end if move finished or target lost
         # logger.info(f'shared data: distance - {shared_data["distance"]}, angle: {shared_data["angle"]}')
-        if shared_data["distance"] < 10 or (shared_data["detections"] is None and (shared_data["angle"] == 0 or shared_data["distance"] == 0)):
+        if SharedData.shared_data["distance"] < 10 or (SharedData.shared_data["detections"] is None and (SharedData.shared_data["angle"] == 0 or SharedData.shared_data["distance"] == 0)):
             self.end()
         else:
-            speed = self.linear_pid.update(shared_data["distance"])
-            self.chassis.translate(shared_data["angle"], speed)
+            speed = self.linear_pid.update(SharedData.shared_data["distance"])
+            self.chassis.translate(SharedData.shared_data["angle"], speed)
 
     def end(self):
         self.finished = True

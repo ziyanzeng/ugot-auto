@@ -10,7 +10,7 @@ class Chassis:
 
     def stop(self):
         # self.got.mecanum_stop()
-        self.got.mecanum_motor_control(0,0,0,0)
+        self.got.stop_chassis()
 
     def translate(self, angle, speed):
         self.got.mecanum_translate_speed(int(angle), int(speed))

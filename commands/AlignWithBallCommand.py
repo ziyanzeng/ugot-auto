@@ -1,6 +1,6 @@
 from .Command import Command
 from .actuators.chassis import Chassis
-from shared_data import shared_data
+from shared_data import SharedData
 
 class AlignWithBallCommand(Command):
     def __init__(self, got, pid_controllers=None):
@@ -12,10 +12,10 @@ class AlignWithBallCommand(Command):
         self.finished = False
 
     def execute(self):
-        if abs(shared_data["angle"]) < 1:
+        if abs(SharedData.shared_data["angle"]) < 1:
             self.end()
         else:
-            turn_speed = self.angle_pid.update(shared_data["angle"])
+            turn_speed = self.angle_pid.update(SharedData.shared_data["angle"])
             self.chassis.spin_on_location(turn_speed)
 
     def end(self):

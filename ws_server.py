@@ -1,8 +1,7 @@
 import asyncio
-import signal
 import websockets
 import json
-from shared_data import shared_data
+from shared_data import SharedData
 from logger import logger
 
 class WSServer:
@@ -20,28 +19,21 @@ class WSServer:
                 data = json.loads(message)
 
                 if 'linear' in data and 'angle' in data:
-                    shared_data["linear_pid"].set_pid(data['linear']['kp'], data['linear']['ki'], data['linear']['kd'])
-                    shared_data["angle_pid"].set_pid(data['angle']['kp'], data['angle']['ki'], data['angle']['kd'])
+                    SharedData.shared_data["linear_pid"].set_pid(data['linear']['kp'], data['linear']['ki'], data['linear']['kd'])
+                    SharedData.shared_data["angle_pid"].set_pid(data['angle']['kp'], data['angle']['ki'], data['angle']['kd'])
                     logger.info(f'Updated PID parameters: {data}')
 
                 if 'command' in data:
-                    shared_data["command"] = data['command']
+                    SharedData.shared_data["command"] = data['command']
                     self.current_command = data['command']
                     logger.info(f'Received command: {self.current_command}')
 
-                # For testing purposes, send back the updated shared data
+                time_data, distance_data, angle_data = self.get_robot_response()
                 response_data = {
-                    'linear_pid': {
-                        'kp': shared_data["linear_pid"].kp,
-                        'ki': shared_data["linear_pid"].ki,
-                        'kd': shared_data["linear_pid"].kd
-                    },
-                    'angle_pid': {
-                        'kp': shared_data["angle_pid"].kp,
-                        'ki': shared_data["angle_pid"].ki,
-                        'kd': shared_data["angle_pid"].kd
-                    },
-                    'command': shared_data["command"]
+                    'type': 'chart',
+                    'time': time_data,
+                    'distance': distance_data,
+                    'angle': angle_data
                 }
                 await websocket.send(json.dumps(response_data))
                 logger.info('Sent updated data back to client')
@@ -51,24 +43,33 @@ class WSServer:
             logger.error(f"KeyError: {e}")
         finally:
             self.clients.remove(websocket)
+            
+    def get_robot_response(self):
+        time_data = list(range(len(SharedData.shared_data["distance_history"])))
+        distance_data = SharedData.shared_data["distance_history"]
+        angle_data = SharedData.shared_data["angle_history"]
+        return time_data, distance_data, angle_data
 
-def start_server():
+def start_server(shutdown_event):
     ws_server = WSServer()
-    loop = asyncio.get_event_loop()
+    try:
+        loop = asyncio.get_event_loop()
+    except RuntimeError:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
     start_server = websockets.serve(ws_server.pid_tuner, "localhost", 8765)
 
-    # Handle signal for clean shutdown
-    def shutdown():
-        print("Shutting down server...")
-        start_server.ws_server.close()
+    async def shutdown():
+        logger.info("Shutting down server...")
+        await start_server.ws_server.close()
         loop.stop()
 
-    for signame in ('SIGINT', 'SIGTERM'):
-        loop.add_signal_handler(getattr(signal, signame), shutdown)
+    async def run_server():
+        await start_server
+        while not shutdown_event.is_set():
+            await asyncio.sleep(1)
+        await shutdown()
 
     logger.info("WebSocket server started")
-    loop.run_until_complete(start_server)
+    loop.run_until_complete(run_server())
     loop.run_forever()
-
-if __name__ == "__main__":
-    start_server()

@@ -4,14 +4,14 @@ from utils.parse_results import parse_detection_results
 from utils.get_relative_position import get_single_relative_pos
 import numpy as np
 import config
-from shared_data import shared_data
+from shared_data import SharedData
 
 # draw only the box with the highest confidence
 def draw_max_score_detection(data, detections):
     boxes, scores, classes = parse_detection_results(detections)
 
     if len(scores) == 0:
-        shared_data["distance"], shared_data["angle"] = 0, 0
+        SharedData.shared_data["distance"], SharedData.shared_data["angle"] = 0, 0
         return data
 
     max_index = np.argmax(scores)

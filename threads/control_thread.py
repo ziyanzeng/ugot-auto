@@ -42,62 +42,52 @@
 import time
 from commands.TranslateToBallCommand import TranslateToBallCommand
 from commands.AlignWithBallCommand import AlignWithBallCommand
-from shared_data import shared_data
+from commands.RestCommand import RestCommand
+from shared_data import SharedData
 from logger import logger  # Import the global logger
 
 def control_thread(got, condition):
     logger.info("Control thread started")
 
-    translate_command = TranslateToBallCommand(got)
-    align_command = AlignWithBallCommand(got)
-    current_command = None
+    current_command = RestCommand(got)
 
     while True:
         with condition:
             condition.wait()  # Wait for notification from the camera thread
 
-        with shared_data["lock"]:
-            if shared_data["exit"]:
+        with SharedData.shared_data["lock"]:
+            if SharedData.shared_data["exit"]:
                 break
 
-        if shared_data["detections"] is not None:
-            distance, angle = shared_data["distance"], shared_data["angle"]
+        if SharedData.shared_data["detections"] is not None:
             # Update shared_data for chart update
-            shared_data["distance_history"].append(distance)
-            shared_data["angle_history"].append(angle)
-            
-            # Maintain only the last 50 records
-            if len(shared_data["distance_history"]) > 50:
-                shared_data["distance_history"].pop(0)
-            if len(shared_data["angle_history"]) > 50:
-                shared_data["angle_history"].pop(0)
+            SharedData.shared_data["distance_history"].append(SharedData.shared_data["distance"])
+            SharedData.shared_data["angle_history"].append(SharedData.shared_data["angle"])
 
             # Log detection data
-            logger.info(f'Detected distance: {distance}, angle: {angle}')
-
-        if shared_data["command"] == 'translate':
-            current_command = translate_command
-            logger.info('Starting TranslateToBallCommand')
-        elif shared_data["command"] == 'align':
-            current_command = align_command
-            logger.info('Starting AlignWithBallCommand')
+            logger.info(f'Detected distance: {SharedData.shared_data["distance"]}, angle: {SharedData.shared_data["angle"]}')
         else:
-            current_command = None
-            logger.info('No command to execute, robot is idle')
-            got.stop_chassis()
+            SharedData.shared_data["distance_history"].append(0)
+            SharedData.shared_data["angle_history"].append(0)
+        
+        # Maintain only the last 50 records
+        if len(SharedData.shared_data["distance_history"]) > 50:
+            SharedData.shared_data["distance_history"].pop(0)
+        if len(SharedData.shared_data["angle_history"]) > 50:
+            SharedData.shared_data["angle_history"].pop(0)
 
-        if current_command:
-            if current_command == translate_command:
-                translate_command.pid_controllers = {
-                    "linear": shared_data["linear_pid"],
-                    "angle": shared_data["angle_pid"]
-                }
-            elif current_command == align_command:
-                align_command.pid_controllers = {
-                    "linear": shared_data["linear_pid"],
-                    "angle": shared_data["angle_pid"]
-                }
+        if current_command.isFinished():
+            if SharedData.shared_data["command"] == "translate":
+                if not isinstance(current_command, TranslateToBallCommand):
+                    current_command = TranslateToBallCommand(got, {"linear": SharedData.shared_data["linear_pid"], "angle": SharedData.shared_data["angle_pid"]})
+                    current_command.initialize()
+            elif SharedData.shared_data["command"] == "align":
+                if not isinstance(current_command, AlignWithBallCommand):
+                    current_command = AlignWithBallCommand(got, {"linear": SharedData.shared_data["linear_pid"], "angle": SharedData.shared_data["angle_pid"]})
+                    current_command.initialize()
+        else:
             current_command.execute()
+            
 
         time.sleep(0.1)  # Control loop interval
 

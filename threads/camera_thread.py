@@ -1,18 +1,21 @@
 import cv2
 import numpy as np
 import utils
-from shared_data import shared_data
+from shared_data import SharedData
 from logger import logger  # Import the global logger
-import threading
 import time
 import base64
+import json
+import asyncio
 
-def camera_thread(got, cam, model, render_frame_queue, condition, ws_server):
+import utils.drawing
+
+def camera_thread(got, cam, model, render_frame_queue, condition):
     prev_time = time.time()
     
     while True:
-        with shared_data["lock"]:
-            if shared_data["exit"]:
+        with SharedData.shared_data["lock"]:
+            if SharedData.shared_data["exit"]:
                 break
 
         frame = cam.read_camera_data()
@@ -32,13 +35,13 @@ def camera_thread(got, cam, model, render_frame_queue, condition, ws_server):
         results = model.predict(graphic)
         detections = results[0]
 
-        with shared_data["lock"]:
-            shared_data["frame"] = graphic.copy()
-            shared_data["detections"] = detections
-            shared_data["frame_width"] = frame_width
-            shared_data["frame_height"] = frame_height
+        with SharedData.shared_data["lock"]:
+            SharedData.shared_data["frame"] = graphic.copy()
+            SharedData.shared_data["detections"] = detections
+            SharedData.shared_data["frame_width"] = frame_width
+            SharedData.shared_data["frame_height"] = frame_height
 
-        graphic = utils.draw_max_score_detection(graphic, detections)
+        graphic = utils.drawing.draw_max_score_detection(graphic, detections)
 
         curr_time = time.time()
         fps = 1.0 / (curr_time - prev_time)
@@ -51,20 +54,14 @@ def camera_thread(got, cam, model, render_frame_queue, condition, ws_server):
         # Display FPS on the frame
         cv2.putText(graphic, f'FPS: {int(fps)}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2, cv2.LINE_AA)
 
-        # Encode the frame to JPEG
-        _, jpeg = cv2.imencode('.jpg', graphic)
-        jpeg_bytes = jpeg.tobytes()
-        jpeg_base64 = base64.b64encode(jpeg_bytes).decode('utf-8')
-
         # Put the processed frame into the render queue
         render_frame_queue.put(graphic)
-
-        # Send the frame to the WebSocket server
-        ws_server.send_video_frame(jpeg_base64)
 
         # Notify the main thread
         with condition:
             condition.notify_all()
+
+        logger.info('Frame processed and added to queue')
 
     cam.close_camera()
     logger.info('Camera thread exited')

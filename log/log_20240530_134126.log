@@ -1,0 +1,642 @@
+2024-05-30 13:41:26,759 - logger.py - INFO - Logger initialized
+2024-05-30 13:41:28,687 - main.py - INFO - Main function started
+2024-05-30 13:41:29,898 - ugotcamera.py - INFO - camera opened
+2024-05-30 13:41:29,943 - control_thread.py - INFO - Control thread started
+2024-05-30 13:41:29,954 - ws_server.py - INFO - WebSocket server started
+2024-05-30 13:41:29,955 - server.py - INFO - server listening on 127.0.0.1:8765
+2024-05-30 13:41:29,956 - server.py - INFO - server listening on [::1]:8765
+2024-05-30 13:41:31,268 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:31,268 - control_thread.py - INFO - Detected distance: 20.441543506006767, angle: 4.3625785935139145
+2024-05-30 13:41:31,667 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:31,780 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:31,780 - control_thread.py - INFO - Detected distance: 49.45794899882499, angle: -29.771455667328866
+2024-05-30 13:41:31,874 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:31,965 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:31,965 - control_thread.py - INFO - Detected distance: 51.995416537931135, angle: -26.609078123288228
+2024-05-30 13:41:32,063 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:32,168 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:32,168 - control_thread.py - INFO - Detected distance: 53.10969651868665, angle: -26.493929340285494
+2024-05-30 13:41:32,269 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:32,374 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:32,374 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:32,481 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:32,494 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:32,563 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:32,656 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:32,669 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:32,733 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:32,807 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:32,820 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:32,886 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:32,969 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:32,982 - control_thread.py - INFO - Detected distance: 51.45360773332515, angle: -26.609078123288228
+2024-05-30 13:41:33,038 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,117 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,130 - control_thread.py - INFO - Detected distance: 51.995416537931135, angle: -26.609078123288228
+2024-05-30 13:41:33,189 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,262 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,274 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:33,335 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,412 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,425 - control_thread.py - INFO - Detected distance: 52.54692750956508, angle: -26.55150502560013
+2024-05-30 13:41:33,490 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,577 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,590 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:33,657 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,730 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,743 - control_thread.py - INFO - Detected distance: 52.54568672832342, angle: -26.493929340285494
+2024-05-30 13:41:33,806 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,882 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:33,895 - control_thread.py - INFO - Detected distance: 52.54568672832342, angle: -26.493929340285494
+2024-05-30 13:41:33,958 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:34,038 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:34,050 - control_thread.py - INFO - Detected distance: 53.10969651868665, angle: -26.493929340285494
+2024-05-30 13:41:34,226 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:34,239 - control_thread.py - INFO - Detected distance: 52.54568672832342, angle: -26.493929340285494
+2024-05-30 13:41:34,297 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:34,386 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:34,398 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:34,461 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:34,538 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:34,551 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:34,615 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:34,701 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:34,714 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:34,779 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:34,860 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:34,874 - control_thread.py - INFO - Detected distance: 52.54692750956508, angle: -26.55150502560013
+2024-05-30 13:41:34,947 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,026 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,040 - control_thread.py - INFO - Detected distance: 52.54692750956508, angle: -26.55150502560013
+2024-05-30 13:41:35,108 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,189 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,203 - control_thread.py - INFO - Detected distance: 53.10969651868665, angle: -26.493929340285494
+2024-05-30 13:41:35,273 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,360 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,373 - control_thread.py - INFO - Detected distance: 52.54692750956508, angle: -26.55150502560013
+2024-05-30 13:41:35,458 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,545 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,557 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:35,629 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,711 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,724 - control_thread.py - INFO - Detected distance: 51.45360773332515, angle: -26.609078123288228
+2024-05-30 13:41:35,806 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,889 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:35,903 - control_thread.py - INFO - Detected distance: 52.54568672832342, angle: -26.493929340285494
+2024-05-30 13:41:36,043 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:36,057 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:36,154 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:36,285 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:36,285 - control_thread.py - INFO - Detected distance: 51.45360773332515, angle: -26.609078123288228
+2024-05-30 13:41:36,508 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:36,522 - control_thread.py - INFO - Detected distance: 53.10969651868665, angle: -26.493929340285494
+2024-05-30 13:41:36,622 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:36,713 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:36,713 - control_thread.py - INFO - Detected distance: 52.54692750956508, angle: -26.55150502560013
+2024-05-30 13:41:36,801 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:36,894 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:36,894 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:37,101 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:37,114 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:37,311 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:37,325 - control_thread.py - INFO - Detected distance: 52.54692750956508, angle: -26.55150502560013
+2024-05-30 13:41:37,431 - server.py - INFO - connection open
+2024-05-30 13:41:37,431 - ws_server.py - INFO - New WebSocket connection established
+2024-05-30 13:41:37,548 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:37,561 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:37,713 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:37,728 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:37,839 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:37,852 - control_thread.py - INFO - Detected distance: 52.54692750956508, angle: -26.55150502560013
+2024-05-30 13:41:37,953 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:38,079 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:38,079 - control_thread.py - INFO - Detected distance: 53.10969651868665, angle: -26.493929340285494
+2024-05-30 13:41:38,215 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:38,228 - control_thread.py - INFO - Detected distance: 52.54692750956508, angle: -26.55150502560013
+2024-05-30 13:41:38,324 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:38,434 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:38,448 - control_thread.py - INFO - Detected distance: 53.10969651868665, angle: -26.493929340285494
+2024-05-30 13:41:38,525 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:38,616 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:38,629 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:38,702 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:38,795 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:38,808 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:38,881 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:38,962 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:38,976 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:39,051 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:39,129 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:39,142 - control_thread.py - INFO - Detected distance: 52.54568672832342, angle: -26.493929340285494
+2024-05-30 13:41:39,228 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:39,312 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:39,326 - control_thread.py - INFO - Detected distance: 53.10969651868665, angle: -26.493929340285494
+2024-05-30 13:41:39,434 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:39,448 - control_thread.py - INFO - Detected distance: 52.54692750956508, angle: -26.55150502560013
+2024-05-30 13:41:39,542 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:39,580 - ws_server.py - INFO - Received message: {"command":"translate"}
+2024-05-30 13:41:39,580 - ws_server.py - INFO - Received command: translate
+2024-05-30 13:41:39,580 - ws_server.py - INFO - Sent updated data back to client
+2024-05-30 13:41:39,651 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:39,651 - control_thread.py - INFO - Detected distance: 51.994185507196704, angle: -26.55150502560013
+2024-05-30 13:41:39,849 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:39,863 - control_thread.py - INFO - Detected distance: 52.54568672832342, angle: -26.493929340285494
+2024-05-30 13:41:39,945 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,041 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,054 - control_thread.py - INFO - Detected distance: 52.54568672832342, angle: -26.493929340285494
+2024-05-30 13:41:40,137 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,217 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,231 - control_thread.py - INFO - Detected distance: 46.085161289034126, angle: -24.015804076619286
+2024-05-30 13:41:40,297 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,397 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,410 - control_thread.py - INFO - Detected distance: 39.66657912148382, angle: -24.938427546315452
+2024-05-30 13:41:40,517 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,603 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,615 - control_thread.py - INFO - Detected distance: 31.46155430837183, angle: -25.62998723314099
+2024-05-30 13:41:40,679 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,755 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,768 - control_thread.py - INFO - Detected distance: 26.679297541233804, angle: -25.341880586940743
+2024-05-30 13:41:40,842 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,921 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:40,934 - control_thread.py - INFO - Detected distance: 23.4398207869173, angle: -24.996071044727987
+2024-05-30 13:41:41,006 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,084 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,098 - control_thread.py - INFO - Detected distance: 21.364897072135708, angle: -24.996071044727987
+2024-05-30 13:41:41,160 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,238 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,252 - control_thread.py - INFO - Detected distance: 18.306156114000384, angle: -24.880781612533394
+2024-05-30 13:41:41,320 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,394 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,408 - control_thread.py - INFO - Detected distance: 15.380596064802798, angle: -24.823133248840364
+2024-05-30 13:41:41,481 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,558 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,571 - control_thread.py - INFO - Detected distance: 12.509757196006026, angle: -25.572370883654052
+2024-05-30 13:41:41,647 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,733 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,746 - control_thread.py - INFO - Detected distance: 11.008331846350181, angle: -23.90043342147701
+2024-05-30 13:41:41,809 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,890 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:41,903 - control_thread.py - INFO - Detected distance: 10.074951387101837, angle: -23.785053418726495
+2024-05-30 13:41:41,977 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:42,063 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:42,076 - control_thread.py - INFO - Detected distance: 8.334903199227668, angle: -22.803952191141676
+2024-05-30 13:41:42,153 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:42,261 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:42,434 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:42,448 - control_thread.py - INFO - Detected distance: 6.495460544239264, angle: -19.972557566922397
+2024-05-30 13:41:42,524 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:42,611 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:42,625 - control_thread.py - INFO - Detected distance: 11.849933821450854, angle: -14.12229863021419
+2024-05-30 13:41:42,697 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:42,780 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:42,793 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:42,854 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:42,937 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:42,951 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:43,017 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,102 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,115 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:43,186 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,263 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,276 - control_thread.py - INFO - Detected distance: 6.654727770003792, angle: -20.261702102327188
+2024-05-30 13:41:43,345 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,422 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,435 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:43,497 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,582 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,596 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:43,669 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,742 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,756 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:43,824 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,899 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:43,912 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:43,980 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:44,064 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:44,077 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:44,143 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:44,251 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:44,264 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:44,334 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:44,419 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:44,432 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:44,664 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:44,678 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:44,744 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:44,825 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:44,838 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:44,912 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:44,994 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,007 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:45,077 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,158 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,172 - control_thread.py - INFO - Detected distance: 6.622437060233486, angle: -20.20387715084239
+2024-05-30 13:41:45,245 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,323 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,336 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:45,400 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,495 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,508 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:45,579 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,656 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,669 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:45,733 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,810 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,823 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:45,889 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,966 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:45,979 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:46,052 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:46,132 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:46,145 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:46,211 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:46,323 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:46,336 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:46,397 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:46,484 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:46,498 - control_thread.py - INFO - Detected distance: 6.622437060233486, angle: -20.20387715084239
+2024-05-30 13:41:46,600 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:46,708 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:46,720 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:46,796 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:46,880 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:46,893 - control_thread.py - INFO - Detected distance: 6.622437060233486, angle: -20.20387715084239
+2024-05-30 13:41:46,982 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:47,027 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 13:41:47,028 - ws_server.py - INFO - Received command: align
+2024-05-30 13:41:47,028 - ws_server.py - INFO - Sent updated data back to client
+2024-05-30 13:41:47,220 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:47,234 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:47,403 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:47,416 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:47,503 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:47,588 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:47,601 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:47,673 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:47,765 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:47,779 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:47,876 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:47,982 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:47,995 - control_thread.py - INFO - Detected distance: 6.654727770003792, angle: -20.261702102327188
+2024-05-30 13:41:48,104 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:48,118 - control_thread.py - INFO - Detected distance: 6.622437060233486, angle: -20.20387715084239
+2024-05-30 13:41:48,185 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:48,274 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:48,287 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:48,352 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:48,429 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:48,442 - control_thread.py - INFO - Detected distance: 6.654727770003792, angle: -20.261702102327188
+2024-05-30 13:41:48,518 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:48,594 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:48,607 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:48,664 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:48,735 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:48,748 - control_thread.py - INFO - Detected distance: 6.622437060233486, angle: -20.20387715084239
+2024-05-30 13:41:48,807 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:48,884 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:48,898 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:48,968 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:49,056 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:49,069 - control_thread.py - INFO - Detected distance: 6.622437060233486, angle: -20.20387715084239
+2024-05-30 13:41:49,135 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:49,206 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:49,219 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:49,301 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:49,371 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:49,384 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:49,454 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:49,537 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:49,550 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:49,614 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:49,707 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:49,721 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:49,847 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:49,861 - control_thread.py - INFO - Detected distance: 6.654727770003792, angle: -20.261702102327188
+2024-05-30 13:41:49,935 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,029 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,042 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:50,112 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,191 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,205 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:50,281 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,396 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 13:41:50,396 - ws_server.py - INFO - Received command: align
+2024-05-30 13:41:50,396 - ws_server.py - INFO - Sent updated data back to client
+2024-05-30 13:41:50,429 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,443 - control_thread.py - INFO - Detected distance: 6.654727770003792, angle: -20.261702102327188
+2024-05-30 13:41:50,523 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,611 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,624 - control_thread.py - INFO - Detected distance: 6.622437060233486, angle: -20.20387715084239
+2024-05-30 13:41:50,699 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,789 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,803 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:50,876 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,970 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:50,983 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:51,052 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:51,167 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:51,180 - control_thread.py - INFO - Detected distance: 6.622437060233486, angle: -20.20387715084239
+2024-05-30 13:41:51,255 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:51,337 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:51,350 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:51,419 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:51,496 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:51,509 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:51,569 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:51,593 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 13:41:51,593 - ws_server.py - INFO - Received command: align
+2024-05-30 13:41:51,594 - ws_server.py - INFO - Sent updated data back to client
+2024-05-30 13:41:51,657 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:51,670 - control_thread.py - INFO - Detected distance: 11.849585062672334, angle: -14.006289206663277
+2024-05-30 13:41:51,737 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:51,823 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:51,837 - control_thread.py - INFO - Detected distance: 6.622437060233486, angle: -20.20387715084239
+2024-05-30 13:41:51,908 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,000 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,013 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:52,102 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,210 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,223 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:52,310 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,401 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,414 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:52,477 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 13:41:52,478 - ws_server.py - INFO - Received command: align
+2024-05-30 13:41:52,478 - ws_server.py - INFO - Sent updated data back to client
+2024-05-30 13:41:52,510 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,605 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,605 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:52,700 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,803 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,816 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:52,905 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,985 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:52,999 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:53,074 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:53,258 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:53,271 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:53,356 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:53,460 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:53,473 - control_thread.py - INFO - Detected distance: 6.622437060233486, angle: -20.20387715084239
+2024-05-30 13:41:53,542 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:53,628 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:53,642 - control_thread.py - INFO - Detected distance: 12.087075095092393, angle: -13.948282418892706
+2024-05-30 13:41:53,714 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:53,796 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:53,810 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:53,874 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:53,957 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:53,970 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:54,036 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:54,113 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:54,126 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:54,305 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:54,319 - control_thread.py - INFO - Detected distance: 11.849585062672334, angle: -14.006289206663277
+2024-05-30 13:41:54,360 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 13:41:54,360 - ws_server.py - INFO - Received command: align
+2024-05-30 13:41:54,360 - ws_server.py - INFO - Sent updated data back to client
+2024-05-30 13:41:54,399 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:54,494 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:54,507 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:54,591 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:54,679 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:54,693 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:54,770 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:54,867 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:54,880 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:54,966 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:55,032 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 13:41:55,033 - ws_server.py - INFO - Received command: align
+2024-05-30 13:41:55,034 - ws_server.py - INFO - Sent updated data back to client
+2024-05-30 13:41:55,073 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:55,086 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:55,169 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:55,258 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:55,271 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:55,350 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:55,451 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:55,465 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:55,547 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:55,576 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 13:41:55,576 - ws_server.py - INFO - Received command: align
+2024-05-30 13:41:55,577 - ws_server.py - INFO - Sent updated data back to client
+2024-05-30 13:41:55,651 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:55,664 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:55,733 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:55,836 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:55,850 - control_thread.py - INFO - Detected distance: 11.849585062672334, angle: -14.006289206663277
+2024-05-30 13:41:55,917 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:56,005 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:56,018 - control_thread.py - INFO - Detected distance: 11.849933821450854, angle: -14.12229863021419
+2024-05-30 13:41:56,107 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:56,194 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 13:41:56,194 - ws_server.py - INFO - Received command: align
+2024-05-30 13:41:56,194 - ws_server.py - INFO - Sent updated data back to client
+2024-05-30 13:41:56,213 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:56,226 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:56,301 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:56,384 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:56,397 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:56,487 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:56,595 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:56,609 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:56,694 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:56,776 - ws_server.py - INFO - Received message: {"command":"translate"}
+2024-05-30 13:41:56,776 - ws_server.py - INFO - Received command: translate
+2024-05-30 13:41:56,777 - ws_server.py - INFO - Sent updated data back to client
+2024-05-30 13:41:56,802 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:56,815 - control_thread.py - INFO - Detected distance: 11.928130221580531, angle: -14.064294612326643
+2024-05-30 13:41:56,903 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:57,004 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:57,017 - control_thread.py - INFO - Detected distance: 12.007172714455521, angle: -14.006289206663277
+2024-05-30 13:41:57,134 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:57,232 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:57,246 - control_thread.py - INFO - Detected distance: 6.558515999456182, angle: -20.08822130334914
+2024-05-30 13:41:57,395 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:57,495 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:57,584 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:57,597 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:57,669 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:57,769 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:57,782 - control_thread.py - INFO - Detected distance: 0, angle: 0
+2024-05-30 13:41:57,877 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:57,964 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:57,977 - control_thread.py - INFO - Detected distance: 8.853009739037391, angle: -23.438857763662405
+2024-05-30 13:41:58,042 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,117 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,130 - control_thread.py - INFO - Detected distance: 10.576598868646235, angle: -24.47719234440925
+2024-05-30 13:41:58,197 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,270 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,283 - control_thread.py - INFO - Detected distance: 10.227160022257879, angle: -23.90043342147701
+2024-05-30 13:41:58,345 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,433 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,446 - control_thread.py - INFO - Detected distance: 10.257667950409637, angle: -23.842744585811232
+2024-05-30 13:41:58,513 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,591 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,604 - control_thread.py - INFO - Detected distance: 8.659104512160521, angle: -23.208014727155582
+2024-05-30 13:41:58,676 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,749 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,762 - control_thread.py - INFO - Detected distance: 8.659104512160521, angle: -23.208014727155582
+2024-05-30 13:41:58,825 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,906 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:58,919 - control_thread.py - INFO - Detected distance: 8.659104512160521, angle: -23.208014727155582
+2024-05-30 13:41:58,982 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:59,058 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:59,071 - control_thread.py - INFO - Detected distance: 8.659104512160521, angle: -23.208014727155582
+2024-05-30 13:41:59,148 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:59,225 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:59,239 - control_thread.py - INFO - Detected distance: 8.659104512160521, angle: -23.208014727155582
+2024-05-30 13:41:59,317 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:59,403 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:59,416 - control_thread.py - INFO - Detected distance: 8.61163532119776, angle: -23.150298276753787
+2024-05-30 13:41:59,460 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-05-30 13:41:59,460 - ws_server.py - INFO - Received command: align
+2024-05-30 13:41:59,460 - ws_server.py - INFO - Sent updated data back to client
+2024-05-30 13:41:59,500 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:59,590 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:59,604 - control_thread.py - INFO - Detected distance: 8.659104512160521, angle: -23.208014727155582
+2024-05-30 13:41:59,670 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:59,753 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:41:59,767 - control_thread.py - INFO - Detected distance: 8.659104512160521, angle: -23.208014727155582
+2024-05-30 13:42:00,030 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,119 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,132 - control_thread.py - INFO - Detected distance: 8.61163532119776, angle: -23.150298276753787
+2024-05-30 13:42:00,205 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,284 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,298 - control_thread.py - INFO - Detected distance: 6.870303728420616, angle: -13.716241560139112
+2024-05-30 13:42:00,374 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,464 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,476 - control_thread.py - INFO - Detected distance: 6.9344303876312, angle: -11.510824482274362
+2024-05-30 13:42:00,564 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,647 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,660 - control_thread.py - INFO - Detected distance: 6.968530850770646, angle: -11.336638557805612
+2024-05-30 13:42:00,726 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,807 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,820 - control_thread.py - INFO - Detected distance: 7.036078580644664, angle: -10.05897690689993
+2024-05-30 13:42:00,877 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,950 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:00,963 - control_thread.py - INFO - Detected distance: 6.725862242166952, angle: -5.234880264140132
+2024-05-30 13:42:01,018 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,091 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,104 - control_thread.py - INFO - Detected distance: 6.791023621590725, angle: -3.722827777498648
+2024-05-30 13:42:01,176 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,256 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,270 - control_thread.py - INFO - Detected distance: 6.790242319511242, angle: -1.6288262892864394
+2024-05-30 13:42:01,336 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,422 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,435 - control_thread.py - INFO - Detected distance: 16.591699009670194, angle: -10.05897690689993
+2024-05-30 13:42:01,506 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,591 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,604 - control_thread.py - INFO - Detected distance: 16.59137002775882, angle: -9.94280105592035
+2024-05-30 13:42:01,663 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,746 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,758 - control_thread.py - INFO - Detected distance: 6.925859794486979, angle: 3.37385347837899
+2024-05-30 13:42:01,818 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,892 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:01,905 - control_thread.py - INFO - Detected distance: 6.927447267311612, angle: 5.816351073088168
+2024-05-30 13:42:01,964 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,034 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,047 - control_thread.py - INFO - Detected distance: 6.563429022007684, angle: 3.3156898910762784
+2024-05-30 13:42:02,111 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,194 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,207 - control_thread.py - INFO - Detected distance: 7.02957494325735, angle: 3.1993617362301094
+2024-05-30 13:42:02,264 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,332 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,346 - control_thread.py - INFO - Detected distance: 6.994702794927075, angle: 3.141197180211812
+2024-05-30 13:42:02,404 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,471 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,484 - control_thread.py - INFO - Detected distance: 7.029522710963555, angle: 3.0830323128137946
+2024-05-30 13:42:02,545 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,612 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,626 - control_thread.py - INFO - Detected distance: 7.06436548658082, angle: 2.44319986873172
+2024-05-30 13:42:02,686 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,757 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,770 - control_thread.py - INFO - Detected distance: 7.0642519056202016, angle: 2.0941875110096833
+2024-05-30 13:42:02,829 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,899 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:02,911 - control_thread.py - INFO - Detected distance: 6.994189070513756, angle: 1.6288262892864394
+2024-05-30 13:42:02,979 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,098 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,110 - control_thread.py - INFO - Detected distance: 6.994078225850854, angle: 1.0471105740619537
+2024-05-30 13:42:03,170 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,240 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,253 - control_thread.py - INFO - Detected distance: 7.099296631113116, angle: 0.40721151822364315
+2024-05-30 13:42:03,316 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,395 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,466 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,479 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:03,546 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,624 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,637 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:03,691 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,758 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,772 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:03,834 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,907 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:03,919 - control_thread.py - INFO - Detected distance: 6.890948027633714, angle: -0.05817312017554997
+2024-05-30 13:42:03,978 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:04,045 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:04,058 - control_thread.py - INFO - Detected distance: 6.959405114857243, angle: 0.05817312017554997
+2024-05-30 13:42:04,120 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:04,193 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:04,206 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:04,333 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:04,347 - control_thread.py - INFO - Detected distance: 6.890948027633714, angle: -0.05817312017554997
+2024-05-30 13:42:04,417 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:04,564 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:04,577 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:04,646 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:04,738 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:04,751 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:04,827 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:04,905 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:04,918 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:04,994 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,076 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,090 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:05,157 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,253 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,266 - control_thread.py - INFO - Detected distance: 6.890948027633714, angle: -0.05817312017554997
+2024-05-30 13:42:05,332 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,417 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,431 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:05,501 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,617 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,631 - control_thread.py - INFO - Detected distance: 6.959405114857243, angle: 0.05817312017554997
+2024-05-30 13:42:05,700 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,782 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,798 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:05,867 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,946 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:05,960 - control_thread.py - INFO - Detected distance: 6.890948027633714, angle: -0.05817312017554997
+2024-05-30 13:42:06,025 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:06,103 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:06,117 - control_thread.py - INFO - Detected distance: 6.959405114857243, angle: 0.05817312017554997
+2024-05-30 13:42:06,183 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:06,256 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:06,269 - control_thread.py - INFO - Detected distance: 6.890948027633714, angle: -0.05817312017554997
+2024-05-30 13:42:06,335 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:06,408 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:06,421 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:06,488 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:06,575 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:06,588 - control_thread.py - INFO - Detected distance: 6.925054954170295, angle: 0.0
+2024-05-30 13:42:06,654 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:06,740 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:06,751 - control_thread.py - INFO - Control thread exited
+2024-05-30 13:42:06,758 - main.py - INFO - Main thread exited
+2024-05-30 13:42:06,820 - camera_thread.py - INFO - Frame processed and added to queue
+2024-05-30 13:42:06,820 - camera_thread.py - INFO - Camera thread exited
+2024-05-30 13:42:07,004 - ws_server.py - INFO - Shutting down server...
+2024-05-30 13:42:07,005 - server.py - INFO - server closing
+2024-05-30 13:42:07,438 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-4' coro=<WebSocketServerProtocol.handler() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/server.py:236> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-05-30 13:42:07,439 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<WebSocketCommonProtocol.transfer_data() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:963> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /opt/anaconda3/lib/python3.11/asyncio/tasks.py:519]>
+2024-05-30 13:42:07,439 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-6' coro=<WebSocketCommonProtocol.keepalive_ping() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:1254> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-05-30 13:42:07,439 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-7' coro=<WebSocketCommonProtocol.close_connection() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:1301> wait_for=<Task pending name='Task-5' coro=<WebSocketCommonProtocol.transfer_data() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:963> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /opt/anaconda3/lib/python3.11/asyncio/tasks.py:519]>>
+2024-05-30 13:42:07,439 - server.py - INFO - connection closed
+2024-05-30 13:42:07,441 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-8' coro=<WebSocketServer._close() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/server.py:766>>

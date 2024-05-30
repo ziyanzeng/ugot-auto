@@ -4,9 +4,6 @@ import utils
 from shared_data import SharedData
 from logger import logger  # Import the global logger
 import time
-import base64
-import json
-import asyncio
 
 import utils.drawing
 

@@ -7,33 +7,33 @@ from shared_data import SharedData
 from logger import logger  # Import the global logger
 
 # Full automatic control thread
-def control_thread(got, condition, control_signal):
-    logger.info("Control thread started")
+# def control_thread(got, condition, control_signal):
+#     logger.info("Control thread started")
 
-    command_planner = CommandPlanner(got)
+#     command_planner = CommandPlanner(got)
 
-    while True:
-        with condition:
-            condition.wait()  # Wait for notification from the camera thread
+#     while True:
+#         with condition:
+#             condition.wait()  # Wait for notification from the camera thread
             
-        with SharedData.shared_data["lock"]:
-            if SharedData.shared_data["exit"]:
-                break
+#         with SharedData.shared_data["lock"]:
+#             if SharedData.shared_data["exit"]:
+#                 break
 
-        command_name = command_planner.update()
+#         command_name = command_planner.update()
         
-        if (command_name == "kick_command"):
-            with control_signal:
-                control_signal.notify_all()
-        # logger.info('Command planner updated')
+#         if (command_name == "KickCommand"):
+#             with control_signal:
+#                 control_signal.notify_all()
+#         # logger.info('Command planner updated')
 
-        time.sleep(0.1)  # Control loop interval
+#         time.sleep(0.1)  # Control loop interval
 
-    logger.info('Control thread exited')
+#     logger.info('Control thread exited')
 
 
 # PID Tunning control thread
-def control_thread(got, condition):
+def control_thread(got, condition, control_signal):
     logger.info("Control thread started")
 
     current_command = RestCommand(got)
@@ -63,6 +63,7 @@ def control_thread(got, condition):
         if len(SharedData.shared_data["angle_history"]) > 50:
             SharedData.shared_data["angle_history"].pop(0)
 
+        logger.info(SharedData.shared_data["command"])
         if current_command.isFinished():
             if SharedData.shared_data["command"] == "translate":
                 if not isinstance(current_command, TranslateToBallCommand):
@@ -72,6 +73,11 @@ def control_thread(got, condition):
                 if not isinstance(current_command, AlignWithBallCommand):
                     current_command = AlignWithBallCommand(got)
                     current_command.initialize()
+            elif SharedData.shared_data["command"] == "kick":
+                current_command = RestCommand(got)
+                SharedData.shared_data["command"] = "rest"
+                with control_signal:
+                    control_signal.notify_all()
         else:
             current_command.execute()
             

@@ -7,6 +7,7 @@ from camera import UGOTCamera
 from model import YOLOModel
 from threads.camera_thread import camera_thread
 from threads.control_thread import control_thread
+from threads.arm_thread import arm_thread
 from shared_data import SharedData
 import config
 from ugot import ugot
@@ -28,8 +29,9 @@ def main():
     # Render queue configuration
     render_frame_queue = queue.Queue(maxsize=1)  # Only allow one frame in the queue
 
-    # Initialize condition variable
+    # Initialize condition variables
     condition = Condition()
+    control_signal = Condition()
 
     # Create shutdown event
     shutdown_event = Event()
@@ -52,8 +54,12 @@ def main():
     camera_thread_instance.start()
 
     # Invoke control thread
-    control_thread_instance = Thread(target=control_thread, args=(got, condition))
+    control_thread_instance = Thread(target=control_thread, args=(got, condition, control_signal))
     control_thread_instance.start()
+    
+    # Invoke arm thread
+    arm_thread_instance = Thread(target=arm_thread, args=(got, control_signal))
+    arm_thread_instance.start()
 
     # Show rendered frames in main thread
     while not shutdown_event.is_set():
@@ -83,6 +89,7 @@ def main():
     # End threads
     camera_thread_instance.join()
     control_thread_instance.join()
+    arm_thread_instance.join()
     ws_thread.join()
     
     got.stop_chassis()

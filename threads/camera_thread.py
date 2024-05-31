@@ -5,7 +5,7 @@ from shared_data import SharedData
 from logger import logger  # Import the global logger
 import time
 
-import utils.drawing
+import utils.draw_results
 
 def camera_thread(got, cam, model, render_frame_queue, condition):
     prev_time = time.time()
@@ -38,7 +38,7 @@ def camera_thread(got, cam, model, render_frame_queue, condition):
             SharedData.shared_data["frame_width"] = frame_width
             SharedData.shared_data["frame_height"] = frame_height
 
-        graphic = utils.drawing.draw_max_score_detection(graphic, detections)
+        graphic = utils.draw_results.draw_max_score_detection(graphic, detections)
 
         curr_time = time.time()
         fps = 1.0 / (curr_time - prev_time)

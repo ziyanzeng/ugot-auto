@@ -6,7 +6,7 @@ from shared_data import SharedData
 from logger import logger
 
 class CommandPlanner:
-    def __init__(self, got):
+    def __init__(self, got, control_signal):
         self.got = got
         self.current_command = LocateBallCommand(self.got)
         logger.info('CommandPlanner initiated')

@@ -45,6 +45,7 @@
                 <button id="start-align">Start Align</button>
                 <button id="start-chart">Start Chart</button>
                 <button id="pause-chart">Pause Chart</button>
+                <button id="kick-run">Kick Run</button>
             </div>
         </div>
         <div class="right-panel">
@@ -146,6 +147,10 @@
         document.getElementById('pause-chart').onclick = () => {
             ws.send(JSON.stringify({ chart_command: 'pause_chart' }));
         };
+
+        document.getElementById('kick-run').onclick = () => {
+            ws.send(JSON.stringify({ command: 'kick'}))
+        }
 
         const ctx = document.getElementById('chart').getContext('2d');
         const chart = new Chart(ctx, {

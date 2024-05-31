@@ -1,5 +1,5 @@
 # system params
-UGOT_IP = "10.10.67.238"
+UGOT_IP = "10.10.67.15"
 MODEL_PATH = './model/ball.pt'
 CLASS_LABELS = {0: 'pingpong', 1: 'tennis'}
 

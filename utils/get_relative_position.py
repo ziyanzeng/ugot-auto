@@ -4,16 +4,18 @@ import config
 import numpy as np
 from shared_data import SharedData
 
-def get_single_relative_pos(detections):
+def get_single_relative_pos(detections, class_name):
     boxes, scores, classes = parse_detection_results(detections)
     if len(scores) == 0:
-        return 0, 0
-    max_index = np.argmax(scores)
+        return 0, 0, None, 0, 0
+    class_indices = [i for i, c in enumerate(classes) if config.CLASS_LABELS[int(c)] == class_name]
+    if not class_indices:
+        return 0, 0, None, 0, 0
+    max_index = max(class_indices, key=lambda i: scores[i])
     box = boxes[max_index]
     x1, y1, x2, y2 = map(int, box)
-    distance, angle = calculate_relative_position_params(config.BALL_DIAMETER, config.CAM_FOCAL, config.SENSOR_WIDTH, config.SENSOR_HEIGHT, SharedData.shared_data["frame_width"] / 2, SharedData.shared_data["frame_height"] / 2, x1, y1, x2, y2)
-    SharedData.shared_data["distance"], SharedData.shared_data["angle"] = distance, angle
-    return distance, angle
+    distance, angle = calculate_relative_position_params(config.BALL_DIAMETER if class_name == "ping-pong" else config.GOAL_WIDTH, config.CAM_FOCAL, config.SENSOR_WIDTH, config.SENSOR_HEIGHT, SharedData.shared_data["frame_width"] / 2, SharedData.shared_data["frame_height"] / 2, x1, y1, x2, y2)
+    return distance, angle, box, scores[max_index], classes[max_index]
 
 def calculate_relative_position_params(actual_width, focal_length, sensor_width, sensor_height, image_center_x, image_center_y, x1, y1, x2, y2):
     pixel_width = abs(x1 - x2)

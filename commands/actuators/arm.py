@@ -32,4 +32,6 @@ class Arm:
         # 机械臂复位
         self.got.mechanical_arms_restory()
         time.sleep(1)
+        
+        return True
     

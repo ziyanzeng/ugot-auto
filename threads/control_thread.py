@@ -3,39 +3,16 @@ from commands.CommandPlanner import CommandPlanner
 from commands.TranslateToBallCommand import TranslateToBallCommand
 from commands.AlignWithBallCommand import AlignWithBallCommand
 from commands.RestCommand import RestCommand
-from commands.actuators.arm import Arm
+from commands.KickCommand import KickCommand
 from shared_data import SharedData
 from logger import logger  # Import the global logger
-
-# Full automatic control thread
-def control_thread_auto(got, condition):
-    logger.info("Control thread started")
-
-    command_planner = CommandPlanner(got)
-
-    while True:
-        with condition:
-            condition.wait()  # Wait for notification from the camera thread
-            
-        with SharedData.shared_data["lock"]:
-            if SharedData.shared_data["exit"]:
-                break
-
-        command = command_planner.update()
-        # logger.info(command)
-
-        time.sleep(0.1)  # Control loop interval
-
-    logger.info('Control thread exited')
-
 
 # PID Tunning control thread
 def control_thread(got, condition):
     logger.info("Control thread started")
 
     current_command = RestCommand(got)
-    
-    arm = Arm(got)
+    command_planner = CommandPlanner(got)
 
     while True:
         with condition:
@@ -73,9 +50,13 @@ def control_thread(got, condition):
                     current_command = AlignWithBallCommand(got)
                     current_command.initialize()
             elif SharedData.shared_data["command"] == "kick":
+                current_command = KickCommand(got)
+                current_command.initialize()
+                SharedData.shared_data["command"] = "rest"
+            else:
                 current_command = RestCommand(got)
                 SharedData.shared_data["command"] = "rest"
-                arm.kick_motion()
+                
         else:
             current_command.execute()
             

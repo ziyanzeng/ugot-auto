@@ -15,7 +15,7 @@ class LocateBallCommand(Command):
     def execute(self):
         self.cummulate += 1
         # end only when target is found
-        if SharedData.shared_data["detections"] is not None and (SharedData.shared_data["angle"] != 0 or SharedData.shared_data["distance"] != 0) or self.cummulate > 1000:
+        if SharedData.shared_data["angle"] != 0 and SharedData.shared_data["distance"] != 0 or self.cummulate > 1000:
             self.end()
         else:
             turn_speed = 75

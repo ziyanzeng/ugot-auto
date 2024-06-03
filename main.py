@@ -31,7 +31,6 @@ def main():
 
     # Initialize condition variables
     condition = Condition()
-    control_signal = Condition()
 
     # Create shutdown event
     shutdown_event = Event()
@@ -54,11 +53,11 @@ def main():
     camera_thread_instance.start()
 
     # Invoke control thread
-    control_thread_instance = Thread(target=control_thread, args=(got, condition, control_signal))
+    control_thread_instance = Thread(target=control_thread, args=(got, condition))
     control_thread_instance.start()
     
     # Invoke arm thread
-    arm_thread_instance = Thread(target=arm_thread, args=(got, control_signal))
+    arm_thread_instance = Thread(target=arm_thread, args=(got))
     arm_thread_instance.start()
 
     # Show rendered frames in main thread

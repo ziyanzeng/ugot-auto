@@ -3,40 +3,39 @@ from commands.CommandPlanner import CommandPlanner
 from commands.TranslateToBallCommand import TranslateToBallCommand
 from commands.AlignWithBallCommand import AlignWithBallCommand
 from commands.RestCommand import RestCommand
+from commands.actuators.arm import Arm
 from shared_data import SharedData
 from logger import logger  # Import the global logger
 
 # Full automatic control thread
-# def control_thread(got, condition, control_signal):
-#     logger.info("Control thread started")
+def control_thread_auto(got, condition):
+    logger.info("Control thread started")
 
-#     command_planner = CommandPlanner(got)
+    command_planner = CommandPlanner(got)
 
-#     while True:
-#         with condition:
-#             condition.wait()  # Wait for notification from the camera thread
+    while True:
+        with condition:
+            condition.wait()  # Wait for notification from the camera thread
             
-#         with SharedData.shared_data["lock"]:
-#             if SharedData.shared_data["exit"]:
-#                 break
+        with SharedData.shared_data["lock"]:
+            if SharedData.shared_data["exit"]:
+                break
 
-#         command_name = command_planner.update()
-        
-#         if (command_name == "KickCommand"):
-#             with control_signal:
-#                 control_signal.notify_all()
-#         # logger.info('Command planner updated')
+        command = command_planner.update()
+        # logger.info(command)
 
-#         time.sleep(0.1)  # Control loop interval
+        time.sleep(0.1)  # Control loop interval
 
-#     logger.info('Control thread exited')
+    logger.info('Control thread exited')
 
 
 # PID Tunning control thread
-def control_thread(got, condition, control_signal):
+def control_thread(got, condition):
     logger.info("Control thread started")
 
     current_command = RestCommand(got)
+    
+    arm = Arm(got)
 
     while True:
         with condition:
@@ -76,8 +75,7 @@ def control_thread(got, condition, control_signal):
             elif SharedData.shared_data["command"] == "kick":
                 current_command = RestCommand(got)
                 SharedData.shared_data["command"] = "rest"
-                with control_signal:
-                    control_signal.notify_all()
+                arm.kick_motion()
         else:
             current_command.execute()
             

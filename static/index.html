@@ -41,11 +41,13 @@
                 </div>
             </div>
             <div class="buttons">
+                <button id="start-locate">Start Locate</button>
+                <button id="locate-goal">Locate Goal</button>
                 <button id="start-translate">Start Translate</button>
                 <button id="start-align">Start Align</button>
+                <button id="kick-run">Kick Run</button>
                 <button id="start-chart">Start Chart</button>
                 <button id="pause-chart">Pause Chart</button>
-                <button id="kick-run">Kick Run</button>
             </div>
         </div>
         <div class="right-panel">
@@ -151,6 +153,14 @@
         document.getElementById('kick-run').onclick = () => {
             ws.send(JSON.stringify({ command: 'kick'}))
         }
+
+        document.getElementById('start-locate').onclick = () => {
+            ws.send(JSON.stringify({ command: 'locate'}));
+        };
+
+        document.getElementById('locate-goal').onclick = () => {
+            ws.send(JSON.stringify({ command: 'goal'}));
+        };
 
         const ctx = document.getElementById('chart').getContext('2d');
         const chart = new Chart(ctx, {

@@ -1,5 +1,7 @@
 import time
 from commands.CommandPlanner import CommandPlanner
+from commands.LocateBallCommand import LocateBallCommand
+from commands.LocateGoalCommand import LocateGoalCommand
 from commands.TranslateToBallCommand import TranslateToBallCommand
 from commands.AlignWithBallCommand import AlignWithBallCommand
 from commands.RestCommand import RestCommand
@@ -39,9 +41,17 @@ def control_thread(got, condition):
         if len(SharedData.shared_data["angle_history"]) > 50:
             SharedData.shared_data["angle_history"].pop(0)
 
-        logger.info(SharedData.shared_data["command"])
+        # logger.info(SharedData.shared_data["command"])
         if current_command.isFinished():
-            if SharedData.shared_data["command"] == "translate":
+            if SharedData.shared_data["command"] == "locate":
+                if not isinstance(current_command, LocateBallCommand):
+                    current_command = LocateBallCommand(got)
+                    current_command.initialize()
+            elif SharedData.shared_data["command"] == "goal":
+                if not isinstance(current_command, LocateGoalCommand):
+                    current_command = LocateGoalCommand(got)
+                    current_command.initialize()
+            elif SharedData.shared_data["command"] == "translate":
                 if not isinstance(current_command, TranslateToBallCommand):
                     current_command = TranslateToBallCommand(got)
                     current_command.initialize()

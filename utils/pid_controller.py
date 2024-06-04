@@ -15,4 +15,4 @@ class PID:
     def set_pid(self, kp, ki, kd):
         self.kp = kp
         self.ki = ki
-        self.kd = kd
+        self.kd = kds

@@ -21,7 +21,7 @@ class Chassis:
     def translate_for_time(self, angle, speed, times, unit):
         self.got.mecanum_translate_speed_times(int(angle), int(speed), int(times), int(unit))
 
-    def turn_on_pivot(self, distance, direction):
+    def turn_on_pivot(self, distance, direction, angular_velocity):
         """turn robot on pivot outside of the robot frame
 
         Args:
@@ -34,5 +34,5 @@ class Chassis:
         logger.info("direction param: " + str(direction))
         if distance == 0:
             return
-        self.got.mecanum_move_turn(int(direction * 90), 15, 2 if direction == 1 else 3, int(1800 / (math.pi * distance)))
+        self.got.mecanum_move_turn(int(direction * 90), angular_velocity, 2 if direction == 1 else 3, int(180 * angular_velocity / (math.pi * distance)))
         logger.info("correctly set params for moventurn function")

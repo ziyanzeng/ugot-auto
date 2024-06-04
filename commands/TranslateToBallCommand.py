@@ -2,12 +2,14 @@ from .Command import Command
 from .actuators.chassis import Chassis
 from shared_data import SharedData
 from logger import logger
+from utils.pid_controller import PID
+import config
 
 class TranslateToBallCommand(Command):
     def __init__(self, got):
         super().__init__(got)
         self.chassis = Chassis(got)
-        self.linear_pid = SharedData.shared_data["linear_pid"]
+        self.linear_pid = PID(config.LINEAR_KP, config.LINEAR_KI, config.LINEAR_KD)
 
     def initialize(self):
         self.finished = False

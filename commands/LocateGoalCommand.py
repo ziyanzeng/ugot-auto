@@ -2,12 +2,16 @@ from .Command import Command
 from .actuators.chassis import Chassis
 from shared_data import SharedData
 from logger import logger
+from utils.pid_controller import PID
+import config
 
 class LocateGoalCommand(Command):
     def __init__(self, got):
         super().__init__(got)
         self.chassis = Chassis(got)
         self.cummulate = 0
+        # self.pivot_pid = PID(config.PIVOT_KP, config.PIVOT_KI, config.PIVOT_KD)
+        self.pivot_pid = SharedData.shared_data["angle_pid"]
 
     def initialize(self):
         self.finished = False

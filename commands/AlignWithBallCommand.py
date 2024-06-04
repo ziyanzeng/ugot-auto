@@ -1,12 +1,14 @@
 from .Command import Command
 from .actuators.chassis import Chassis
 from shared_data import SharedData
+from utils.pid_controller import PID
+import config
 
 class AlignWithBallCommand(Command):
     def __init__(self, got):
         super().__init__(got)
         self.chassis = Chassis(got)
-        self.angle_pid = SharedData.shared_data["angle_pid"]
+        self.angle_pid = PID(config.ANGLE_KP, config.ANGLE_KI, config.ANGLE_KD)
 
     def initialize(self):
         self.finished = False

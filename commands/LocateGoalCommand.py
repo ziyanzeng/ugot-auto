@@ -25,13 +25,14 @@ class LocateGoalCommand(Command):
             logger.info("goal located")
             if abs(SharedData.shared_data["angle_goal"]) > 1 and SharedData.shared_data["distance"] != 0:
                 logger.info("locking goal")
-                self.chassis.turn_on_pivot(SharedData.shared_data["distance"], -1 * SharedData.shared_data["angle_goal"] / abs(SharedData.shared_data["angle_goal"]))
+                velocity = self.pivot_pid.update(SharedData.shared_data["angle_goal"])
+                self.chassis.turn_on_pivot(SharedData.shared_data["distance"], -1 * SharedData.shared_data["angle_goal"] / abs(SharedData.shared_data["angle_goal"]), velocity)
             else:
                 logger.info("goal locked")
                 self.end()
         else:
             logger.info("searching for goal...")
-            self.chassis.turn_on_pivot(SharedData.shared_data["distance"], -1)
+            self.chassis.turn_on_pivot(SharedData.shared_data["distance"], -1, 15)
 
     def end(self):
         self.finished = True

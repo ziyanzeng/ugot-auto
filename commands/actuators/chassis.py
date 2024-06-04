@@ -21,18 +21,18 @@ class Chassis:
     def translate_for_time(self, angle, speed, times, unit):
         self.got.mecanum_translate_speed_times(int(angle), int(speed), int(times), int(unit))
 
-    def turn_on_pivot(self, distance, direction, angular_velocity):
+    def turn_on_pivot(self, distance:float, direction:float, drifting_velocity:float)->None:
         """turn robot on pivot outside of the robot frame
 
         Args:
-            distance (int): unit - cm
-            angle (int): unit - degree
-            direction (int): either -1 or 1, -1 makes robot turn clockwise, 1 makes robot turn anticlockwise
+            distance (float): unit - cm, distance to the ball (pivot point of turnings)
+            direction (float): either -1 or 1, -1 makes robot turn clockwise, 1 makes robot turn anticlockwise
+            drifting_velocity (float): pid controller input
         """
         logger.info("running turn on pivot function")
         logger.info("distance param: " + str(distance))
         logger.info("direction param: " + str(direction))
         if distance == 0:
             return
-        self.got.mecanum_move_turn(int(direction * 90), angular_velocity, 2 if direction == 1 else 3, int(180 * angular_velocity / (math.pi * distance)))
+        self.got.mecanum_move_turn(int(direction * 90), drifting_velocity, 2 if direction == 1 else 3, int(180 * drifting_velocity / (math.pi * distance)))
         logger.info("correctly set params for moventurn function")

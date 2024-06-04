@@ -27,7 +27,8 @@ def control_thread(got, condition):
         if SharedData.shared_data["detections"] is not None:
             # Update shared_data for chart update
             SharedData.shared_data["distance_history"].append(SharedData.shared_data["distance"])
-            SharedData.shared_data["angle_history"].append(SharedData.shared_data["angle"])
+            # SharedData.shared_data["angle_history"].append(SharedData.shared_data["angle"])
+            SharedData.shared_data["angle_history"].append(SharedData.shared_data["angle_goal"])
 
             # Log detection data
             # logger.info(f'Detected distance: {SharedData.shared_data["distance"]}, angle: {SharedData.shared_data["angle"]}')

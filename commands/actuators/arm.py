@@ -17,13 +17,15 @@ class Arm:
     def kick_motion(self):
         # 机械臂复位
         self.got.mechanical_arms_restory()
+        self.got.mecanum_translate_speed(-180, 20)
         time.sleep(0.5)
         
         # 关节角度控制
-        self.got.mechanical_joint_control(-35, 0, -90, 500)
+        self.got.mechanical_joint_control(-15, 0, -90, 500)
+        self.got.mecanum_translate_speed(0, 40)
         time.sleep(0.5)
         
-        self.got.mechanical_joint_control(0, -40, -90, 200)
+        self.got.mechanical_joint_control(0, -30, -90, 200)
         time.sleep(0.2)
 
         self.got.mechanical_joint_control(0, 0, 20, 200)

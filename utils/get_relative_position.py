@@ -3,6 +3,7 @@ from utils.parse_results import parse_detection_results
 import config
 import numpy as np
 from shared_data import SharedData
+from logger import logger
 
 def get_single_relative_pos(detections, class_name):
     boxes, scores, classes = parse_detection_results(detections)
@@ -14,7 +15,8 @@ def get_single_relative_pos(detections, class_name):
     max_index = max(class_indices, key=lambda i: scores[i])
     box = boxes[max_index]
     x1, y1, x2, y2 = map(int, box)
-    distance, angle = calculate_relative_position_params(config.BALL_DIAMETER if class_name == "ping-pong" else config.GOAL_WIDTH, config.CAM_FOCAL, config.SENSOR_WIDTH, config.SENSOR_HEIGHT, SharedData.shared_data["frame_width"] / 2, SharedData.shared_data["frame_height"] / 2, x1, y1, x2, y2)
+    # logger.info(f"class indices: {class_indices}, box data: {x1}, {x2}, {y1}, {y2}")
+    distance, angle = calculate_relative_position_params(config.BALL_DIAMETER if class_name == "ping-pong" or class_name == "ping-pong-partial" else config.GOAL_WIDTH, config.CAM_FOCAL, config.SENSOR_WIDTH, config.SENSOR_HEIGHT, SharedData.shared_data["frame_width"] / 2, SharedData.shared_data["frame_height"] / 2, x1, y1, x2, y2)
     return distance, angle, box, scores[max_index], classes[max_index]
 
 def calculate_relative_position_params(actual_width, focal_length, sensor_width, sensor_height, image_center_x, image_center_y, x1, y1, x2, y2):
@@ -32,5 +34,9 @@ def calculate_relative_position_params(actual_width, focal_length, sensor_width,
     sensor_x = (pixel_x - image_center_x) * sensor_width / (2 * image_center_x)
     theta_x = math.atan(sensor_x / focal_length)
     horizontal_distance = (actual_width * focal_length) / ((pixel_width * sensor_width / (image_center_x * 2)) * math.cos(theta_x))
+    
+    if (x1 < 5 or x2 > image_center_x * 2 - 5) and (y1 > image_center_y * 2 - 5 or y2 > image_center_y * 2 - 5):
+        #logger.info("Object in the corner, returning (0, angle)")
+        return 0, math.degrees(theta_x * 4.56)
     
     return abs((horizontal_distance / 1000 - 0.09) / 0.033), math.degrees(theta_x * 4.56)

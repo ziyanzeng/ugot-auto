@@ -1,5 +1,5 @@
 # system params
-UGOT_IP = "10.10.66.58"
+UGOT_IP = "10.10.66.172"
 MODEL_PATH = './model/best.pt'
 CLASS_LABELS = {0: 'goal', 1: 'ping-pong'}
 
@@ -19,5 +19,5 @@ ANGLE_KP = 1.0
 ANGLE_KI = 0.035
 ANGLE_KD = 0.1
 PIVOT_KP = 1.0
-PIVOT_KI = 0.035
+PIVOT_KI = 10
 PIVOT_KD = 0.1

@@ -15,4 +15,7 @@ class PID:
     def set_pid(self, kp, ki, kd):
         self.kp = kp
         self.ki = ki
-        self.kd = kds
+        self.kd = kd
+        
+    def reset_integral(self):
+        self.integral = 0

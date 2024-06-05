@@ -29,21 +29,24 @@ class LocateGoalCommand(Command):
             return
         elif SharedData.shared_data["angle_goal"] != 0 and SharedData.shared_data["distance_goal"] != 0 or self.cummulate > 1000:
             logger.info("goal located")
-            if abs(SharedData.shared_data["angle_goal"]) > 3:
+            if abs(SharedData.shared_data["angle_goal"]) > 1:
                 logger.info("locking goal")
-                velocity = max((self.pivot_pid.update(abs(SharedData.shared_data["angle_goal"])) * 10), 80)
+                velocity = min((self.pivot_pid.update(abs(SharedData.shared_data["angle_goal"]))), 40)
                 logger.info("pivot drifting velocity: " + str(velocity))
                 self.chassis.turn_on_pivot(distance_to_ball, -1 * SharedData.shared_data["angle_goal"] / abs(SharedData.shared_data["angle_goal"]), velocity)
             elif abs(angle_to_ball) > 1:
                 logger.info("aligning in locking goal command")
-                turn_speed = self.angle_pid.update(angle_to_ball)
-                self.chassis.spin_on_location(turn_speed)
-            elif abs(distance_to_ball - 10) > 1:
+                align_speed = min(self.linear_pid.update(angle_to_ball), 40)
+                self.chassis.translate(90 if angle_to_ball > 0 else -90, align_speed)
+                if abs(distance_to_ball - 12) > 1:
+                    self.linear_pid.reset_integral()
+            elif abs(distance_to_ball - 12) > 1:
                 logger.info("distance adjusting in locking goal command")
-                error = distance_to_ball - 10
-                linear_speed = max(self.linear_pid.update(abs(error)), 80)
+                error = distance_to_ball - 12
+                linear_speed = min(self.linear_pid.update(abs(error)), 40)
                 logger.info("linear speed: " + str(linear_speed))
                 self.chassis.translate(0 if error > 0 else -180, linear_speed)
+                if abs(angle_to_ball) > 1: self.linear_pid.reset_integral()
             else:
                 logger.info("goal locked")
                 self.end()

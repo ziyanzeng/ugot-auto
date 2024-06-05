@@ -34,6 +34,6 @@ class Chassis:
         logger.info("direction param: " + str(direction))
         if distance == 0:
             return
-        omega = max(round(180 * drifting_velocity / (math.pi * (distance + 10.5))), 280)
+        omega = min(round(180 * drifting_velocity / (math.pi * (distance + 10.5))), 280)
         self.got.mecanum_move_turn(round(direction * 90), round(drifting_velocity) if drifting_velocity > 5 else 5, 2 if direction == 1 else 3, omega if omega > 5 else 5)
         logger.info("correctly set params for moventurn function")

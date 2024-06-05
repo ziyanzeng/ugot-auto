@@ -1,0 +1,495 @@
+2024-06-05 18:42:13,761 - logger.py - INFO - Logger initialized
+2024-06-05 18:42:15,683 - main.py - INFO - Main function started
+2024-06-05 18:42:16,925 - ugotcamera.py - INFO - camera opened
+2024-06-05 18:42:16,971 - control_thread.py - INFO - Control thread started
+2024-06-05 18:42:16,971 - CommandPlanner.py - INFO - CommandPlanner initiated
+2024-06-05 18:42:16,983 - ws_server.py - INFO - WebSocket server started
+2024-06-05 18:42:16,984 - server.py - INFO - server listening on 127.0.0.1:8765
+2024-06-05 18:42:16,985 - server.py - INFO - server listening on [::1]:8765
+2024-06-05 18:42:21,713 - server.py - INFO - connection open
+2024-06-05 18:42:21,713 - ws_server.py - INFO - New WebSocket connection established
+2024-06-05 18:42:26,231 - ws_server.py - INFO - Received message: {"command":"locate"}
+2024-06-05 18:42:26,233 - ws_server.py - INFO - Received command: locate
+2024-06-05 18:42:29,526 - ws_server.py - INFO - Received message: {"command":"align"}
+2024-06-05 18:42:29,527 - ws_server.py - INFO - Received command: align
+2024-06-05 18:42:33,409 - ws_server.py - INFO - Received message: {"command":"translate"}
+2024-06-05 18:42:33,409 - ws_server.py - INFO - Received command: translate
+2024-06-05 18:42:36,763 - ws_server.py - INFO - Received message: {"command":"goal"}
+2024-06-05 18:42:36,764 - ws_server.py - INFO - Received command: goal
+2024-06-05 18:42:36,829 - LocateGoalCommand.py - INFO - locate goal command initialized
+2024-06-05 18:42:36,947 - LocateGoalCommand.py - INFO - goal angle: 22.803952191141676
+2024-06-05 18:42:36,947 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:36,947 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:36,947 - LocateGoalCommand.py - INFO - pivot drifting velocity: 20.637576732983216
+2024-06-05 18:42:36,947 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:36,947 - chassis.py - INFO - distance param: 11.267514732757565
+2024-06-05 18:42:36,947 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:36,963 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:37,107 - LocateGoalCommand.py - INFO - goal angle: 22.803952191141676
+2024-06-05 18:42:37,107 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:37,108 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:37,108 - LocateGoalCommand.py - INFO - pivot drifting velocity: 23.031991713053092
+2024-06-05 18:42:37,108 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:37,108 - chassis.py - INFO - distance param: 11.267514732757565
+2024-06-05 18:42:37,108 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:37,123 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:37,289 - LocateGoalCommand.py - INFO - goal angle: 21.013243456216525
+2024-06-05 18:42:37,289 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:37,289 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:37,289 - LocateGoalCommand.py - INFO - pivot drifting velocity: 21.52542006890154
+2024-06-05 18:42:37,289 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:37,289 - chassis.py - INFO - distance param: 11.020015925846772
+2024-06-05 18:42:37,289 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:37,307 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:37,452 - LocateGoalCommand.py - INFO - goal angle: 10.23323320731276
+2024-06-05 18:42:37,452 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:37,452 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:37,452 - LocateGoalCommand.py - INFO - pivot drifting velocity: 11.695506137432199
+2024-06-05 18:42:37,453 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:37,453 - chassis.py - INFO - distance param: 10.916667734174302
+2024-06-05 18:42:37,453 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:37,466 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:37,648 - LocateGoalCommand.py - INFO - goal angle: 3.548342210658787
+2024-06-05 18:42:37,648 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:37,648 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:37,648 - LocateGoalCommand.py - INFO - pivot drifting velocity: 4.618844926606542
+2024-06-05 18:42:37,648 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:37,648 - chassis.py - INFO - distance param: 10.882773789628352
+2024-06-05 18:42:37,648 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:37,659 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:37,818 - LocateGoalCommand.py - INFO - goal angle: 0.8144210580518713
+2024-06-05 18:42:37,819 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:37,819 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:37,991 - LocateGoalCommand.py - INFO - goal angle: 0.17451933745482198
+2024-06-05 18:42:37,992 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:37,992 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:38,164 - LocateGoalCommand.py - INFO - goal angle: 2.268694701994357
+2024-06-05 18:42:38,164 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:38,164 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:38,164 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.810016542653129
+2024-06-05 18:42:38,164 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:38,164 - chassis.py - INFO - distance param: 10.748961396774336
+2024-06-05 18:42:38,164 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:38,179 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:38,372 - LocateGoalCommand.py - INFO - goal angle: 3.4901796439322332
+2024-06-05 18:42:38,372 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:38,372 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:38,372 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.7988391377504356
+2024-06-05 18:42:38,372 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:38,372 - chassis.py - INFO - distance param: 10.719860299889646
+2024-06-05 18:42:38,372 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:38,385 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:38,561 - LocateGoalCommand.py - INFO - goal angle: 1.512484253624852
+2024-06-05 18:42:38,561 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:38,561 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:38,561 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.1486242019357045
+2024-06-05 18:42:38,561 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:38,561 - chassis.py - INFO - distance param: 10.786595451389212
+2024-06-05 18:42:38,561 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:38,573 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:38,729 - LocateGoalCommand.py - INFO - goal angle: 0.05817312017554997
+2024-06-05 18:42:38,729 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:38,729 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:38,899 - LocateGoalCommand.py - INFO - goal angle: -0.5817302500451741
+2024-06-05 18:42:38,899 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:38,899 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:39,106 - LocateGoalCommand.py - INFO - goal angle: -0.17451933745482198
+2024-06-05 18:42:39,106 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:39,106 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:39,242 - LocateGoalCommand.py - INFO - goal angle: -7.444144439785221
+2024-06-05 18:42:39,242 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:39,242 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:39,242 - LocateGoalCommand.py - INFO - pivot drifting velocity: 7.326569552648225
+2024-06-05 18:42:39,242 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:39,242 - chassis.py - INFO - distance param: 7.497354239521879
+2024-06-05 18:42:39,242 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:39,259 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:39,443 - LocateGoalCommand.py - INFO - goal angle: -18.468231388039428
+2024-06-05 18:42:39,563 - LocateGoalCommand.py - INFO - goal angle: -14.992188513304242
+2024-06-05 18:42:39,758 - LocateGoalCommand.py - INFO - goal angle: -10.23323320731276
+2024-06-05 18:42:39,946 - LocateGoalCommand.py - INFO - goal angle: -7.967247065235524
+2024-06-05 18:42:39,946 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:39,946 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:39,946 - LocateGoalCommand.py - INFO - pivot drifting velocity: 8.430364169495713
+2024-06-05 18:42:39,946 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:39,946 - chassis.py - INFO - distance param: 16.298624039036337
+2024-06-05 18:42:39,946 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:39,963 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:40,130 - LocateGoalCommand.py - INFO - goal angle: -4.246263929929137
+2024-06-05 18:42:40,130 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:40,130 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:40,130 - LocateGoalCommand.py - INFO - pivot drifting velocity: 5.15502092991464
+2024-06-05 18:42:40,130 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:40,130 - chassis.py - INFO - distance param: 18.620016558101042
+2024-06-05 18:42:40,130 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:40,148 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:40,474 - LocateGoalCommand.py - INFO - goal angle: -1.8615083765944074
+2024-06-05 18:42:40,474 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:40,474 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:40,474 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.6459501602657163
+2024-06-05 18:42:40,474 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:40,474 - chassis.py - INFO - distance param: 18.769161314481035
+2024-06-05 18:42:40,474 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:40,490 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:40,663 - LocateGoalCommand.py - INFO - goal angle: -0.23269242302264212
+2024-06-05 18:42:40,663 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:40,663 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:40,836 - LocateGoalCommand.py - INFO - goal angle: 0.5235573894265945
+2024-06-05 18:42:40,836 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:40,836 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:41,090 - LocateGoalCommand.py - INFO - goal angle: -0.465384476896806
+2024-06-05 18:42:41,090 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:41,090 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:41,269 - LocateGoalCommand.py - INFO - goal angle: -0.5817302500451741
+2024-06-05 18:42:41,269 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:41,269 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:41,457 - LocateGoalCommand.py - INFO - goal angle: 0.7562484627558008
+2024-06-05 18:42:41,457 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:41,457 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:41,627 - LocateGoalCommand.py - INFO - goal angle: 1.6869970677651411
+2024-06-05 18:42:41,627 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:41,627 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:41,627 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.258849412324729
+2024-06-05 18:42:41,627 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:41,627 - chassis.py - INFO - distance param: 18.057863703568017
+2024-06-05 18:42:41,627 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:41,639 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:41,812 - LocateGoalCommand.py - INFO - goal angle: 2.0360180244209576
+2024-06-05 18:42:41,812 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:41,812 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:41,812 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.5656972325541427
+2024-06-05 18:42:41,812 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:41,812 - chassis.py - INFO - distance param: 20.1136834504497
+2024-06-05 18:42:41,812 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:41,824 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:42,012 - LocateGoalCommand.py - INFO - goal angle: 0.8144210580518713
+2024-06-05 18:42:42,012 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:42,012 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:42,206 - LocateGoalCommand.py - INFO - goal angle: 0.29086548551866515
+2024-06-05 18:42:42,206 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:42,206 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:42,378 - LocateGoalCommand.py - INFO - goal angle: 3.37385347837899
+2024-06-05 18:42:42,379 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:42,379 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:42,379 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.821520504173848
+2024-06-05 18:42:42,379 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:42,379 - chassis.py - INFO - distance param: 17.465147285446623
+2024-06-05 18:42:42,379 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:42,397 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:42,545 - LocateGoalCommand.py - INFO - goal angle: 3.4901796439322332
+2024-06-05 18:42:42,545 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:42,545 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:42,545 - LocateGoalCommand.py - INFO - pivot drifting velocity: 4.077448496787231
+2024-06-05 18:42:42,545 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:42,545 - chassis.py - INFO - distance param: 17.16614297686443
+2024-06-05 18:42:42,545 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:42,562 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:42,749 - LocateGoalCommand.py - INFO - goal angle: 1.8033381171855387
+2024-06-05 18:42:42,749 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:42,749 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:42,749 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.5799404298564586
+2024-06-05 18:42:42,749 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:42,749 - chassis.py - INFO - distance param: 17.02732289043131
+2024-06-05 18:42:42,749 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:42,763 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:42,929 - LocateGoalCommand.py - INFO - goal angle: 0.23269242302264212
+2024-06-05 18:42:42,929 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:42,929 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:43,111 - LocateGoalCommand.py - INFO - goal angle: 1.2216266411469394
+2024-06-05 18:42:43,111 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:43,111 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:43,111 - LocateGoalCommand.py - INFO - pivot drifting velocity: 1.8938240819527843
+2024-06-05 18:42:43,111 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:43,111 - chassis.py - INFO - distance param: 16.46111849634485
+2024-06-05 18:42:43,111 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:43,128 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:43,293 - LocateGoalCommand.py - INFO - goal angle: 3.722827777498648
+2024-06-05 18:42:43,293 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:43,293 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:43,293 - LocateGoalCommand.py - INFO - pivot drifting velocity: 4.105348095952955
+2024-06-05 18:42:43,293 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:43,293 - chassis.py - INFO - distance param: 16.099505413177486
+2024-06-05 18:42:43,293 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:43,305 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:43,469 - LocateGoalCommand.py - INFO - goal angle: 1.8615083765944074
+2024-06-05 18:42:43,469 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:43,469 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:43,469 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.689588290657282
+2024-06-05 18:42:43,469 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:43,469 - chassis.py - INFO - distance param: 16.169212064788866
+2024-06-05 18:42:43,469 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:43,485 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:43,647 - LocateGoalCommand.py - INFO - goal angle: 0.23269242302264212
+2024-06-05 18:42:43,648 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:43,648 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:43,813 - LocateGoalCommand.py - INFO - goal angle: -0.6399030529847414
+2024-06-05 18:42:43,814 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:43,814 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:43,996 - LocateGoalCommand.py - INFO - goal angle: 3.2575259751058234
+2024-06-05 18:42:43,996 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:43,996 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:43,996 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.7761598191026615
+2024-06-05 18:42:43,996 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:43,996 - chassis.py - INFO - distance param: 15.264434093347639
+2024-06-05 18:42:43,996 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:44,010 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:44,200 - LocateGoalCommand.py - INFO - goal angle: 2.0360180244209576
+2024-06-05 18:42:44,200 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:44,200 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:44,200 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.826584513459528
+2024-06-05 18:42:44,200 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:44,200 - chassis.py - INFO - distance param: 15.08952750206521
+2024-06-05 18:42:44,200 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:44,215 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:44,400 - LocateGoalCommand.py - INFO - goal angle: 0.5817302500451741
+2024-06-05 18:42:44,400 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:44,400 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:44,561 - LocateGoalCommand.py - INFO - goal angle: 0.17451933745482198
+2024-06-05 18:42:44,561 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:44,562 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:44,747 - LocateGoalCommand.py - INFO - goal angle: 3.6065044256696543
+2024-06-05 18:42:44,747 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:44,747 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:44,747 - LocateGoalCommand.py - INFO - pivot drifting velocity: 4.135904001643216
+2024-06-05 18:42:44,747 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:44,747 - chassis.py - INFO - distance param: 14.450826823695046
+2024-06-05 18:42:44,747 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:44,771 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:44,916 - LocateGoalCommand.py - INFO - goal angle: 2.617702855562957
+2024-06-05 18:42:44,916 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:44,916 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:44,916 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.4161197429498737
+2024-06-05 18:42:44,916 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:44,916 - chassis.py - INFO - distance param: 14.450918320466712
+2024-06-05 18:42:44,916 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:44,932 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:45,096 - LocateGoalCommand.py - INFO - goal angle: 0.8725935725980932
+2024-06-05 18:42:45,096 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:45,096 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:45,271 - LocateGoalCommand.py - INFO - goal angle: -0.8144210580518713
+2024-06-05 18:42:45,271 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:45,271 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:45,437 - LocateGoalCommand.py - INFO - goal angle: 2.8503698446882186
+2024-06-05 18:42:45,437 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:45,437 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:45,437 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.540891725375381
+2024-06-05 18:42:45,437 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:45,437 - chassis.py - INFO - distance param: 14.023334527123595
+2024-06-05 18:42:45,437 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:45,451 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:45,612 - LocateGoalCommand.py - INFO - goal angle: 2.6758700065141245
+2024-06-05 18:42:45,612 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:45,612 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:45,612 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.4204879199637928
+2024-06-05 18:42:45,612 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:45,612 - chassis.py - INFO - distance param: 14.285262225929158
+2024-06-05 18:42:45,612 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:45,628 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:45,781 - LocateGoalCommand.py - INFO - goal angle: 0.5817302500451741
+2024-06-05 18:42:45,781 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:45,781 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:45,941 - LocateGoalCommand.py - INFO - goal angle: -0.34903851917496764
+2024-06-05 18:42:45,941 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:45,941 - LocateGoalCommand.py - INFO - distance adjusting in locking goal command
+2024-06-05 18:42:45,941 - LocateGoalCommand.py - INFO - linear speed: 24.585077632990057
+2024-06-05 18:42:46,124 - LocateGoalCommand.py - INFO - goal angle: -0.6399030529847414
+2024-06-05 18:42:46,124 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:46,124 - LocateGoalCommand.py - INFO - distance adjusting in locking goal command
+2024-06-05 18:42:46,124 - LocateGoalCommand.py - INFO - linear speed: 40
+2024-06-05 18:42:46,282 - LocateGoalCommand.py - INFO - goal angle: -2.6758700065141245
+2024-06-05 18:42:46,283 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:46,283 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:46,283 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.416417286178954
+2024-06-05 18:42:46,283 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:46,283 - chassis.py - INFO - distance param: 10.460794019571205
+2024-06-05 18:42:46,283 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:46,296 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:46,450 - LocateGoalCommand.py - INFO - goal angle: -2.2105258555619915
+2024-06-05 18:42:46,616 - LocateGoalCommand.py - INFO - goal angle: -1.1634547322174356
+2024-06-05 18:42:46,785 - LocateGoalCommand.py - INFO - goal angle: 0.05817312017554997
+2024-06-05 18:42:46,785 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:46,785 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:46,977 - LocateGoalCommand.py - INFO - goal angle: 0.11634623458314212
+2024-06-05 18:42:46,977 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:46,977 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:47,139 - LocateGoalCommand.py - INFO - goal angle: -0.6399030529847414
+2024-06-05 18:42:47,139 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:47,139 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:47,311 - LocateGoalCommand.py - INFO - goal angle: -0.29086548551866515
+2024-06-05 18:42:47,311 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:47,311 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:47,479 - LocateGoalCommand.py - INFO - goal angle: -0.29086548551866515
+2024-06-05 18:42:47,480 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:47,480 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:47,664 - LocateGoalCommand.py - INFO - goal angle: 0.9889383363706531
+2024-06-05 18:42:47,664 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:47,664 - LocateGoalCommand.py - INFO - distance adjusting in locking goal command
+2024-06-05 18:42:47,664 - LocateGoalCommand.py - INFO - linear speed: 40
+2024-06-05 18:42:47,837 - LocateGoalCommand.py - INFO - goal angle: 2.0941875110096833
+2024-06-05 18:42:47,838 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:47,838 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:47,838 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.903373977780005
+2024-06-05 18:42:47,838 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:47,838 - chassis.py - INFO - distance param: 40.825757009874444
+2024-06-05 18:42:47,838 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:47,851 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:48,003 - LocateGoalCommand.py - INFO - goal angle: 2.9667016669309794
+2024-06-05 18:42:48,003 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:48,003 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:48,003 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.6453019768933825
+2024-06-05 18:42:48,003 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:48,003 - chassis.py - INFO - distance param: 37.30556191647649
+2024-06-05 18:42:48,003 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:48,015 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:48,221 - LocateGoalCommand.py - INFO - goal angle: 4.653357585487251
+2024-06-05 18:42:48,221 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:48,221 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:48,221 - LocateGoalCommand.py - INFO - pivot drifting velocity: 5.273810507113593
+2024-06-05 18:42:48,221 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:48,221 - chassis.py - INFO - distance param: 29.49851389323425
+2024-06-05 18:42:48,221 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:48,236 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:48,383 - LocateGoalCommand.py - INFO - goal angle: 5.0604286450431735
+2024-06-05 18:42:48,384 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:48,384 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:48,384 - LocateGoalCommand.py - INFO - pivot drifting velocity: 5.834142195794766
+2024-06-05 18:42:48,384 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:48,384 - chassis.py - INFO - distance param: 31.744847253757563
+2024-06-05 18:42:48,384 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:48,396 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:48,546 - LocateGoalCommand.py - INFO - goal angle: 3.6065044256696543
+2024-06-05 18:42:48,546 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:48,546 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:48,546 - LocateGoalCommand.py - INFO - pivot drifting velocity: 4.584350026442539
+2024-06-05 18:42:48,546 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:48,546 - chassis.py - INFO - distance param: 31.52464393253995
+2024-06-05 18:42:48,546 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:48,561 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:48,713 - LocateGoalCommand.py - INFO - goal angle: 3.4901796439322332
+2024-06-05 18:42:48,714 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:48,714 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:48,714 - LocateGoalCommand.py - INFO - pivot drifting velocity: 4.35171619916117
+2024-06-05 18:42:48,714 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:48,714 - chassis.py - INFO - distance param: 31.526636685043577
+2024-06-05 18:42:48,714 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:48,725 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:48,893 - LocateGoalCommand.py - INFO - goal angle: 3.1993617362301094
+2024-06-05 18:42:48,893 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:48,893 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:48,893 - LocateGoalCommand.py - INFO - pivot drifting velocity: 4.094344412736667
+2024-06-05 18:42:48,893 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:48,893 - chassis.py - INFO - distance param: 31.74252524704027
+2024-06-05 18:42:48,893 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:48,908 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:49,079 - LocateGoalCommand.py - INFO - goal angle: 3.2575259751058234
+2024-06-05 18:42:49,080 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:49,080 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:49,080 - LocateGoalCommand.py - INFO - pivot drifting velocity: 4.133898066830126
+2024-06-05 18:42:49,080 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:49,080 - chassis.py - INFO - distance param: 31.528041467713344
+2024-06-05 18:42:49,080 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:49,094 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:49,264 - LocateGoalCommand.py - INFO - goal angle: 2.3268633235102656
+2024-06-05 18:42:49,264 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:49,264 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:49,264 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.313752420899247
+2024-06-05 18:42:49,264 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:49,264 - chassis.py - INFO - distance param: 31.74164420944095
+2024-06-05 18:42:49,264 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:49,278 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:49,431 - LocateGoalCommand.py - INFO - goal angle: 1.1634547322174356
+2024-06-05 18:42:49,431 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:49,431 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:49,431 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.179435697237231
+2024-06-05 18:42:49,431 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:49,431 - chassis.py - INFO - distance param: 31.30794995532385
+2024-06-05 18:42:49,431 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:49,444 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:49,591 - LocateGoalCommand.py - INFO - goal angle: 0.8144210580518713
+2024-06-05 18:42:49,592 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:49,592 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:49,729 - LocateGoalCommand.py - INFO - goal angle: 0.8725935725980932
+2024-06-05 18:42:49,729 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:49,730 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-05 18:42:49,910 - LocateGoalCommand.py - INFO - goal angle: 2.2105258555619915
+2024-06-05 18:42:49,910 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:49,911 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:49,911 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.016511478395859
+2024-06-05 18:42:49,911 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:49,911 - chassis.py - INFO - distance param: 32.87113940677852
+2024-06-05 18:42:49,911 - chassis.py - INFO - direction param: -1.0
+2024-06-05 18:42:49,925 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:50,107 - LocateGoalCommand.py - INFO - goal angle: -9.478058770839352
+2024-06-05 18:42:50,107 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:50,107 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:50,107 - LocateGoalCommand.py - INFO - pivot drifting velocity: 9.709388508334136
+2024-06-05 18:42:50,107 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:50,107 - chassis.py - INFO - distance param: 29.31020725248194
+2024-06-05 18:42:50,107 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:50,122 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:50,309 - LocateGoalCommand.py - INFO - goal angle: -17.889312159447293
+2024-06-05 18:42:50,309 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:50,309 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:50,309 - LocateGoalCommand.py - INFO - pivot drifting velocity: 18.095716410406254
+2024-06-05 18:42:50,309 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:50,309 - chassis.py - INFO - distance param: 34.158714439203905
+2024-06-05 18:42:50,309 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:50,327 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:50,483 - LocateGoalCommand.py - INFO - goal angle: -13.25209522576209
+2024-06-05 18:42:50,483 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:50,483 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:50,483 - LocateGoalCommand.py - INFO - pivot drifting velocity: 14.829606985079176
+2024-06-05 18:42:50,483 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:50,483 - chassis.py - INFO - distance param: 33.37786137353932
+2024-06-05 18:42:50,483 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:50,510 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:50,666 - LocateGoalCommand.py - INFO - goal angle: -11.278574334332792
+2024-06-05 18:42:50,666 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:50,666 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:50,666 - LocateGoalCommand.py - INFO - pivot drifting velocity: 12.646109361095952
+2024-06-05 18:42:50,666 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:50,666 - chassis.py - INFO - distance param: 34.10328933293466
+2024-06-05 18:42:50,666 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:50,681 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:50,850 - LocateGoalCommand.py - INFO - goal angle: -10.87209387453617
+2024-06-05 18:42:50,851 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:50,851 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:50,851 - LocateGoalCommand.py - INFO - pivot drifting velocity: 12.137285327508742
+2024-06-05 18:42:50,851 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:50,851 - chassis.py - INFO - distance param: 34.60781758033477
+2024-06-05 18:42:50,851 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:50,865 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:51,028 - LocateGoalCommand.py - INFO - goal angle: -9.59425008276884
+2024-06-05 18:42:51,028 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:51,028 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:51,028 - LocateGoalCommand.py - INFO - pivot drifting velocity: 10.994549119352328
+2024-06-05 18:42:51,028 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:51,028 - chassis.py - INFO - distance param: 34.60410384609019
+2024-06-05 18:42:51,028 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:51,072 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:51,252 - LocateGoalCommand.py - INFO - goal angle: -7.909127629772156
+2024-06-05 18:42:51,252 - LocateGoalCommand.py - INFO - goal located
+2024-06-05 18:42:51,252 - LocateGoalCommand.py - INFO - locking goal
+2024-06-05 18:42:51,252 - LocateGoalCommand.py - INFO - pivot drifting velocity: 9.38970017062744
+2024-06-05 18:42:51,252 - chassis.py - INFO - running turn on pivot function
+2024-06-05 18:42:51,252 - chassis.py - INFO - distance param: 34.59638533437823
+2024-06-05 18:42:51,252 - chassis.py - INFO - direction param: 1.0
+2024-06-05 18:42:51,264 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-05 18:42:51,420 - control_thread.py - INFO - Control thread exited
+2024-06-05 18:42:51,437 - main.py - INFO - Main thread exited
+2024-06-05 18:42:51,504 - camera_thread.py - INFO - Camera thread exited
+2024-06-05 18:42:52,029 - ws_server.py - INFO - Shutting down server...
+2024-06-05 18:42:52,030 - server.py - INFO - server closing
+2024-06-05 18:42:52,537 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-3' coro=<WSServer.broadcast_data() running at /Users/tomzeng/Code/ugot-auto/ws_server.py:82> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-06-05 18:42:52,537 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-5' coro=<WebSocketServerProtocol.handler() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/server.py:236> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-06-05 18:42:52,537 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-6' coro=<WebSocketCommonProtocol.transfer_data() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:963> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /opt/anaconda3/lib/python3.11/asyncio/tasks.py:519]>
+2024-06-05 18:42:52,537 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-7' coro=<WebSocketCommonProtocol.keepalive_ping() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:1254> wait_for=<Future pending cb=[Task.task_wakeup()]>>
+2024-06-05 18:42:52,537 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-8' coro=<WebSocketCommonProtocol.close_connection() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:1301> wait_for=<Task pending name='Task-6' coro=<WebSocketCommonProtocol.transfer_data() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/protocol.py:963> wait_for=<Future pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup(), _wait.<locals>._on_completion() at /opt/anaconda3/lib/python3.11/asyncio/tasks.py:519]>>
+2024-06-05 18:42:52,537 - server.py - INFO - connection closed
+2024-06-05 18:42:52,540 - base_events.py - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Task-69' coro=<WebSocketServer._close() running at /opt/anaconda3/lib/python3.11/site-packages/websockets/legacy/server.py:766>>

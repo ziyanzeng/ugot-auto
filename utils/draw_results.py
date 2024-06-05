@@ -10,8 +10,8 @@ from logger import logger
 def draw_max_score_detection(data, detections):
     distance_ping_pong, angle_ping_pong, box_ping_pong, score_ping_pong, cls_ping_pong = get_single_relative_pos(detections, "ping-pong")
     distance_ping_pong_partial, angle_ping_pong_partial, box_ping_pong_partial, score_ping_pong_partial, cls_ping_pong_partial = get_single_relative_pos(detections, "ping-pong-partial")
-    logger.info(f"full dist {distance_ping_pong}, full angle: {angle_ping_pong}")
-    logger.info(f"part dist: {distance_ping_pong_partial}, part angle: {angle_ping_pong_partial}")
+    # logger.info(f"full dist {distance_ping_pong}, full angle: {angle_ping_pong}")
+    # logger.info(f"part dist: {distance_ping_pong_partial}, part angle: {angle_ping_pong_partial}")
     # if confidence of partial ping pong is greater than confidence of entire ping pong, replace origianl data with partial detection data
     if score_ping_pong_partial > score_ping_pong:
         distance_ping_pong = distance_ping_pong_partial

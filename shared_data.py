@@ -18,5 +18,6 @@ class SharedData:
         "angle_history": [0] * 50,
         "latest_frame": None,
         "distance_goal": 0,
-        "angle_goal": 0
+        "angle_goal": 0,
+        "restart_trial": False
     }

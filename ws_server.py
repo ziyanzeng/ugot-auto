@@ -37,6 +37,10 @@ class WSServer:
                         self.broadcasting = True
                     elif chart_command == 'pause_chart':
                         self.broadcasting = False
+                        
+                if 'trial' in data:
+                    SharedData.shared_data["restart_trial"] = True
+                    logger.info("Restart signal received from web panel")
 
         except websockets.ConnectionClosed:
             logger.info("Client disconnected")

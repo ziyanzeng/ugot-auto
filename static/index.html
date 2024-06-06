@@ -41,6 +41,8 @@
                 </div>
             </div>
             <div class="buttons">
+                <button id="disable">Disable</button>
+                <button id="restart">Restart</button>
                 <button id="start-locate">Start Locate</button>
                 <button id="locate-goal">Locate Goal</button>
                 <button id="start-translate">Start Translate</button>
@@ -151,15 +153,23 @@
         };
 
         document.getElementById('kick-run').onclick = () => {
-            ws.send(JSON.stringify({ command: 'kick'}))
-        }
+            ws.send(JSON.stringify({ command: 'kick' }));
+        };
 
         document.getElementById('start-locate').onclick = () => {
-            ws.send(JSON.stringify({ command: 'locate'}));
+            ws.send(JSON.stringify({ command: 'locate' }));
         };
 
         document.getElementById('locate-goal').onclick = () => {
-            ws.send(JSON.stringify({ command: 'goal'}));
+            ws.send(JSON.stringify({ command: 'goal' }));
+        };
+
+        document.getElementById('disable').onclick = () => {
+            ws.send(JSON.stringify({ command: 'diable' }));
+        };
+
+        document.getElementById('restart').onclick = () => {
+            ws.send(JSON.stringify({ trial: 'restart' }));
         };
 
         const ctx = document.getElementById('chart').getContext('2d');

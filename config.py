@@ -1,5 +1,5 @@
 # system params
-UGOT_IP = "10.10.64.179"
+UGOT_IP = "10.10.65.25"
 MODEL_PATH = './model/best3.pt'
 CLASS_LABELS = {0: 'goal', 1: 'ping-pong', 2: 'ping-pong-partial'}
 

@@ -42,12 +42,18 @@ def control_thread(got, condition):
         if len(SharedData.shared_data["angle_history"]) > 50:
             SharedData.shared_data["angle_history"].pop(0)
             
-        # command_planner.update(current_command.isFinished())
+        update_signal = current_command.isFinished() and SharedData.shared_data["command"] != "disable"
+        command_planner.update(update_signal)
+        
+        if SharedData.shared_data["command"] == "disable":
+            continue
 
         # logger.info(SharedData.shared_data["command"])
         if current_command.isFinished():
+            command_name = SharedData.shared_data["command"]
+            logger.info(f"next command updating: {command_name}")
             if SharedData.shared_data["command"] == "locate":
-                if not isinstance(current_command, LocateBallCommand):
+                if not isinstance(current_command, LocateBallCommand) or got.read_gyro_data()[5] < 1:
                     current_command = LocateBallCommand(got)
                     current_command.initialize()
             elif SharedData.shared_data["command"] == "translate":

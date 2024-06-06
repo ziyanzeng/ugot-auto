@@ -53,19 +53,19 @@ def control_thread(got, condition):
             command_name = SharedData.shared_data["command"]
             logger.info(f"next command updating: {command_name}")
             if SharedData.shared_data["command"] == "locate":
-                if not isinstance(current_command, LocateBallCommand) or got.read_gyro_data()[5] < 1:
+                # if not isinstance(current_command, LocateBallCommand) or got.read_gyro_data()[5] < 1:
                     current_command = LocateBallCommand(got)
                     current_command.initialize()
             elif SharedData.shared_data["command"] == "translate":
-                if not isinstance(current_command, TranslateToBallCommand):
+                # if not isinstance(current_command, TranslateToBallCommand):
                     current_command = TranslateToBallCommand(got)
                     current_command.initialize()
             elif SharedData.shared_data["command"] == "align":
-                if not isinstance(current_command, AlignWithBallCommand):
+                # if not isinstance(current_command, AlignWithBallCommand):
                     current_command = AlignWithBallCommand(got)
                     current_command.initialize()
             elif SharedData.shared_data["command"] == "goal":
-                if not isinstance(current_command, LocateGoalCommand):
+                # if not isinstance(current_command, LocateGoalCommand):
                     current_command = LocateGoalCommand(got)
                     current_command.initialize()
             elif SharedData.shared_data["command"] == "kick":

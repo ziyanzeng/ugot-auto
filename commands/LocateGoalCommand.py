@@ -26,6 +26,8 @@ class LocateGoalCommand(Command):
         distance_to_ball = SharedData.shared_data["distance"]
         angle_to_ball = SharedData.shared_data["angle"]
         if distance_to_ball == 0:
+            logger.info("lost ball distance data, terminating goal locking command")
+            self.end()
             return
         elif SharedData.shared_data["angle_goal"] != 0 and SharedData.shared_data["distance_goal"] != 0 or self.cummulate > 1000:
             logger.info("goal located")

@@ -1,0 +1,546 @@
+2024-06-06 15:13:42,741 - logger.py - INFO - Logger initialized
+2024-06-06 15:13:44,525 - main.py - INFO - Main function started
+2024-06-06 15:13:45,657 - ugotcamera.py - INFO - camera opened
+2024-06-06 15:13:45,703 - control_thread.py - INFO - Control thread started
+2024-06-06 15:13:45,703 - CommandPlanner.py - INFO - CommandPlanner initiated
+2024-06-06 15:13:45,714 - ws_server.py - INFO - WebSocket server started
+2024-06-06 15:13:45,716 - server.py - INFO - server listening on [::1]:8765
+2024-06-06 15:13:45,716 - server.py - INFO - server listening on 127.0.0.1:8765
+2024-06-06 15:13:47,984 - CommandPlanner.py - INFO - Switching to LocateBallCommand
+2024-06-06 15:13:47,988 - control_thread.py - INFO - next command updating: locate
+2024-06-06 15:14:01,632 - CommandPlanner.py - INFO - Switching to LocateBallCommand
+2024-06-06 15:14:01,633 - control_thread.py - INFO - next command updating: locate
+2024-06-06 15:14:19,119 - CommandPlanner.py - INFO - aligning...
+2024-06-06 15:14:19,120 - control_thread.py - INFO - next command updating: align
+2024-06-06 15:14:22,046 - CommandPlanner.py - INFO - Switching to LocateBallCommand
+2024-06-06 15:14:22,046 - control_thread.py - INFO - next command updating: locate
+2024-06-06 15:14:22,707 - CommandPlanner.py - INFO - aligning...
+2024-06-06 15:14:22,707 - control_thread.py - INFO - next command updating: align
+2024-06-06 15:14:25,692 - CommandPlanner.py - INFO - Switching to TranslateToBallCommand with distance: 57.09612442035779, angle: 0.6399030529847414
+2024-06-06 15:14:25,693 - control_thread.py - INFO - next command updating: translate
+2024-06-06 15:14:27,358 - CommandPlanner.py - INFO - aligning...
+2024-06-06 15:14:27,358 - control_thread.py - INFO - next command updating: align
+2024-06-06 15:14:29,683 - CommandPlanner.py - INFO - switching to goal aimming command
+2024-06-06 15:14:29,683 - control_thread.py - INFO - next command updating: goal
+2024-06-06 15:14:29,683 - LocateGoalCommand.py - INFO - locate goal command initialized
+2024-06-06 15:14:29,830 - LocateGoalCommand.py - INFO - goal angle: 0
+2024-06-06 15:14:29,830 - LocateGoalCommand.py - INFO - searching for goal...
+2024-06-06 15:14:29,830 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:29,831 - chassis.py - INFO - distance param: 11.303430397299088
+2024-06-06 15:14:29,831 - chassis.py - INFO - direction param: -1
+2024-06-06 15:14:29,871 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:29,995 - LocateGoalCommand.py - INFO - goal angle: 0
+2024-06-06 15:14:29,995 - LocateGoalCommand.py - INFO - searching for goal...
+2024-06-06 15:14:29,995 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:29,995 - chassis.py - INFO - distance param: 11.26736209863227
+2024-06-06 15:14:29,995 - chassis.py - INFO - direction param: -1
+2024-06-06 15:14:30,046 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:30,165 - LocateGoalCommand.py - INFO - goal angle: 0
+2024-06-06 15:14:30,165 - LocateGoalCommand.py - INFO - searching for goal...
+2024-06-06 15:14:30,165 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:30,165 - chassis.py - INFO - distance param: 11.089978925440976
+2024-06-06 15:14:30,165 - chassis.py - INFO - direction param: -1
+2024-06-06 15:14:30,186 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:30,327 - LocateGoalCommand.py - INFO - goal angle: 0
+2024-06-06 15:14:30,327 - LocateGoalCommand.py - INFO - searching for goal...
+2024-06-06 15:14:30,327 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:30,327 - chassis.py - INFO - distance param: 10.951292107946161
+2024-06-06 15:14:30,327 - chassis.py - INFO - direction param: -1
+2024-06-06 15:14:30,346 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:30,536 - LocateGoalCommand.py - INFO - goal angle: 0
+2024-06-06 15:14:30,536 - LocateGoalCommand.py - INFO - searching for goal...
+2024-06-06 15:14:30,536 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:30,536 - chassis.py - INFO - distance param: 10.782032880260926
+2024-06-06 15:14:30,536 - chassis.py - INFO - direction param: -1
+2024-06-06 15:14:30,566 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:30,694 - LocateGoalCommand.py - INFO - goal angle: 38.9182572153898
+2024-06-06 15:14:30,694 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:30,694 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:30,694 - LocateGoalCommand.py - INFO - pivot drifting velocity: 35.22102277992777
+2024-06-06 15:14:30,694 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:30,694 - chassis.py - INFO - distance param: 10.88364412840846
+2024-06-06 15:14:30,694 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:30,721 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:30,853 - LocateGoalCommand.py - INFO - goal angle: 33.440254525536474
+2024-06-06 15:14:30,853 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:30,853 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:30,853 - LocateGoalCommand.py - INFO - pivot drifting velocity: 34.34984735322644
+2024-06-06 15:14:30,853 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:30,853 - chassis.py - INFO - distance param: 10.81639702127624
+2024-06-06 15:14:30,853 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:30,868 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:30,996 - LocateGoalCommand.py - INFO - goal angle: 24.47719234440925
+2024-06-06 15:14:30,996 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:30,996 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:30,996 - LocateGoalCommand.py - INFO - pivot drifting velocity: 25.85767708294865
+2024-06-06 15:14:30,996 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:30,996 - chassis.py - INFO - distance param: 10.519601996692952
+2024-06-06 15:14:30,996 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:31,013 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:31,205 - LocateGoalCommand.py - INFO - goal angle: 9.94280105592035
+2024-06-06 15:14:31,205 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:31,205 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:31,205 - LocateGoalCommand.py - INFO - pivot drifting velocity: 11.93013271047552
+2024-06-06 15:14:31,205 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:31,205 - chassis.py - INFO - distance param: 10.391921276461957
+2024-06-06 15:14:31,205 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:31,252 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:31,397 - LocateGoalCommand.py - INFO - goal angle: 1.3961416181358839
+2024-06-06 15:14:31,397 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:31,397 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:31,397 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.7916807957112892
+2024-06-06 15:14:31,397 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:31,398 - chassis.py - INFO - distance param: 10.145139003592142
+2024-06-06 15:14:31,398 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:31,420 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:31,608 - LocateGoalCommand.py - INFO - goal angle: -1.1634547322174356
+2024-06-06 15:14:31,608 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:31,608 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:31,608 - LocateGoalCommand.py - INFO - pivot drifting velocity: 1.7334139282673262
+2024-06-06 15:14:31,608 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:31,608 - chassis.py - INFO - distance param: 10.11428409981356
+2024-06-06 15:14:31,608 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:31,628 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:31,769 - LocateGoalCommand.py - INFO - goal angle: -0.5817302500451741
+2024-06-06 15:14:31,769 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:31,769 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:31,947 - LocateGoalCommand.py - INFO - goal angle: 1.512484253624852
+2024-06-06 15:14:31,947 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:31,947 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:31,947 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.0318342302102805
+2024-06-06 15:14:31,947 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:31,947 - chassis.py - INFO - distance param: 10.266848403636063
+2024-06-06 15:14:31,947 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:31,976 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:32,175 - LocateGoalCommand.py - INFO - goal angle: -0.34903851917496764
+2024-06-06 15:14:32,175 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:32,175 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:32,336 - LocateGoalCommand.py - INFO - goal angle: -1.3961416181358839
+2024-06-06 15:14:32,336 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:32,336 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:32,336 - LocateGoalCommand.py - INFO - pivot drifting velocity: 1.9690095185016303
+2024-06-06 15:14:32,336 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:32,336 - chassis.py - INFO - distance param: 10.235699595295351
+2024-06-06 15:14:32,336 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:32,364 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:32,510 - LocateGoalCommand.py - INFO - goal angle: 0.5817302500451741
+2024-06-06 15:14:32,510 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:32,510 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:32,903 - LocateGoalCommand.py - INFO - goal angle: 1.6288262892864394
+2024-06-06 15:14:32,903 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:32,903 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:32,903 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.1749355904346657
+2024-06-06 15:14:32,903 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:32,903 - chassis.py - INFO - distance param: 10.204075363975216
+2024-06-06 15:14:32,903 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:33,160 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:33,439 - LocateGoalCommand.py - INFO - goal angle: -2.152356789978585
+2024-06-06 15:14:33,439 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:33,439 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:33,439 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.680143292122545
+2024-06-06 15:14:33,439 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:33,439 - chassis.py - INFO - distance param: 10.33104041471682
+2024-06-06 15:14:33,439 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:33,733 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:33,996 - LocateGoalCommand.py - INFO - goal angle: -0.9307660006268693
+2024-06-06 15:14:33,996 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:33,996 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:34,572 - LocateGoalCommand.py - INFO - goal angle: -0.8725935725980932
+2024-06-06 15:14:34,572 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:34,572 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:35,481 - LocateGoalCommand.py - INFO - goal angle: 0.05817312017554997
+2024-06-06 15:14:35,481 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:35,481 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:35,847 - LocateGoalCommand.py - INFO - goal angle: 0.8725935725980932
+2024-06-06 15:14:35,848 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:35,848 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:36,199 - LocateGoalCommand.py - INFO - goal angle: -1.512484253624852
+2024-06-06 15:14:36,199 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:36,199 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:36,199 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.1641734807415243
+2024-06-06 15:14:36,199 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:36,199 - chassis.py - INFO - distance param: 8.521622957747716
+2024-06-06 15:14:36,199 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:36,333 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:36,553 - LocateGoalCommand.py - INFO - goal angle: -4.129947582990321
+2024-06-06 15:14:36,553 - LocateGoalCommand.py - INFO - lost ball distance data, terminating goal locking command
+2024-06-06 15:14:36,780 - CommandPlanner.py - INFO - aligning...
+2024-06-06 15:14:36,780 - control_thread.py - INFO - next command updating: align
+2024-06-06 15:14:38,501 - CommandPlanner.py - INFO - switching to goal aimming command
+2024-06-06 15:14:38,502 - control_thread.py - INFO - next command updating: goal
+2024-06-06 15:14:38,502 - LocateGoalCommand.py - INFO - locate goal command initialized
+2024-06-06 15:14:38,701 - LocateGoalCommand.py - INFO - goal angle: 14.35430071066262
+2024-06-06 15:14:38,702 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:38,702 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:38,702 - LocateGoalCommand.py - INFO - pivot drifting velocity: 12.990642143149671
+2024-06-06 15:14:38,702 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:38,702 - chassis.py - INFO - distance param: 10.78128151014366
+2024-06-06 15:14:38,702 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:38,838 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:39,102 - LocateGoalCommand.py - INFO - goal angle: 14.296302300548069
+2024-06-06 15:14:39,102 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:39,102 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:39,102 - LocateGoalCommand.py - INFO - pivot drifting velocity: 14.445355156615578
+2024-06-06 15:14:39,102 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:39,102 - chassis.py - INFO - distance param: 10.747834140215158
+2024-06-06 15:14:39,102 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:39,251 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:39,581 - LocateGoalCommand.py - INFO - goal angle: -3.6646662832033607
+2024-06-06 15:14:39,582 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:39,582 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:39,582 - LocateGoalCommand.py - INFO - pivot drifting velocity: 4.889406231409902
+2024-06-06 15:14:39,582 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:39,582 - chassis.py - INFO - distance param: 10.45493104957004
+2024-06-06 15:14:39,582 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:39,737 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:39,988 - LocateGoalCommand.py - INFO - goal angle: -7.67664211522902
+2024-06-06 15:14:39,988 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:39,988 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:39,988 - LocateGoalCommand.py - INFO - pivot drifting velocity: 7.47540408907467
+2024-06-06 15:14:39,988 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:39,988 - chassis.py - INFO - distance param: 10.64864164906437
+2024-06-06 15:14:39,988 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:40,105 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:40,349 - LocateGoalCommand.py - INFO - goal angle: -3.4901796439322332
+2024-06-06 15:14:40,349 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:40,349 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:40,349 - LocateGoalCommand.py - INFO - pivot drifting velocity: 4.126236346329788
+2024-06-06 15:14:40,349 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:40,349 - chassis.py - INFO - distance param: 10.681435690667726
+2024-06-06 15:14:40,349 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:40,378 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:40,510 - LocateGoalCommand.py - INFO - goal angle: -1.512484253624852
+2024-06-06 15:14:40,510 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:40,510 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:40,510 - LocateGoalCommand.py - INFO - pivot drifting velocity: 1.935226669191591
+2024-06-06 15:14:40,510 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:40,510 - chassis.py - INFO - distance param: 10.648461284325846
+2024-06-06 15:14:40,510 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:40,534 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:40,677 - LocateGoalCommand.py - INFO - goal angle: -0.9889383363706531
+2024-06-06 15:14:40,678 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:40,678 - LocateGoalCommand.py - INFO - distance adjusting in locking goal command
+2024-06-06 15:14:40,678 - LocateGoalCommand.py - INFO - linear speed: 1.7637580239547714
+2024-06-06 15:14:40,911 - LocateGoalCommand.py - INFO - goal angle: 0.0
+2024-06-06 15:14:40,912 - LocateGoalCommand.py - INFO - searching for goal...
+2024-06-06 15:14:40,912 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:40,912 - chassis.py - INFO - distance param: 10.714543612687333
+2024-06-06 15:14:40,912 - chassis.py - INFO - direction param: -1
+2024-06-06 15:14:40,931 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:41,076 - LocateGoalCommand.py - INFO - goal angle: -0.40721151822364315
+2024-06-06 15:14:41,077 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:41,077 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:41,256 - LocateGoalCommand.py - INFO - goal angle: -9.536154898517891
+2024-06-06 15:14:41,256 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:41,256 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:41,256 - LocateGoalCommand.py - INFO - pivot drifting velocity: 9.006441485057177
+2024-06-06 15:14:41,256 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:41,256 - chassis.py - INFO - distance param: 11.41553660353909
+2024-06-06 15:14:41,256 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:41,281 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:41,408 - LocateGoalCommand.py - INFO - goal angle: -9.361863708089057
+2024-06-06 15:14:41,408 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:41,408 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:41,408 - LocateGoalCommand.py - INFO - pivot drifting velocity: 9.698755796700977
+2024-06-06 15:14:41,408 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:41,408 - chassis.py - INFO - distance param: 11.450848590735118
+2024-06-06 15:14:41,408 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:41,432 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:41,623 - LocateGoalCommand.py - INFO - goal angle: -2.152356789978585
+2024-06-06 15:14:41,623 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:41,623 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:41,623 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.2035322353085607
+2024-06-06 15:14:41,623 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:41,623 - chassis.py - INFO - distance param: 11.867690942139204
+2024-06-06 15:14:41,623 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:41,651 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:41,802 - LocateGoalCommand.py - INFO - goal angle: 3.3156898910762784
+2024-06-06 15:14:41,802 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:41,802 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:41,802 - LocateGoalCommand.py - INFO - pivot drifting velocity: 3.5461597839408188
+2024-06-06 15:14:41,802 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:41,802 - chassis.py - INFO - distance param: 11.946408182926259
+2024-06-06 15:14:41,802 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:41,847 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:42,032 - LocateGoalCommand.py - INFO - goal angle: 2.5595354451057672
+2024-06-06 15:14:42,032 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:42,032 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:42,032 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.994751769902657
+2024-06-06 15:14:42,032 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:42,032 - chassis.py - INFO - distance param: 11.867703966119556
+2024-06-06 15:14:42,032 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:42,072 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:42,205 - LocateGoalCommand.py - INFO - goal angle: -0.6399030529847414
+2024-06-06 15:14:42,205 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:42,205 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:42,362 - LocateGoalCommand.py - INFO - goal angle: -0.7562484627558008
+2024-06-06 15:14:42,362 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:42,362 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:42,507 - LocateGoalCommand.py - INFO - goal angle: -0.11634623458314212
+2024-06-06 15:14:42,507 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:42,507 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:42,674 - LocateGoalCommand.py - INFO - goal angle: 1.6288262892864394
+2024-06-06 15:14:42,674 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:42,674 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:42,674 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.089642216514643
+2024-06-06 15:14:42,674 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:42,674 - chassis.py - INFO - distance param: 11.71604435059401
+2024-06-06 15:14:42,674 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:42,708 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:42,853 - LocateGoalCommand.py - INFO - goal angle: 1.45431300797538
+2024-06-06 15:14:42,853 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:42,853 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:42,853 - LocateGoalCommand.py - INFO - pivot drifting velocity: 1.8467809127926338
+2024-06-06 15:14:42,853 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:42,853 - chassis.py - INFO - distance param: 11.7904934502191
+2024-06-06 15:14:42,853 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:42,873 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:43,013 - LocateGoalCommand.py - INFO - goal angle: -0.40721151822364315
+2024-06-06 15:14:43,013 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:43,013 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:43,171 - LocateGoalCommand.py - INFO - goal angle: -0.9889383363706531
+2024-06-06 15:14:43,171 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:43,171 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:43,401 - LocateGoalCommand.py - INFO - goal angle: 0.23269242302264212
+2024-06-06 15:14:43,401 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:43,401 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:43,556 - LocateGoalCommand.py - INFO - goal angle: -1.337970089873291
+2024-06-06 15:14:43,556 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:43,556 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:43,556 - LocateGoalCommand.py - INFO - pivot drifting velocity: 1.7313108088190141
+2024-06-06 15:14:43,556 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:43,556 - chassis.py - INFO - distance param: 11.868683987300585
+2024-06-06 15:14:43,556 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:43,577 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:43,725 - LocateGoalCommand.py - INFO - goal angle: -1.337970089873291
+2024-06-06 15:14:43,725 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:43,725 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:43,725 - LocateGoalCommand.py - INFO - pivot drifting velocity: 1.7263663674581715
+2024-06-06 15:14:43,725 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:43,725 - chassis.py - INFO - distance param: 11.754256133457774
+2024-06-06 15:14:43,725 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:43,748 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:43,890 - LocateGoalCommand.py - INFO - goal angle: 0.29086548551866515
+2024-06-06 15:14:43,890 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:43,890 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:44,051 - LocateGoalCommand.py - INFO - goal angle: 1.337970089873291
+2024-06-06 15:14:44,052 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:44,052 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:44,052 - LocateGoalCommand.py - INFO - pivot drifting velocity: 1.7330562179075382
+2024-06-06 15:14:44,052 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:44,052 - chassis.py - INFO - distance param: 11.909052089057306
+2024-06-06 15:14:44,052 - chassis.py - INFO - direction param: -1.0
+2024-06-06 15:14:44,079 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:44,206 - LocateGoalCommand.py - INFO - goal angle: 0.05817312017554997
+2024-06-06 15:14:44,206 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:44,207 - LocateGoalCommand.py - INFO - aligning in locking goal command
+2024-06-06 15:14:44,373 - LocateGoalCommand.py - INFO - goal angle: -1.6869970677651411
+2024-06-06 15:14:44,373 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:44,373 - LocateGoalCommand.py - INFO - locking goal
+2024-06-06 15:14:44,373 - LocateGoalCommand.py - INFO - pivot drifting velocity: 2.055615483349029
+2024-06-06 15:14:44,373 - chassis.py - INFO - running turn on pivot function
+2024-06-06 15:14:44,373 - chassis.py - INFO - distance param: 11.753402125797667
+2024-06-06 15:14:44,373 - chassis.py - INFO - direction param: 1.0
+2024-06-06 15:14:44,429 - chassis.py - INFO - correctly set params for moventurn function
+2024-06-06 15:14:44,550 - LocateGoalCommand.py - INFO - goal angle: -0.5235573894265945
+2024-06-06 15:14:44,550 - LocateGoalCommand.py - INFO - goal located
+2024-06-06 15:14:44,550 - LocateGoalCommand.py - INFO - goal locked
+2024-06-06 15:14:44,886 - CommandPlanner.py - INFO - switching to kick command
+2024-06-06 15:14:44,886 - control_thread.py - INFO - next command updating: kick
+2024-06-06 15:14:47,585 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:47,585 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:47,740 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:47,925 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:47,925 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:48,087 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:48,271 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:48,271 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:48,480 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:48,645 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:48,645 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:48,789 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:48,946 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:48,946 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:49,112 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:49,299 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:49,299 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:49,492 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:49,698 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:49,698 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:49,847 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:50,082 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:50,083 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:50,208 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:50,474 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:50,474 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:50,658 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:50,869 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:50,869 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:51,046 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:51,222 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:51,222 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:51,378 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:51,570 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:51,570 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:51,748 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:51,917 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:51,917 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:52,085 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:52,255 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:52,255 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:52,425 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:52,614 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:52,614 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:52,859 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:53,043 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:53,043 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:53,220 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:53,530 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:53,530 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:53,678 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:53,890 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:53,890 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:54,078 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:54,274 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:54,274 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:54,471 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:54,646 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:54,646 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:54,838 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:55,008 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:55,008 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:55,128 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:55,342 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:55,342 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:55,500 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:55,652 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:55,652 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:55,817 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:56,001 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:56,001 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:56,183 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:56,353 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:56,353 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:56,514 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:56,671 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:56,671 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:56,852 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:57,026 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:57,026 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:57,196 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:57,370 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:57,370 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:57,546 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:57,753 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:57,753 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:57,949 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:58,145 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:58,145 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:58,300 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:58,481 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:58,481 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:58,645 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:58,808 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:58,808 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:59,001 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:59,162 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:59,162 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:59,367 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:59,718 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:14:59,718 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:14:59,890 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:00,731 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:00,731 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:00,872 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:01,085 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:01,085 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:01,235 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:01,451 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:01,451 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:01,611 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:01,860 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:01,860 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:02,045 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:02,292 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:02,292 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:02,432 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:02,596 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:02,596 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:02,773 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:02,937 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:02,937 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:03,092 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:03,291 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:03,291 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:03,517 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:03,741 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:03,741 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:03,888 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:04,050 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:04,050 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:04,320 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:04,501 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:04,501 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:04,652 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:04,836 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:04,836 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:04,998 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:05,163 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:05,164 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:05,360 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:05,571 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:05,571 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:05,722 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:05,877 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:05,878 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:06,021 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:06,174 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:06,174 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:06,349 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:06,513 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:06,513 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:06,666 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:06,820 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:06,820 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:06,987 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:07,146 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:07,146 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:07,349 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:07,492 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:07,492 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:07,644 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:07,818 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:07,818 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:07,988 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:08,155 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:08,155 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:08,317 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:08,489 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:08,490 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:08,661 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:08,913 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:08,913 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:09,068 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:09,214 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:09,214 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:09,545 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:09,991 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:09,991 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:10,318 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:10,860 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:10,860 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:11,241 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:11,586 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:11,586 - control_thread.py - INFO - next command updating: rest
+2024-06-06 15:15:11,778 - CommandPlanner.py - INFO - Current trial ended, waiting for next trial signal...
+2024-06-06 15:15:39,016 - server.py - INFO - connection open
+2024-06-06 15:15:39,017 - ws_server.py - INFO - New WebSocket connection established
+2024-06-06 15:15:40,306 - ws_server.py - INFO - Received message: {"trial":"restart"}
+2024-06-06 15:15:40,306 - ws_server.py - INFO - Restart signal received from web panel
+2024-06-06 15:16:11,586 - main.py - INFO - Received signal 2, initiating shutdown...
+2024-06-06 15:16:11,753 - main.py - INFO - Received signal 2, initiating shutdown...
+2024-06-06 15:16:12,064 - ws_server.py - INFO - Shutting down server...
+2024-06-06 15:16:12,067 - server.py - INFO - server closing
+2024-06-06 15:16:12,181 - main.py - INFO - Main thread exited
+2024-06-06 15:16:12,208 - main.py - INFO - Received signal 2, initiating shutdown...
+2024-06-06 15:16:13,683 - main.py - INFO - Received signal 2, initiating shutdown...

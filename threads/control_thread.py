@@ -41,16 +41,14 @@ def control_thread(got, condition):
             SharedData.shared_data["distance_history"].pop(0)
         if len(SharedData.shared_data["angle_history"]) > 50:
             SharedData.shared_data["angle_history"].pop(0)
+            
+        # command_planner.update(current_command.isFinished())
 
         # logger.info(SharedData.shared_data["command"])
         if current_command.isFinished():
             if SharedData.shared_data["command"] == "locate":
                 if not isinstance(current_command, LocateBallCommand):
                     current_command = LocateBallCommand(got)
-                    current_command.initialize()
-            elif SharedData.shared_data["command"] == "goal":
-                if not isinstance(current_command, LocateGoalCommand):
-                    current_command = LocateGoalCommand(got)
                     current_command.initialize()
             elif SharedData.shared_data["command"] == "translate":
                 if not isinstance(current_command, TranslateToBallCommand):
@@ -59,6 +57,10 @@ def control_thread(got, condition):
             elif SharedData.shared_data["command"] == "align":
                 if not isinstance(current_command, AlignWithBallCommand):
                     current_command = AlignWithBallCommand(got)
+                    current_command.initialize()
+            elif SharedData.shared_data["command"] == "goal":
+                if not isinstance(current_command, LocateGoalCommand):
+                    current_command = LocateGoalCommand(got)
                     current_command.initialize()
             elif SharedData.shared_data["command"] == "kick":
                 current_command = KickCommand(got)

@@ -15,11 +15,11 @@ Welcome to the **UGOT Robot Auto Demo**! This project showcases the autonomous c
 
 ### Webpage Control Panel
 *Integrated with a local server, communicates via WebSocket*
-*ps: this front end webpage might look terrible, as I am not a frontend person, it is just usable, lol*
 - **Manual Command Selection Buttons**
 - **Video Stream Preview**
 - **PID Tuning with Reaction Curve**
   - Maintains data from the past 50 ticks of the program run.
+- ps: this front end webpage might look terrible, as I am not a frontend person, it is just usable, lol
 
 ### Computer Vision
 - **YOLOv8 Model**

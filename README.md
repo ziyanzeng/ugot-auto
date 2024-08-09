@@ -28,8 +28,8 @@ Welcome to the **UGOT Robot Auto Demo**! This project showcases the autonomous c
   - No depth camera or depth prediction model is involved.
   - Algorithm located in `utils.get_relative_position.py`.
 
-## 🎥 Video Demo
-*Coming soon...*
+## 🎥 Video Demo on YouTube
+[![Watch the video](https://img.youtube.com/vi/SKE5ZX4mnl8/maxresdefault.jpg)](https://www.youtube.com/watch?v=SKE5ZX4mnl8)
 
 ## 🤩 Get Started
 1. Installed all the required packages (docker support already added to repo)

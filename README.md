@@ -32,18 +32,12 @@ Welcome to the **UGOT Robot Auto Demo**! This project showcases the autonomous c
 *Coming soon...*
 
 ## 🤩 Get Started
-1. Installed all the required packages
+1. Installed all the required packages (docker support already added to repo)
 2. Make sure that the UGOT robot is connected to the same WiFi as your computer
 3. Config the IP of the robot in the `config.py` file
 4. Open a terminal and go to the ~/static directory to run `python -m http.server` to start the webpage service
-5. Open `http://localhost:8000/index.html` in the browser to view the panel
+5. Open `http://localhost:8000/index.html` in the browser to view the control panel (including the PID Tuning panel)
 6. Open another terminal and go back to the root directory then run `python main.py` to start the program
    - the default mode is the autonomous mode, so the robot will start locating the ball as soon as your computer is connected to the robot
    - an Opencv frame will be pulled up on your computer, this frame should have better video quality than the frame shown on the webpage
    - to switch to manual command selection mode, go to `~/threads/control_thread.py` then comment out the line `command_planner.update(update_signal)` at line 46, then you will be able to control the robot fully through the buttons on the webpage
-
-## 🌟 Possible Future Updates
-1. Implement a new Ball-Goal-Robot aligning algorithm to replace the current goal-locking method.
-2. Augment the dataset to address misdetection and no-detection issues in bright, overexposed environments.
-3. Frontend webpage updates
-4. And more...
